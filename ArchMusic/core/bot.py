@@ -31,6 +31,7 @@ class ArchMusic(Client):
             try:
                 await self.send_video(
                     config.LOG_GROUP_ID,
+                    video=video_url,
                     caption=caption,
                 )
             except:
