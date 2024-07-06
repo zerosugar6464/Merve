@@ -254,16 +254,16 @@ S_B_3 : "🎉 Destek Grubu"
 S_B_4 : "🎩 Duyuru"
 S_B_5 : "✚ Beni Grubuna Ekle ✚"
 S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 İletişim Hesabı"
-S_B_8 : "🔮 Komutlar Menüsü, Nasıl kullanılır?"
+S_B_7 : "❤️‍🔥 Developer"
+S_B_8 : "📚 Komutlar Menüsü"
 
 #Help 
 H_B_1 : "💎 Admin Komutları"
 H_B_2 : "🎧 Oynatma Komutları"
 H_B_3 : "🤖 Bot Komutları"
-H_B_4 : "✨ Ekstra Komutlar"
+H_B_4 : "🔮 Ekstra Komutlar"
 H_B_5 : "💣 Menüyü Kapat"
-H_B_6 : "🚀 Sudo Komutları"
+H_B_6 : "❤️‍🔥 Sudo Komutları"
 
 #PlayMode
 PM_B_1 : "DirectPlay"
