@@ -52,7 +52,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"❤️‍🩹 Pulse Duyuru", 
+                text=f"🎮 Pulse Duyuru", 
                 url=f"https://t.me/PulseDuyuru"
             )
         ],
@@ -75,7 +75,7 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"❤️‍🩹 Pulse Duyuru", 
+                text=f"🎮 Pulse Duyuru", 
                 url=f"https://t.me/PulseDuyuru"
             )
         ],
@@ -105,7 +105,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"❤️‍🩹 Pulse Duyuru", 
+                text=f"🎮 Pulse Duyuru", 
                 url=f"https://t.me/PulseDuyuru"
             )
         ],
@@ -146,7 +146,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"❤️‍🩹 Pulse Duyuru", 
+                text=f"🎮 Pulse Duyuru", 
                 url=f"https://t.me/PulseDuyuru"
             )
         ],
@@ -169,7 +169,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"❤️‍🩹 Pulse Duyuru", 
+                text=f"🎮 Pulse Duyuru", 
                 url=f"https://t.me/PulseDuyuru"
             )
         ],
