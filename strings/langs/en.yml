@@ -211,7 +211,7 @@ ping_2 : "**🔮 {0} 🔮\nGecikme: `{1}` ms\nUpTime: {2}\nDepolama: {3}\nCpu: {
 song_1 : "YouTube'dan Müzik veya Video'yu yalnızca özel sohbette indirebilirsiniz. Lütfen beni özel sohbette başlat. 🔮"
 song_2 : "**Kullanım:**\n/indir [Şarkı Adı] veya [Youtube Link]\n\n(**Örnek:** /indir Neşet Ertaş Gönül Dağı)"
 song_3 : "Canlı Bağlantı Algılandı. Canlı youtube videolarını indiremiyorum. 🔮"
-song_4 : "**🥀Parça: {0}**\n\n**İndirmek istediğiniz türü seçin.**"
+song_4 : "**🔮Başlık: {0}**\n\n**İndirmek istediğiniz türü seçin.**"
 song_5 : "Geçerli bir Youtube Bağlantısı değil"
 song_6 : "Format Alınıyor... 🔮\n\nLütfen Bekleyin.. ✅"
 song_7 : "Video için kullanılabilir biçimler alınamadı. Lütfen başka bir parça deneyin."
@@ -224,14 +224,14 @@ song_11 : "**Yükleme Başladı\n\nYükleme hızı yavaş olabilir. Lütfen bekl
 queue_1 : "**Lütfen Bekleyin.. Sıra Alınıyor...** 🔮"
 queue_2 : "Sırada Malesef Hiçbir Şey Yok. 😔"
 queue_3 : "<u>**Sıradaki Parçalar:</u>**  [Sıradaki Parçalara Burdan Bakabilirsiniz]({0})"
-queue_4 : "❤️‍🩹 Sıraya eklendi **#{0}\n\n🥀Parça:** {1}\n**⏱Süre:** {2}\n👤**Talep Eden: {3}**"
+queue_4 : "❤️‍🩹 Sıraya eklendi **#{0}\n\n🔮Başlık:** {1}\n**⏱Süre:** {2}\n👤**Talep Eden: {3}**"
 queue_5 : "Sırada Sadece Bir Parça Var, Lütfen Biraz Daha Parça Ekleyin. 🔮"
 
-stream_1 : "🥀**Parça**: {0} \n**⏱Süre**: {2}\n**👤Talep Eden**: {3}"
+stream_1 : "🔮**Başlık**: {0} \n**⏱Süre**: {2}\n**👤Talep Eden**: {3}"
 stream_2 : " **Yayın Başlatıldı** \n**Başlık**: {0}\n**⏱Süre**: {2}\n**👤Talep Eden**: {3}"
-stream_3 : "🥀**Parça**: {0}\n**⏱Süre**: {1}\n**👤Talep Eden**: {2}"
-stream_4 : "🥀**Parça**: [{0}]\n**⏱Süre**: {2}\n**👤Talep Eden**: {3}"
-stream_5 : "🥀**Parça**: {0}\n**👤Talep Eden**:{1}"
+stream_3 : "🔮**Başlık**: {0}\n**⏱Süre**: {1}\n**👤Talep Eden**: {2}"
+stream_4 : "🔮**Başlık**: [{0}]\n**⏱Süre**: {2}\n**👤Talep Eden**: {3}"
+stream_5 : "🔮**Başlık**: {0}\n**👤Talep Eden**:{1}"
 stream_6 : " **Yayın Başlatıldı**  \n**Parça**: [{0}]({1})\n**👤Talep Eden**: {2}"
 
 
