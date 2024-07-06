@@ -150,7 +150,7 @@ play_7 : "**Üzgünüm! Şu Anda Birçok Grup Videolu Sohbet Açmış. Sunucu G�
 play_8 : "Geçerli Bir Video Dosyası Uzantısı Değil!\n\n**Desteklenen Biçimler:** {0}"
 play_9 : "Video Dosya Boyutu 1 GB'den Küçük Olmalı. 🔮"
 play_10 : "**Youtube Oynatma Listesi Özelliği**\n\nYoutube Oynatma Listesinin tamamını oynatmak istediğiniz Modu seçin"
-play_11 : "🥀Başlık: **{0}\n\n⌛Süre:** {1} Dakika"
+play_11 : "🔮Başlık: **{0}\n\n⌛Süre:** {1} Dakika"
 play_12 : "**Spotify Oynatma Listeleri**\n\n👤Talep Eden:- {0}"
 play_13 : "**Apple Oynatma Listeleri**\n\n👤Talep Eden:- {0}"
 play_14 : "**URL doğrulanamıyor.**\nBot, bu url'nin şu platformlardan birine ait olup olmadığını merak ediyor: Youtube, AppleMusic, Spotify, Resso ve Soundcloud.\n\nM3u8 veya Uzak Bağlantılar için /stream'i kullanabilirsiniz.."
