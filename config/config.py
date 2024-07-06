@@ -156,7 +156,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 CLEANMODE_DELETE_MINS = int(
 
-    getenv("CLEANMODE_MINS", "3")
+    getenv("CLEANMODE_MINS", "600")
 
 )  # Remember to give value in Seconds
 
