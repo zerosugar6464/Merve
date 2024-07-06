@@ -29,9 +29,9 @@ class ArchMusic(Client):
             caption = "Bot Başarıyla Başlatıldı 🥀"
             
             try:
-                await self.send_message(
+                await self.send_video(
                     config.LOG_GROUP_ID,
-                    caption=caption
+                    caption=caption,
                 )
             except:
                 LOGGER(__name__).error(
