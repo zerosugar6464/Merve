@@ -29,13 +29,13 @@ HELP_2 = """✅<u>**OYNATMA KOMUTLARI:**</u>
 
 **/oynat veya /play :** Müziği Oynatmaya Yarar.
 **-Örnek Kullanım:** /oynat şarkı İsmi // Veya Oynatmak İstediğiniz Şarkıyı Yanıtlayarak /oynat Yazabilirsiniz.
-(**Örnek:** /oynat Neşet Ertaş Gönül Dağı)
+(**Örnek:** /oynat Defkhan Kapak Olsun)
 
-**/vplay :** Videoyu Seste Oynatmaya Yarar.
-**-Örnek Kullanım:** /vplay Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay Yazabilirsiniz.
+**/voynat veya /vplay :** Videoyu Seste Oynatmaya Yarar.
+**-Örnek Kullanım:** /voynat Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay Yazabilirsiniz.
 
 **/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
-(**Örnek:** /indir Neşet Ertaş Gönül Dağı)
+(**Örnek:** /bul Defkhan Kapak Olsun)
 
 
 ✅**<u>Oynatma Listeleri:</u>**
