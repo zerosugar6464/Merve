@@ -259,9 +259,8 @@ async def welcome(client, message: Message):
                 photo_url = "https://telegra.ph/file/b928d630f9c8c39be79e6.jpg"  # Replace with the actual URL of the video
                 photo_caption = _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id)
 
-                await app.send_photo(
+                await app.send_message(
                     message.chat.id,
-                    photo_url,
                     caption=photo_caption,
                     reply_markup=InlineKeyboardMarkup(out)
                 )
