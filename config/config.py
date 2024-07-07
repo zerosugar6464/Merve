@@ -220,29 +220,101 @@ autoclean = []
 
 START_IMG_URL = getenv("START_IMG_URL", None)
 
-PING_IMG_URL = getenv("PING_IMG_URL", None)
+PING_IMG_URL = getenv(
 
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", None)
+    "PING_IMG_URL",
 
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", None)
+    "assets/Ping.jpeg",
 
-STATS_IMG_URL = getenv("STATS_IMG_URL", None)
+)
 
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", None)
+PLAYLIST_IMG_URL = getenv(
 
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", None)
+    "PLAYLIST_IMG_URL",
 
-STREAM_IMG_URL = getenv("STREAM_IMG_URL", None)
+    "assets/Playlist.jpeg",
 
-SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", None)
+)
 
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", None)
+GLOBAL_IMG_URL = getenv(
 
-SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", None)
+    "GLOBAL_IMG_URL",
 
-SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", None)
+    "assets/Global.jpeg",
 
-SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", None)
+)
+
+STATS_IMG_URL = getenv(
+
+    "STATS_IMG_URL",
+
+    "assets/Stats.jpeg",
+
+)
+
+TELEGRAM_AUDIO_URL = getenv(
+
+    "TELEGRAM_AUDIO_URL",
+
+    "assets/Audio.jpeg",
+
+)
+
+TELEGRAM_VIDEO_URL = getenv(
+
+    "TELEGRAM_VIDEO_URL",
+
+    "assets/Video.jpeg",
+
+)
+
+STREAM_IMG_URL = getenv(
+
+    "STREAM_IMG_URL",
+
+    "assets/Stream.jpeg",
+
+)
+
+SOUNCLOUD_IMG_URL = getenv(
+
+    "SOUNCLOUD_IMG_URL",
+
+    "assets/Soundcloud.jpeg",
+
+)
+
+YOUTUBE_IMG_URL = getenv(
+
+    "YOUTUBE_IMG_URL",
+
+    "assets/Youtube.jpeg",
+
+)
+
+SPOTIFY_ARTIST_IMG_URL = getenv(
+
+    "SPOTIFY_ARTIST_IMG_URL",
+
+    "assets/SpotifyArtist.jpeg",
+
+)
+
+SPOTIFY_ALBUM_IMG_URL = getenv(
+
+    "SPOTIFY_ALBUM_IMG_URL",
+
+    "assets/SpotifyAlbum.jpeg",
+
+)
+
+SPOTIFY_PLAYLIST_IMG_URL = getenv(
+
+    "SPOTIFY_PLAYLIST_IMG_URL",
+
+    "assets/SpotifyPlaylist.jpeg",
+
+)
 
 def time_to_seconds(time):
 
@@ -290,7 +362,7 @@ if SUPPORT_GROUP:
 
 if UPSTREAM_REPO:
 
-    if not re.match("(?:http|https)://", UPSTREAM_REPO):
+if not re.match("(?:http|https)://", UPSTREAM_REPO):
 
         print(
 
