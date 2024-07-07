@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
-#
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import os
 import re
 
@@ -36,20 +26,6 @@ SONG_COMMAND = get_command("SONG_COMMAND")
     & filters.group
     & ~BANNED_USERS
 )
-@language
-async def song_commad_group(client, message: Message, _):
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    text=_["SG_B_1"],
-                    url=f"https://t.me/{app.username}?start=song",
-                ),
-            ]
-        ]
-    )
-    await message.reply_text(_["song_1"], reply_markup=upl)
-
 
 # Song Module
 
@@ -168,7 +144,7 @@ async def song_helper_cb(client, CallbackQuery, _):
                 fom = x["format_id"]
                 keyboard.row(
                     InlineKeyboardButton(
-                        text=f"{form} Quality Audio = {sz}",
+                        text=f"{form} Kalite = {sz}",
                         callback_data=f"song_download {stype}|{fom}|{vidid}",
                     ),
                 )
@@ -233,7 +209,7 @@ async def song_helper_cb(client, CallbackQuery, _):
 @languageCB
 async def song_download_cb(client, CallbackQuery, _):
     try:
-        await CallbackQuery.answer("Downloading")
+        await CallbackQuery.answer("İndiriliyor")
     except:
         pass
     callback_data = CallbackQuery.data.strip()
