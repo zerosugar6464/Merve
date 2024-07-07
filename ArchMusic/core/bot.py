@@ -2,15 +2,49 @@ import sys
 
 from pyrogram import Client
 from pyrogram.enums import ChatMemberStatus
-from pyrogram.types import BotCommand
+from pyrogram.types import BotCommand, BotCommandScopeAllPrivateChats, BotCommandScopeAllGroupChats
 
 import config
 
 from ..logging import LOGGER
 
+
+private_commands = [
+    BotCommand("start", "🎧 Botu başlatır"),
+    BotCommand("yardim", "📖 Yardım menüsünü gösterir"),
+]
+
+
+group_commands = [
+    BotCommand("oynat", "🔼 Müziği oynatır"),
+    BotCommand("voynat", "📹 Videoyu oynatır"),
+    BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
+    BotCommand("duraklat", "⏸️ Çalan Parçayı Durdurur"),
+    BotCommand("devam", "▶️ Çalan Parçayı Devam Ettirir"),
+    BotCommand("son", "⏹️ Çalan Parçayı Kapatır"),
+    BotCommand("karistir", "🔀 Çalan Parçayı Karıştırır"),
+    BotCommand("dongu", "🔄 Çalan Parçayı Tekrarlar"),
+    BotCommand("sira", "📖 Çalma Listelerini Gösterir"),
+    BotCommand("ilerisar", "⏩ Parçayı İleri Sarar"),
+    BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
+    BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
+    BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
+    BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
+    BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
+    BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
+    
+]
+
+async def set_commands(client):
+    
+    await client.set_bot_commands(private_commands, scope=BotCommandScopeAllPrivateChats())
+    
+    
+    await client.set_bot_commands(group_commands, scope=BotCommandScopeAllGroupChats())
+
 class ArchMusic(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot")
+        LOGGER(__name__).info(f"Bot Başlatılıyor")
         super().__init__(
             "ArchMusic",
             api_id=config.API_ID,
@@ -26,7 +60,7 @@ class ArchMusic(Client):
             self.id = get_me.id
 
             video_url = "https://telegra.ph/file/36221d40afde82941ffff.mp4"
-            caption = "Bot Başarıyla Başlatıldı 🥀"
+            caption = "__Bot Başlatılıyor . . . ⚡️__"
             
             try:
                 await self.send_video(
@@ -36,39 +70,22 @@ class ArchMusic(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                    "Bot log grubuna erişemedi. Log kanalınıza botunuzu eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun!"
                 )
                 sys.exit()
 
-            if config.SET_CMDS == str(True):
-                try:
-                    await self.set_bot_commands(
-                        [
-                            BotCommand("ping", "Check that bot is alive or dead"),
-                            BotCommand("play", "Starts playing the requested song"),
-                            BotCommand("skip", "Moves to the next track in queue"),
-                            BotCommand("pause", "Pause the current playing song"),
-                            BotCommand("resume", "Resume the paused song"),
-                            BotCommand("end", "Clear the queue and leave voice chat"),
-                            BotCommand("shuffle", "Randomly shuffles the queued playlist."),
-                            BotCommand("playmode", "Allows you to change the default playmode for your chat"),
-                            BotCommand("settings", "Open the settings of the music bot for your chat.")
-                        ]
-                    )
-                except:
-                    pass
-            else:
-                pass
+            await set_commands(self)  
+
 
             a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
             if a.status != ChatMemberStatus.ADMINISTRATOR:
                 LOGGER(__name__).error(
-                    "Please promote Bot as Admin in Logger Group"
+                    "Lütfen Logger Grubunda Botu Yönetici Olarak Terfi Ettirin"
                 )
                 sys.exit()
 
         except Exception as e:
-            LOGGER(__name__).error(f"Error during bot start: {e}")
+            LOGGER(__name__).error(f"Bot başlatılırken hata oluştu: {e}")
             sys.exit()
 
         if get_me.last_name:
@@ -76,4 +93,4 @@ class ArchMusic(Client):
         else:
             self.name = get_me.first_name
 
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"MusicBot {self.name} olarak başlatıldı")
