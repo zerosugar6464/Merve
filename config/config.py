@@ -362,7 +362,7 @@ if SUPPORT_GROUP:
 
 if UPSTREAM_REPO:
 
-if not re.match("(?:http|https)://", UPSTREAM_REPO):
+    if not re.match("(?:http|https)://", UPSTREAM_REPO):
 
         print(
 
