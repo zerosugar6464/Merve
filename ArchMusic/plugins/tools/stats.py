@@ -280,23 +280,23 @@ async def overall_stats(client, CallbackQuery, _):
     else:
         ass = "No"
     cm = config.CLEANMODE_DELETE_MINS
-    text = f"""**Bot's Stats and Information:**
+    text = f"""**Bot istatistikleri ve Bilgileri:**
 
-**Imported Modules:** {mod}
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
-**Blocked Users:** {blocked} 
-**Sudo Users:** {sudoers} 
+**İçe Aktarılan Modüller:** {mod}
+**Toplam Grup:** {served_chats} 
+**Kullanıcılar:** {served_users} 
+**Yasaklanan Kullanıcılar:** {blocked} 
+**Sudo Kullanıcıları:** {sudoers} 
     
-**Total Queries:** {total_queries} 
-**Total Assistants:** {assistant}
-**Auto Leaving Assistant:** {ass}
-**Cleanmode duration:** {cm} Mins
+**Toplam Sorgu Sayısı:** {total_queries} 
+**Toplam Asistan:** {assistant}
+**Asistan Otomatik Mi Ayrılsın?:** {ass}
+**Mesajları Temizleme Süresi:** {cm} Mins
 
-**Play Duration Limit:** {play_duration} Mins
-**Song Download Limit:** {song} Mins
-**Bot's Server Playlist Limit:** {playlist_limit}
-**Playlist Play Limit:** {fetch_playlist}"""
+**Oynatma Süresi Sınırı:** {play_duration} Mins
+**Şarkı İndirme Limiti:** {song} Mins
+**Botun Sunucu Çalma Listesi Limiti:** {playlist_limit}
+**Oynatma Listesi Oynatma Sınırı:** {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
@@ -313,7 +313,7 @@ async def overall_stats(client, CallbackQuery, _):
 async def overall_stats(client, CallbackQuery, _):
     if CallbackQuery.from_user.id not in SUDOERS:
         return await CallbackQuery.answer(
-            "Only for Sudo Users", show_alert=True
+            "Yalnızca Sudo Kullanıcıları İçin", show_alert=True
         )
     callback_data = CallbackQuery.data.strip()
     what = callback_data.split(None, 1)[1]
@@ -361,33 +361,33 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **Bot's Stats and Information:**
+    text = f""" **Botun İstatistikleri ve Bilgileri:**
 
-**Imported Modules:** {mod}
+**İçe Aktarılan Modüller:** {mod}
 **Platform:** {sc}
-**Ram:** {ram}
-**Physical Cores:** {p_core}
-**Total Cores:** {t_core}
-**Cpu Frequency:** {cpu_freq}
+**Bellek:** {ram}
+**Fiziksel Çekirdekler:** {p_core}
+**Toplam Çekirdek:** {t_core}
+**İşlemci Frekansı:** {cpu_freq}
 
-**Python Version :** {pyver.split()[0]}
-**Pyrogram Version :** {pyrover}
-**Py-TgCalls Version :** {pytgver}
+**Python Sürümü:** {pyver.split()[0]}
+**Pyrogram Sürümü:** {pyrover}
+**Py-TgCalls Versiyonu:** {pytgver}
 
-**Storage Avail:** {total[:4]} GiB
-**Storage Used:** {used[:4]} GiB
-**Storage Left:** {free[:4]} GiB
+**Depolama Alanı:** {total[:4]} GB
+**Kullanılan Depolama Alanı:** {used[:4]} GB
+**Kalan Depolama Alanı:** {free[:4]} GB
 
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
-**Blocked Users:** {blocked} 
-**Sudo Users:** {sudoers} 
+**Toplam Grup:** {served_chats} 
+**Kullanıcılar:** {served_users} 
+**Yasaklanan Kullanıcılar:** {blocked} 
+**Sudo Kullanıcıları:** {sudoers} 
 
-**Total DB Size:** {datasize[:6]} Mb
-**Total DB Storage:** {storage} Mb
-**Total DB Collections:** {collections}
-**Total DB Keys:** {objects}
-**Total Bot Queries:** `{total_queries} `
+**Toplam Veritabanı Boyutu:** {datasize[:6]} Mb
+**Toplam Veritabanı Depolama Alanı:** {storage} Mb
+**Toplam Veritabanı Koleksiyonu:** {collections}
+**Toplam Veritabanı Anahtarı:** {objects}
+**Toplam Bot Sorguları:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
