@@ -218,7 +218,7 @@ async def start_comm(client, message: Message, _):
             sender_name = message.from_user.first_name
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"{message.from_user.mention} Botu Başlattı.\n\n**Kullanıcı İd:** {sender_id}\n**Kullanıcı Adı:** {sender_name}",
+                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
             )
 
 
@@ -256,11 +256,12 @@ async def welcome(client, message: Message):
                 userbot = await get_assistant(message.chat.id)
                 out = start_pannel(_)
 
-                photo_url = "https://telegra.ph/file/b928d630f9c8c39be79e6.jpg"  # Replace with the actual URL of the video
+                photo_url = "https://telegra.ph/file/82a0cafdf358e68c052e4.jpg"  # Replace with the actual URL of the video
                 photo_caption = _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id)
 
                 await app.send_photo(
                     message.chat.id,
+                    photo_url,
                     caption=photo_caption,
                     reply_markup=InlineKeyboardMarkup(out)
                 )
