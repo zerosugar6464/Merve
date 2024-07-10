@@ -225,7 +225,7 @@ async def song_download_cb(client, CallbackQuery, _):
     title = (x["title"]).title()
     title = re.sub("\W+", " ", title)
     thumb_image_path = await CallbackQuery.message.download()
-    duration = x["duration"]
+    duration = x.get("duration", 0)
     
     if stype == "video":
         thumb_image_path = await CallbackQuery.message.download()
@@ -279,13 +279,29 @@ async def song_download_cb(client, CallbackQuery, _):
             )
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
+
+        res = (
+            f"👤 Talep Eden : {CallbackQuery.from_user.mention}\n"
+            f"🔮 Başlık : [{title[:23]}]({yturl})\n"
+            f"⌛️ Süre : `{duration}`"
+        )
+
+        visit_butt = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Pulse 🔮", url=f"https://t.me/PulseSongs"
+                        )
+                    ]
+                ]
+           )
         
         med = InputMediaAudio(
             media=filename,
-            caption=title,
+            caption=res,
             thumb=thumb_image_path,
-            title=title,
-            performer=x["uploader"],
+            performer="@PulseMusicBot",
+            reply_markup=visit_butt
         )
         
         await mystic.edit_text(_["song_11"])
