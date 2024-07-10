@@ -52,8 +52,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎮 Pulse Duyuru", 
-                url=f"https://t.me/PulseDuyuru"
+                text=f"🎧 Pulse Music", 
+                url=f"https://t.me/PulseSongs"
             )
         ],
         [
@@ -75,8 +75,8 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎮 Pulse Duyuru", 
-                url=f"https://t.me/PulseDuyuru"
+                text=f"🎧 Pulse Music", 
+                url=f"https://t.me/PulseSongs"
             )
         ],
         
@@ -105,8 +105,8 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎮 Pulse Duyuru", 
-                url=f"https://t.me/PulseDuyuru"
+                text=f"🎧 Pulse Music", 
+                url=f"https://t.me/PulseSongs"
             )
         ],
         
@@ -146,8 +146,8 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎮 Pulse Duyuru", 
-                url=f"https://t.me/PulseDuyuru"
+                text=f"🎧 Pulse Music", 
+                url=f"https://t.me/PulseSongs"
             )
         ],
         
@@ -169,8 +169,8 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎮 Pulse Duyuru", 
-                url=f"https://t.me/PulseDuyuru"
+                text=f"🎧 Pulse Music", 
+                url=f"https://t.me/PulseSongs"
             )
         ],
         
