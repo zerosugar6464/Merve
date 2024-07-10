@@ -212,21 +212,26 @@ async def song_download_cb(client, CallbackQuery, _):
         await CallbackQuery.answer("İndiriliyor")
     except:
         pass
+    
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
     stype, format_id, vidid = callback_request.split("|")
     mystic = await CallbackQuery.edit_message_text(_["song_8"])
     yturl = f"https://www.youtube.com/watch?v={vidid}"
+    
     with yt_dlp.YoutubeDL({"quiet": True}) as ytdl:
         x = ytdl.extract_info(yturl, download=False)
+    
     title = (x["title"]).title()
     title = re.sub("\W+", " ", title)
     thumb_image_path = await CallbackQuery.message.download()
     duration = x["duration"]
+    
     if stype == "video":
         thumb_image_path = await CallbackQuery.message.download()
         width = CallbackQuery.message.photo.width
         height = CallbackQuery.message.photo.height
+        
         try:
             file_path = await YouTube.download(
                 yturl,
@@ -237,6 +242,7 @@ async def song_download_cb(client, CallbackQuery, _):
             )
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
+        
         med = InputMediaVideo(
             media=file_path,
             duration=duration,
@@ -246,17 +252,22 @@ async def song_download_cb(client, CallbackQuery, _):
             caption=title,
             supports_streaming=True,
         )
+        
         await mystic.edit_text(_["song_11"])
+        
         await app.send_chat_action(
             chat_id=CallbackQuery.message.chat.id,
             action=ChatAction.UPLOAD_VIDEO,
         )
+        
         try:
             await CallbackQuery.edit_message_media(media=med)
         except Exception as e:
             print(e)
             return await mystic.edit_text(_["song_10"])
+        
         os.remove(file_path)
+    
     elif stype == "audio":
         try:
             filename = await YouTube.download(
@@ -268,6 +279,7 @@ async def song_download_cb(client, CallbackQuery, _):
             )
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
+        
         med = InputMediaAudio(
             media=filename,
             caption=title,
@@ -275,27 +287,34 @@ async def song_download_cb(client, CallbackQuery, _):
             title=title,
             performer=x["uploader"],
         )
+        
         await mystic.edit_text(_["song_11"])
+        
         await app.send_chat_action(
             chat_id=CallbackQuery.message.chat.id,
             action=ChatAction.UPLOAD_AUDIO,
         )
+        
         try:
             await CallbackQuery.edit_message_media(media=med)
         except Exception as e:
             print(e)
             return await mystic.edit_text(_["song_10"])
-
-      rep = (f"👤 Talep Eden : {message.from_user.mention}\n🔮 Başlık : [{title[:23]}]({link})\n⌛️ Süre : `{duration}`")
-    
-      channel_id = -1002216518699
-    
-    await app.send_audio(
-        chat_id=channel_id,
-        audio=filename,
-        caption=rep,
-        performer="@PulseMusicBot",
-        thumb=thumb_image_path,
-      
-    )
+        
+        rep = (
+            f"👤 Talep Eden : {CallbackQuery.from_user.mention}\n"
+            f"🔮 Başlık : [{title[:23]}]({yturl})\n"
+            f"⌛️ Süre : `{duration}`"
+        )
+        
+        channel_id = -1002216518699
+        
+        await app.send_audio(
+            chat_id=channel_id,
+            audio=filename,
+            caption=rep,
+            performer="@PulseMusicBot",
+            thumb=thumb_image_path,
+        )
+        
         os.remove(filename)
