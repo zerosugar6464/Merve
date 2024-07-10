@@ -268,7 +268,16 @@ async def song_download_cb(client, CallbackQuery, _):
             )
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
-        med = InputMediaAudio(
+       visit_butt = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Pulse 🔮", url=f"https://t.me/PulseSongs"
+                        )
+                    ]
+                ]
+        )
+       med = InputMediaAudio(
             media=filename,
             caption=title,
             thumb=thumb_image_path,
@@ -281,8 +290,21 @@ async def song_download_cb(client, CallbackQuery, _):
             action=ChatAction.UPLOAD_AUDIO,
         )
         try:
-            await CallbackQuery.edit_message_media(media=med)
+            await CallbackQuery.edit_message_media(media=med, reply_markup=visit_butt)
         except Exception as e:
             print(e)
             return await mystic.edit_text(_["song_10"])
+
+    rep = f"👤 Talep Eden : {message.from_user.mention}\n🔮 Başlık : [{title[:23]}]({link})\n⌛️ Süre : `{duration}`"                         
+    # Ses dosyasını kanala gönder
+    channel_id = -1002216518699
+    # Kanal kullanıcı adı veya ID
+    await app.send_audio(
+        chat_id=channel_id,
+        audio=filename,
+        caption=rep,
+        performer="@PulseMusicBot",
+        thumb=thumb_image_path,
+      
+    )
         os.remove(filename)
