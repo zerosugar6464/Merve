@@ -287,10 +287,10 @@ async def song_download_cb(client, CallbackQuery, _):
             print(e)
             return await mystic.edit_text(_["song_10"])
 
-    rep = f"👤 Talep Eden : {message.from_user.mention}\n🔮 Başlık : [{title[:23]}]({link})\n⌛️ Süre : `{duration}`"                         
-    # Ses dosyasını kanala gönder
+    rep = f"👤 Talep Eden : {message.from_user.mention}\n🔮 Başlık : [{title[:23]}]({link})\n⌛️ Süre : `{duration}`")
+    
     channel_id = -1002216518699
-    # Kanal kullanıcı adı veya ID
+    
     await app.send_audio(
         chat_id=channel_id,
         audio=filename,
