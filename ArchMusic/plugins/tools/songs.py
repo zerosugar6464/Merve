@@ -287,7 +287,7 @@ async def song_download_cb(client, CallbackQuery, _):
         )
 
         visit_button = InlineKeyboardButton(
-            text="Pulse 🔮",
+            text="🎧 Pulse Music",
             url=f"https://t.me/PulseSongs"
         )
 
