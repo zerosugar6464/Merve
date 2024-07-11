@@ -286,22 +286,20 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
 
-        visit_butt = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="Pulse 🔮", url=f"https://t.me/PulseSongs"
-                        )
-                    ]
-                ]
-           )
+        visit_button = InlineKeyboardButton(
+            text="Pulse 🔮",
+            url=f"https://t.me/PulseSongs"
+        )
+
+        visit_markup = InlineKeyboardMarkup(
+            [[visit_button]]
+        )
         
         med = InputMediaAudio(
             media=filename,
             caption=res,
             thumb=thumb_image_path,
-            performer="@PulseMusicBot",
-            reply_markup=visit_butt
+            performer="@PulseMusicBot"
         )
         
         await mystic.edit_text(_["song_11"])
@@ -312,7 +310,7 @@ async def song_download_cb(client, CallbackQuery, _):
         )
         
         try:
-            await CallbackQuery.edit_message_media(media=med)
+            await CallbackQuery.edit_message_media(media=med, reply_markup=visit_markup)
         except Exception as e:
             print(e)
             return await mystic.edit_text(_["song_10"])
