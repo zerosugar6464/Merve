@@ -281,14 +281,14 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_9"].format(e))
 
         res = (
-            f"👤 Talep Eden : {CallbackQuery.from_user.mention}\n"
+            f"👉 Talep Eden : {CallbackQuery.from_user.mention}\n"
             f"🔮 Başlık : [{title[:23]}]({yturl})\n"
             f"⌛️ Süre : `{duration}`"
         )
 
         visit_button = InlineKeyboardButton(
-            text="🎧 Pulse Music",
-            url=f"https://t.me/PulseSongs"
+            text="🥀 Rose Müzik 🥀",
+            url=f"https://t.me/RoseMuzik"
         )
 
         visit_markup = InlineKeyboardMarkup(
@@ -316,7 +316,7 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_10"])
         
         rep = (
-            f"👤 Talep Eden : {CallbackQuery.from_user.mention}\n"
+            f"👉 Talep Eden : {CallbackQuery.from_user.mention}\n"
             f"🔮 Başlık : [{title[:23]}]({yturl})\n"
             f"⌛️ Süre : `{duration}`"
         )
@@ -327,7 +327,7 @@ async def song_download_cb(client, CallbackQuery, _):
             chat_id=channel_id,
             audio=filename,
             caption=rep,
-            performer="@PulseMusicBot",
+            performer="@RoseMuzikBot",
             thumb=thumb_image_path,
         )
         
