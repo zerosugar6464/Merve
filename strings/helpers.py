@@ -9,7 +9,7 @@
 
 HELP_1 = """✅**<u>BURDAKİ KOMUTLARI YALNIZCA GRUP ADMİNLERİ KULLANABİLİR:</u>**
 
-**Burdaki Komutları Normal Üyelerin De Kullanabilmesi İçin İstediğiniz Kişinin Mesajını Yanıtlayarak /yetkilendir Yazmanız Yeterlidir.**
+**Burdaki Komutları Normal Üyelerinde Kullanabilmesi İçin İstediğiniz Kişinin Mesajını Yanıtlayarak /yetkilendir Yazmanız Yeterlidir.**
 
 **/duraklat :** Müziği Duraklatır.
 **/devam :** Müziği Devam Ettirir.
@@ -32,7 +32,7 @@ HELP_2 = """✅<u>**OYNATMA KOMUTLARI:**</u>
 (**Örnek:** /oynat Defkhan Kapak Olsun)
 
 **/voynat veya /vplay :** Videoyu Seste Oynatmaya Yarar.
-**-Örnek Kullanım:** /voynat Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay Yazabilirsiniz.
+**-Örnek Kullanım:** /voynat Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay veya /voynat Yazabilirsiniz.
 
 **/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
 (**Örnek:** /bul Defkhan Kapak Olsun)
@@ -124,6 +124,6 @@ HELP_5 = """🔰**<u>BURASI ÇOK ÖNEMLİ DEĞİL, SADECE BOT YÖNETİCİLERİ �
 **-assistant** : Bu, mesajınızı botunuzun asistan hesabından yayınlayacaktır.
 **-nobot** : Bu, botunuzu mesaj yayınlamamaya zorlayacaktır
 
-**Örnek:** `/broadcast -user -assistant -pin TestGöktuğ`
+**Örnek:** `/broadcast -user -assistant -pin Rose Muzik`
 
 """
