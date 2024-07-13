@@ -81,7 +81,7 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "**Sesli Sohbette Kimse Olmadığı İçin, Bot Parçayı Sonlandırdı** 🙂‍↕️",
+                        "**Sesli Sohbette Kimse Olmadığı İçin, Bot Parçayı Sonlandırdı** 🔮",
                     )
                 except:
                     continue
