@@ -17,7 +17,7 @@ from pyrogram.types import (InlineKeyboardButton,
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from config import BANNED_USERS
+from config import BANNED_USERS, SEND_WELCOME_PHOTO
 from config.config import OWNER_ID
 from strings import get_command, get_string
 from ArchMusic import Telegram, YouTube, app
@@ -255,16 +255,22 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(chat_id)
                 userbot = await get_assistant(message.chat.id)
                 out = start_pannel(_)
+                
+                if SEND_WELCOME_PHOTO:
+                    photo_url = "https://telegra.ph/file/bd2490a327194a383e655.jpg"  # Resim Url 
+                    photo_caption = _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id)
 
-                photo_url = "https://telegra.ph/file/bd2490a327194a383e655.jpg"  # Replace with the actual URL of the video
-                photo_caption = _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id)
-
-                await app.send_photo(
-                    message.chat.id,
-                    photo_url,
-                    caption=photo_caption,
-                    reply_markup=InlineKeyboardMarkup(out)
-                )
+                    await app.send_photo(
+                        message.chat.id,
+                        photo_url,
+                        caption=photo_caption,
+                        reply_markup=InlineKeyboardMarkup(out)
+                    )
+                else:
+                    await message.reply_text(
+                        _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id),
+                        reply_markup=InlineKeyboardMarkup(out)
+                    )
             if member.id in config.OWNER_ID:
                 return await message.reply_text(
                     _["start_4"].format(
