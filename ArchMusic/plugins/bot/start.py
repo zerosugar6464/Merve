@@ -256,7 +256,7 @@ async def welcome(client, message: Message):
                 userbot = await get_assistant(message.chat.id)
                 out = start_pannel(_)
 
-                photo_url = "https://telegra.ph/file/82a0cafdf358e68c052e4.jpg"  # Replace with the actual URL of the video
+                photo_url = "https://telegra.ph/file/bd2490a327194a383e655.jpg"  # Replace with the actual URL of the video
                 photo_caption = _["start_3"].format(config.MUSIC_BOT_NAME, userbot.username, userbot.id)
 
                 await app.send_photo(
