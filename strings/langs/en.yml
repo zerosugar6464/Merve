@@ -75,7 +75,7 @@ admin_34 : "İleri Sarılırken Hata Oluştu."
 
 # Start
 start_1 : "**Beni {0} Grubunuza Davet Ettiğiniz İçin Teşekkürler.\n{1} Çalışıyor. 🌹\n\nHerhangi Bir Yardım Almak İçin Destek Grubumuza Veya Kanalımıza Göz Atın.**"
-start_2 : "**{0}'e Hoş Geldiniz. 🥀\n\nGrubunuza Ekleyerek Sesli Sohbetlerinizde Kaliteli Müzik Dinleyebilirsiniz.**"
+start_2 : "**{0}'e Hoş Geldiniz. 🌹\n\nGrubunuza Ekleyerek Sesli Sohbetlerinizde Kaliteli Müzik Dinleyebilirsiniz.**"
 start_3 : "**Beni Grubunuza Davet Ettiğiniz İçin Teşekkürler.**\n\n**Çalışmak için Sadece Sesli sohbetleri Yönetme ve Gruba Davet Etme Yetkisi Vermeniz Yeterlidir.** 🌹\n\n**Asistan Kullanıcı Adı:** @{1}"
 start_4 : "**{0}'in Sahibi {1} Sohbetinize Katıldı.** 👑"
 start_5 : "**{0}'in Çok Kıymetli {1} Beyefendisinin Grubunuza Katıldığını Fark Ettik. Kendisine Saygılarımı Sunarım.** 🙏"
@@ -140,7 +140,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/channelplay bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "🔮**Müzik İndiriliyor. Lütfen Bekleyin.** 🌹"
+play_1 : "🔄**Müzik İndiriliyor... Lütfen Bekleyin..** 🌹"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔮 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi! Başka Bir Parça Oynatmayı Deneyiniz. 🔮"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirilmiş Kullanıcılar bu grupta müzik çalabilir.\n\nModu /playmode aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
