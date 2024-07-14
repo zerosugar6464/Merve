@@ -282,7 +282,7 @@ async def update_(client, message, _):
                 try:
                     await app.send_message(
                         x,
-                        f"{config.MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                        f"{config.MUSIC_BOT_NAME} **Bot Şuanda Güncelleniyor. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
                     )
                     await remove_active_chat(x)
                     await remove_active_video_chat(x)
@@ -309,7 +309,7 @@ async def update_(client, message, _):
             try:
                 await app.send_message(
                     x,
-                    f"{config.MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                    f"{config.MUSIC_BOT_NAME} **Bot Şuanda Güncelleniyor. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
                 )
                 await remove_active_chat(x)
                 await remove_active_video_chat(x)
@@ -331,7 +331,7 @@ async def restart_(_, message):
         try:
             await app.send_message(
                 x,
-                f"{config.MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                f"{config.MUSIC_BOT_NAME} **Bot Şuanda Güncelleniyor. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
             )
             await remove_active_chat(x)
             await remove_active_video_chat(x)
