@@ -287,7 +287,7 @@ async def song_download_cb(client, CallbackQuery, _):
         )
 
         visit_button = InlineKeyboardButton(
-            text="🥀 Rose Müzik 🥀",
+            text="🌹 Rose Müzik",
             url=f"https://t.me/RoseMuzik"
         )
 
@@ -299,7 +299,7 @@ async def song_download_cb(client, CallbackQuery, _):
             media=filename,
             caption=res,
             thumb=thumb_image_path,
-            performer="@PulseMusicBot"
+            performer="@RoseMuzikBot"
         )
         
         await mystic.edit_text(_["song_11"])
@@ -321,7 +321,7 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
         
-        channel_id = -1002216518699
+        channel_id = -1002223481618
         
         await app.send_audio(
             chat_id=channel_id,
