@@ -196,7 +196,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 
 ### DONT TOUCH or EDIT codes after this line
 
-SEND_WELCOME_PHOTO = True #Foto için ayaz True yazarsan çalışır amk
+SEND_WELCOME_PHOTO = False #Foto için ayaz True yazarsan çalışır amk
 
 BANNED_USERS = filters.user()
 
