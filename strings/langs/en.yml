@@ -261,9 +261,9 @@ S_B_8 : "🔮 Komutlar Menüsü"
 H_B_1 : "💎 Admin Komutları"
 H_B_2 : "🎧 Oynatma Komutları"
 H_B_3 : "🤖 Bot Komutları"
-H_B_4 : "🔮 Ekstra Komutlar"
+H_B_4 : "🎁 Ekstra Komutlar"
 H_B_5 : "💣 Menüyü Kapat"
-H_B_6 : "❤️‍🔥 Sudo Komutları"
+H_B_6 : "❤️‍🔥 Yetkili Komutları"
 
 #PlayMode
 PM_B_1 : "DirectPlay"
