@@ -37,17 +37,18 @@ async def play_logs(message, streamtype):
         logger_text = f"""
 
 
-📌 **Grup :** {message.chat.title} [`{message.chat.id}`]
-👥 **Üye Sayısı : {sayı}**
-👤 **Kullanıcı :** {message.from_user.mention}
-✏️ **Kullanıcı Adı :** @{message.from_user.username}
-🔢 **Kullanıcı ID :** `{message.from_user.id}`
-🔗 **Grup Linki :** {chatusername}
-🔎 **Sorgu :** {message.text}
+📌 **Grup Adı:** {message.chat.title}
+🆔 **Grup ID:** `{message.chat.id}`
+👥 **Üye Sayısı: {sayı}**
+👤 **Kullanıcı:** {message.from_user.mention}
+✏️ **Kullanıcı Adı:** @{message.from_user.username}
+🔢 **Kullanıcı ID:** `{message.from_user.id}`
+🔗 **Grup Linki:** {chatusername}
+🔮 **Sorgu:** {message.text}
 
-**CPU :** {CPU}  ♨️  **RAM :** {RAM}  📂  **DISK :** {DISK}
+**CPU:** {CPU}  ♨️  **RAM:** {RAM}  📂  **DISK:** {DISK}
 
-**Toplam Grup Sayısı : 👉{toplamgrup}**
+**Toplam Grup Sayısı: 👉 {toplamgrup}** 
 
 **Aktif Ses : {aktifseslisayısı}  🌬️  Aktif Video : {aktifvideosayısı}**"""
         if message.chat.id != LOG_GROUP_ID:
