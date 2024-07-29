@@ -133,7 +133,7 @@ class Userbot(Client):
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "Asistan Başarıyla Başlatıldı 🥀"
+                    config.LOG_GROUP_ID, "Asistan Başarıyla Başlatıldı 🌹"
                 )
             except:
                 LOGGER(__name__).error(
