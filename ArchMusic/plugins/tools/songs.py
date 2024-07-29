@@ -281,9 +281,9 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_9"].format(e))
 
         res = (
-            f"👉 Talep Eden : {CallbackQuery.from_user.mention}\n"
-            f"🔮 Başlık : [{title[:23]}]({yturl})\n"
-            f"⌛️ Süre : `{duration}`"
+            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
+            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
+            f"⌛️ **Süre:** `{duration}`"
         )
 
         visit_button = InlineKeyboardButton(
@@ -316,9 +316,9 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_10"])
         
         rep = (
-            f"👉 Talep Eden : {CallbackQuery.from_user.mention}\n"
-            f"🔮 Başlık : [{title[:23]}]({yturl})\n"
-            f"⌛️ Süre : `{duration}`"
+            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
+            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
+            f"⌛️ **Süre:** `{duration}`"
         )
         
         channel_id = -1002223481618
