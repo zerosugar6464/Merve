@@ -1,6 +1,5 @@
 import sys
-import asyncio
-from datetime import timedelta
+
 from pyrogram import Client
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import BotCommand, BotCommandScopeAllPrivateChats, BotCommandScopeAllGroupChats
@@ -45,14 +44,13 @@ async def set_commands(client):
 
 class ArchMusic(Client):
     def __init__(self):
-        LOGGER(__name__).info("Bot Başlatılıyor")
+        LOGGER(__name__).info(f"Bot Başlatılıyor")
         super().__init__(
             "ArchMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
         )
-        self.restart_interval = timedelta(hours=4)  # Varsayılan olarak 4 saat
 
     async def start(self):
         await super().start()
@@ -70,13 +68,14 @@ class ArchMusic(Client):
                     video=video_url,
                     caption=caption,
                 )
-            except Exception as e:
+            except:
                 LOGGER(__name__).error(
                     "Bot log grubuna erişemedi. Log kanalınıza botunuzu eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun!"
                 )
                 sys.exit()
 
             await set_commands(self)  
+
 
             a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
             if a.status != ChatMemberStatus.ADMINISTRATOR:
@@ -90,26 +89,8 @@ class ArchMusic(Client):
             sys.exit()
 
         if get_me.last_name:
-            self.name = f"{get_me.first_name} {get_me.last_name}"
+            self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
 
         LOGGER(__name__).info(f"MusicBot {self.name} olarak başlatıldı")
-
-        
-        self.schedule_restart() # Res Fonksiyon Başla
-
-    async def restart_bot(self):
-        LOGGER(__name__).info("**Bot yeniden başlatılıyor...**")
-        await self.stop()
-        await self.start()
-
-    def schedule_restart(self):
-        loop = asyncio.get_event_loop()
-        
-        async def restart_at_intervals():
-            while True:
-                await asyncio.sleep(self.restart_interval.total_seconds())
-                await self.restart_bot()
-
-        loop.create_task(restart_at_intervals())
