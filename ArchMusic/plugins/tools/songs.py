@@ -283,7 +283,7 @@ async def song_download_cb(client, CallbackQuery, _):
         res = (
             f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
             f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
-            f"⌛️ **Süre:** `{duration_min}`"
+            f"⌛️ **Süre:** `{duration}`"
         )
 
         visit_button = InlineKeyboardButton(
@@ -318,7 +318,7 @@ async def song_download_cb(client, CallbackQuery, _):
         rep = (
             f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
             f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
-            f"⌛️ **Süre:** `{duration_min}`"
+            f"⌛️ **Süre:** `{duration}`"
         )
         
         channel_id = -1002167023993
