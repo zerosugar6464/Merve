@@ -124,6 +124,6 @@ HELP_5 = """🔰**<u>BURASI ÇOK ÖNEMLİ DEĞİL, SADECE BOT YÖNETİCİLERİ �
 **-assistant** : Bu, mesajınızı botunuzun asistan hesabından yayınlayacaktır.
 **-nobot** : Bu, botunuzu mesaj yayınlamamaya zorlayacaktır
 
-**Örnek:** `/broadcast -user -assistant -pin Rythim`
+**Örnek:** `/broadcast -user -assistant -pin Arch Music`
 
 """
