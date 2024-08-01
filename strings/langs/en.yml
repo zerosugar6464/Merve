@@ -123,7 +123,7 @@ gstats_7 : "Bu Grupta **{0}** Parça **{1}** Kez Çaldı.\n\nGruptaki Top {2} Pa
 gstats_8 : "**İstatistikler Yükleniyor... Bu Biraz Zaman Alabilir... ❄️**"
 gstats_9 : "**BOTTAKİ TOP10 İSTATİSTİKLER**\n\nButonları Kullanarak İstediğiniz İstatistiği Görebilirsiniz. 🔮"
 gstats_10 : "**Global İstatistikler {0}**\n\nButonları Kullanarak İstediğiniz İstatistiği Görebilirsiniz. 🔮"
-gstats_11 : "** {0}unun Genel İstatistiklerini Görmek İçin Aşağıdaki Butona Tıklayabilirsiniz.** 🔮"
+gstats_11 : "** {0}'in Genel İstatistiklerini Görmek İçin Aşağıdaki Butona Tıklayabilirsiniz.** 🔮"
 
 
 # Play 
@@ -142,7 +142,7 @@ cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız ge
 #Play
 play_1 : "**🔄Parça İndiriliyor... Lütfen Bekleyin...** 🔮"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔮 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
-play_3 : "Sorgu İşlenemedi! Başka Bir Parça Oynatmayı Deneyiniz. 🔮"
+play_3 : "Sorgu İşlenemedi! Başka Bir Parça Oynatmayı Deneyiniz. ❄️"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirilmiş Kullanıcılar bu grupta müzik çalabilir.\n\nModu /playmode aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
 play_5 : "Ses dosyası işlenemedi.\n\nSes Dosyası Boyutu 100 mb'den Küçük Olmalı 🔮"
 play_6 : "**Süre Sınırı Aşıldı**\n\n**İzin Verilen Süre: **{0} dakika\n**Alınan Süre:** {1} dakika(s)"
