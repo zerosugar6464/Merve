@@ -54,7 +54,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text=f"🌹 Rose Müzik", 
                 url=f"https://t.me/RoseMuzik"
-            )
+            ),
+            InlineKeyboardButton(
+                text=f"🎮 Oyun Botu", 
+                url=f"https://t.me/SancakCashBot"
+            ),
         ],
         [
             InlineKeyboardButton(
@@ -77,7 +81,11 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
             InlineKeyboardButton(
                 text=f"🌹 Rose Müzik", 
                 url=f"https://t.me/RoseMuzik"
-            )
+            ),
+            InlineKeyboardButton(
+                text=f"🎮 Oyun Botu", 
+                url=f"https://t.me/SancakCashBot"
+            ), 
         ],
         
         [
@@ -107,7 +115,11 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text=f"🌹 Rose Müzik", 
                 url=f"https://t.me/RoseMuzik"
-            )
+            ),
+            InlineKeyboardButton(
+                text=f"🎮 Oyun Botu", 
+                url=f"https://t.me/SancakCashBot"
+            ),
         ],
         
         [
@@ -148,7 +160,11 @@ def track_markup(_, videoid, user_id, channel, fplay):
             InlineKeyboardButton(
                 text=f"🌹 Rose Müzik", 
                 url=f"https://t.me/RoseMuzik"
-            )
+            ),
+            InlineKeyboardButton(
+                text=f"🎮 Oyun Botu", 
+                url=f"https://t.me/SancakCashBot"
+            ),
         ],
         
         [
@@ -171,7 +187,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=f"🌹 Rose Müzik", 
                 url=f"https://t.me/RoseMuzik"
-            )
+            ),
+            InlineKeyboardButton(
+                text=f"🎮 Oyun Botu", 
+                url=f"https://t.me/SancakCashBot"
+            ),
         ],
         
         [
