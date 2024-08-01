@@ -287,8 +287,8 @@ async def song_download_cb(client, CallbackQuery, _):
         )
 
         visit_button = InlineKeyboardButton(
-            text="🎧 Rythim FM",
-            url=f"https://t.me/RythimFM"
+            text="🎧 Arch Music",
+            url=f"https://t.me/ArchMusicFM"
         )
 
         visit_markup = InlineKeyboardMarkup(
@@ -299,7 +299,7 @@ async def song_download_cb(client, CallbackQuery, _):
             media=filename,
             caption=res,
             thumb=thumb_image_path,
-            performer="@RythimBot"
+            performer="@ArchMusicBot"
         )
         
         await mystic.edit_text(_["song_11"])
@@ -327,7 +327,7 @@ async def song_download_cb(client, CallbackQuery, _):
             chat_id=channel_id,
             audio=filename,
             caption=rep,
-            performer="@RythimBot",
+            performer="@ArchMusicBot",
             thumb=thumb_image_path,
         )
         
