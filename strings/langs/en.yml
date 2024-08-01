@@ -75,9 +75,9 @@ admin_34 : "İleri Sarılırken Hata Oluştu."
 
 # Start
 start_1 : "**Beni {0} Grubunuza Davet Ettiğiniz İçin Teşekkürler.\n{1} Çalışıyor. ❄️\n\nHerhangi Bir Yardım Almak İçin Destek Grubumuza Veya Kanalımıza Göz Atın.**"
-start_2 : "**{0}'e Hoş Geldiniz. 🔮\n\nGrubunuza Ekleyerek Sesli Sohbetlerinizde Kaliteli Müzik Dinleyebilirsiniz.**"
+start_2 : "**{0}'e Hoş Geldin. 🔮\n\nGrubunuza Ekleyerek Sesli Sohbetlerinizde Kaliteli Müzik Dinleyebilirsiniz.**"
 start_3 : "**Beni Grubunuza Davet Ettiğiniz İçin Teşekkürler.**\n\n**Çalışmak için Sadece Sesli sohbetleri Yönetme ve Gruba Davet Etme Yetkisi Vermeniz Yeterlidir.** ❄️\n\n**Asistan Kullanıcı Adı:** @{1}"
-start_4 : "**{0}'ın Sahibi {1} Sohbetinize Katıldı.** 👑"
+start_4 : "**{0}'in Sahibi {1} Sohbetinize Katıldı.** 👑"
 start_5 : "**{0}'in Çok Kıymetli {1} Beyefendisinin Grubunuza Katıldığını Fark Ettik. Kendisine Saygılarımı Sunarım.** 🙏"
 start_6 : "❗️ **Süper Grup Gerekli** ❗️ Lütfen Grubunuzu **Süper Gruba** dönüştürün ve sonra beni tekrar ekleyin. \n\n**Süper grup nasıl yapılır? 1-** Üyeler listesine gelin ve sağ üstteki kalem işaretine basın.\n**2-** Yeni üyeler için sohbet geçmişi ayarını Görünür olarak düzenleyin. Şimdi botu tekrar ekleyebilirsiniz"
 start_7 : "**Rythim Botunun Grup Kapasitesi doldu** \n [Buraya Tıklayarak Yeni Botu Görebilirsiniz]({0})"
