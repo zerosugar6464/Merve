@@ -25,16 +25,6 @@ def start_pannel(_):
             InlineKeyboardButton(
                 text=_["S_B_2"], callback_data="settings_helper"
             ),
-
-        ],
-            InlineKeyboardButton(
-                text=f"🤖 Bot Destek",
-                url=f"https://t.me/DallasResmi",
-            ),
-            InlineKeyboardButton(
-                text=f"🎮 Oyun Botu",
-                url=f"https://t.me/ArchCashBot",
-            ),
         ],
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
