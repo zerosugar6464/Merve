@@ -38,14 +38,14 @@ async def set_commands(client):
 
 class ArchMusic(Client):
     def __init__(self):
-        LOGGER(__name__).info("**Bot Başlatılıyor...**")
+        LOGGER(__name__).info("Bot Başlatılıyor...")
         super().__init__(
             "ArchMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
         )
-        self.restart_interval = timedelta(hours=1)  # Varsayılan olarak 1 saat
+        self.restart_interval = timedelta(hours=5)  # Varsayılan olarak 1 saat
 
     async def start(self):
         await super().start()
@@ -87,12 +87,12 @@ class ArchMusic(Client):
         else:
             self.name = get_me.first_name
 
-        LOGGER(__name__).info(f"MusicBot {self.name} olarak başlatıldı")
+        LOGGER(__name__).info(f"{self.name} olarak başlatıldı")
 
         self.schedule_restart()  
 
     async def restart_bot(self):
-        LOGGER(__name__).info("**Otomatik Restart Atılıyor..**")
+        LOGGER(__name__).info("Otomatik Restart Atılıyor..")
         try:
             await self.send_message(config.LOG_GROUP_ID, "Bot otomatik olarak yeniden başlatılıyor...")
             await asyncio.sleep(2)  # İsteğe
