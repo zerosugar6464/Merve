@@ -91,7 +91,7 @@ HELP_5 = """🔰**<u>BURASI ÇOK ÖNEMLİ DEĞİL, SADECE BOT YÖNETİCİLERİ �
 /stat - Bot İstatistiklerini Kontrol Edin
 
 ⚠️**<u>KARA LİSTE SOHBET İŞLEVİ:</u>**
-/blacklistchat veya /engelle [CHAT_ID] - Music Bot'u kullanarak yapılan tüm sohbetleri kara listeye alın
+/blacklistchat veya /engelle [CHAT_ID] - Müzik Bot'u kullanarak yapılan tüm sohbetleri kara listeye alın
 /whitelistchat [CHAT_ID] - Kara listeye alınmış herhangi bir sohbeti Music Bot kullanarak beyaz listeye alın
 /blacklistedchat veya /engelliler- Kara listeye alınan tüm sohbetleri kontrol edin.
 
@@ -124,6 +124,6 @@ HELP_5 = """🔰**<u>BURASI ÇOK ÖNEMLİ DEĞİL, SADECE BOT YÖNETİCİLERİ �
 **-assistant** : Bu, mesajınızı botunuzun asistan hesabından yayınlayacaktır.
 **-nobot** : Bu, botunuzu mesaj yayınlamamaya zorlayacaktır
 
-**Örnek:** `/broadcast -user -assistant -pin Arch Music`
+**Örnek:** `/broadcast -user -assistant -pin Lost Müzik`
 
 """
