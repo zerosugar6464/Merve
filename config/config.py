@@ -45,7 +45,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002202401772"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Arch Music")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Lost Müzik")
 
 # Your User ID.
 
@@ -77,7 +77,7 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # GIT TOKEN ( if your edited repo is private)
 
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 
@@ -183,7 +183,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "AgFH6rYAr2edB0zpfqclWx7xb42j5ZxtWmkf_kMphHp-PlQTE3fRJStR3vAiEUhDOZpn2ELKpK4HMhRN2C2CGdS8fMH8_klI7QcopC2tI6wt5pccCE5N7w4r3L5VN0TjS32NShJB7pcCfdYp1FhXKfO6Xz6t0j_XZlDVtmchNO_KH8g0W2havprwQy2_fRh3T63lMqjXvTMoSX_AJt4DXD7_CJTujWoMBLzjG6l7n_3fBkZ_uqYxBFGyclfsEGbuEXOBgL1Nlyd_GQhnmPgdHvd5ilO1F7MNtNrha8ffOhED7ek6_GcpJfdXZlF9YvzyOOgKywftLjs8Wwf8gom2dubWs37U2QAAAAGHv9YpAA")
+STRING1 = getenv("STRING_SESSION", "AgFH6rYAtGW3GcSN0fId_OIEJoe2wZWTk2pt5jwxwbgVuFWXuPEjsQiHpHvXQkScuvxyYwIQSB35XHwy7IcIdyyDmuW8FhCz7KEPz0H9EzhypPFTtEcb01bzfWuHXGnJ56yBOaMWr-6DPTZ5FbSAwf6qzX4gVlcrVzuEpklJVLMnFMyZ2GO507gf5HmQ2ZrxhGeF6a-TDveuFEXV_ksleHQy1nzY8Nxgdeb-SdOQj8OQvOsBQ1Km1ZTEDtiP-CV9gV93LGfBMbWUNwm0qYNjnyHIbWe7Efx93YcysDXIgbO08l_OQPlj9KM5H62g294fGAjCo6jY8TuwWNYOy-dulRYFLBhOKgAAAAGHv9YpAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
