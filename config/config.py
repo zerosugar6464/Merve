@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "c9a8ea0d3e63c97afdecf913172a2bc3")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7480785599:AAE3ZTgsF1fiMZPvR4JMa_J2UH2TFKDezA8")
+BOT_TOKEN = getenv("BOT_TOKEN", "7271340407:AAHHhTo8CBf01YNgN5y4yCszVcMrFXN5kd8")
 
 # Database to save your chats and stats.
 
@@ -155,7 +155,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 CLEANMODE_DELETE_MINS = int(
 
-    getenv("CLEANMODE_MINS", "60")
+    getenv("CLEANMODE_MINS", "1200")
 
 )  # Remember to give value in Seconds
 
