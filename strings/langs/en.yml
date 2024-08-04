@@ -415,7 +415,7 @@ heroku_9 : "{0} has been updated successfully"
 heroku_10 : "{0} has been added successfully"
 heroku_11 : "Only for Heroku Apps"
 heroku_12 : "Checking Heroku Usage. Please Wait"
-heroku_13 : "Checking for available updates..."
+heroku_13 : "Mevcut güncellemeler kontrol ediliyor...‌‌"
 heroku_14 : "Git Command Error"
 heroku_15 : "Invalid Git Repsitory"
 
@@ -449,7 +449,7 @@ gban_10 : "Banlı Kullanıcı Yok. ❄️"
 gban_11 : "Please wait a while.. Fetching Gbanned users list ❄️"
 
 #Suggestions
-sug_0 : "❓**Do You Know?**\n\n✅ "
+sug_0 : "❓**Biliyor Musunuz?**\n\n✅ "
 sug_1 : "You can play music in two **search modes** i.e. Direct Mode and Inline Mode.\n\nChange modes via /playmode"
 sug_2 : "You can play music in two **play types** i.e. Everyone Mode and Admins Mode.\n\nChange modes via /playmode"
 sug_3 : "You can play music in **channels** too.\n\nSet channel_id via /channelplay and play via /cplay "
