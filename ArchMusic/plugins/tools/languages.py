@@ -23,17 +23,16 @@ from ArchMusic.utils.decorators import (ActualAdminCB, language,
 
 
 def lanuages_keyboard(_):
-    keyboard = InlineKeyboard(row_width=3)
-    keyboard.add(
-        *[
-            (
-                InlineKeyboardButton(
-                    text=languages_present[i],
-                    callback_data=f"languages:{i}",
-                )
-            )
-            for i in languages_present
-        ]
+    keyboard = InlineKeyboard(row_width=2)
+    keyboard.row(
+        InlineKeyboardButton(
+            text="🇹🇷 Türkçe",
+            callback_data=f"languages:en",
+        ),
+        InlineKeyboardButton(
+            text="🇦🇿 Azerbaycanca",
+            callback_data=f"languages:aze",
+        ),
     )
     keyboard.row(
         InlineKeyboardButton(
