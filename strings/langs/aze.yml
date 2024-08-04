@@ -1,20 +1,19 @@
 name : Azerbaycan
 
 # General Strings
-general_1 : "Bir kullanıcının mesajını yanıtlayın veya username/user_id verin."
-general_2 : "Hata! Komutun Yanlış Kullanımı."
-general_3 : "İşleminiz Gerçekleşirken Hata Oluştu. **Lütfen Bota Yönetici Yetkisi Verin**.\n\nHata Türü: - {0}"
-general_4 : "Bu sohbet grubunda isimsiz bir yöneticisiniz!\nYönetici Haklarından Kullanıcı Hesabına geri dönün."
-general_5 : "Bu eylemi gerçekleştirmek için sesli sohbet haklarına sahip yönetici olmanız gerekir."
-general_6 : "Bot sesli sohbette yayın yapmıyor. ❄️"
-
+general_1 : "Bir istifadəcinin mesajını cavaplayın və ya username/user_id verin."
+general_2 : "Xəta! Əmr'in səhv istifədəsi."
+general_3 : "Əməliyyatınız baş verərkən xəta baş verdi. **Xaiş edirik bota adminlik verin.**\n\nXəta növü: - {0}"
+general_4 : "Bu söhbət qrupunda anonim administratorsünüz!\nAdministrator hüquqlarınızdan istifadəçi hesabınıza qayıdın."
+general_5 : "Bu əməliyyatı yerinə yetirmək üçün səsli söhbət hüquqlarına malik administrator olmalısınız."
+general_6 : "Bot səsli söhbətdə yayımlanmır. ❄️"
 # Classes - Telegram.py
-tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. @Blayzen hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
-tg_2 : "Telegram'dan Medya İndirilirken Hata Oluştu."
+tg_1 : "Hazırda bot yükləmələrlə çox yüklənib. Bu mesajı @Blayzen hesabına düzəltməsi üçün bildirin.\n\n**Yoxlama müddəti:** {0} (__beklenen süre__))"
+tg_2 : "Telegram'dan Media Yüklənərkən Xəta Baş Verdi."
 
 # Core - Call.py
-call_1 : "Bot, asistan hesabını grubunuza davet etmek için **Yönetici** İzni gerektirir.\n\Lütfen bota davet yetkisi verin."
-call_2 : "**Asistanı Grubunuzda yasaklamışsınız**, lütfen yasağı kaldırın! \nAsistanın bilgileri aşağıda unban yaparsanız tekrar katılabilir. Veya grup ayarlarında çıkarılan kullanıcılar listesinde asistanı bulup engeli kaldırın. Yapamazsanız @Blayzen hesabına ulaşın.\n\n**Asistan Kullanıcı Adı:** @{0}\n**Asistan ID:** {1}"
+call_1 : "Bot, Köməkçi Hesabını Qrupunuza Dəvət Etmək Üçün **Admin** İcazəsi Tələb Edir.\n\Xaiş Edirik Bota Dəvət İcazəsi Verin."
+call_2 : "**Qrupunuzda Köməkçiyə qadağa qoymusunuz**, xaiş edirik blokdan çıxarın! \nKömekçinin aşağıda göstərilən məlumatla blokdan çıxarsanız yenidən qatıla bilər. Və ya qrup parametrlərində istifadəçilər siyahısında köməkçini tapıb blokdan çıxara bilərsiniz. Edəbilməzsəniz @Blayzen hesabına yazın. \n\n**Köməkçinin istifadəçi adı:** @{0}\n**Asistan ID:** {1}"
 call_3 : "Asistan Hesabı sohbetinize katılırken sorun oluştu.\nLütfen @{0} hesabını gruba kendiniz ekleyin veya @Blayzen hesabına yazın.\n\n**Sistem Notu**: {1}"
 call_4 : "Bot, asistan hesabını sohbet grubunuza davet etmek için **Kullanıcıları Bağlantı Yoluyla Davet Et** Yetkisi gerektirir.\nLütfen bota davet yetkisi verin."
 call_5 : "**Asistan Hesabı 5 Saniye içinde katılacak.. Lütfen Bekleyin.** ❄️"
