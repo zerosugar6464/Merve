@@ -19,6 +19,16 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
+                text=f"🔮 Bot Destek", 
+                url=f"https://t.me/BallerChat",
+            ),
+            InlineKeyboardButton(
+                text=f"🎮 Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
+            ),
+        ], 
+        [
+            InlineKeyboardButton(
                 text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
@@ -71,7 +81,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 url=f"https://t.me/BallerChat",
             ),
             InlineKeyboardButton(
-                text=f"🌟 Oyun Botu", 
+                text=f"🎮 Oyun Botu", 
                 url=f"https://t.me/LostCashBot"
             ),
         ]
