@@ -411,7 +411,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_played - duration_to_skip) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"Bot is not able to seek due to total duration has been exceeded.\n\nCurrently played** {bet}** mins out of **{duration}** mins",
+                    f"Toplam Süre Aşıldığı İçin Bot Arama Yapamıyor‌‌.\n\nŞu anda Oynanan‌‌** {bet}** Dakikadan **{duration}** Dakika",
                     show_alert=True,
                 )
             to_seek = duration_played - duration_to_skip + 1
@@ -422,7 +422,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             ) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"Bot is not able to seek due to total duration has been exceeded.\n\nCurrently played** {bet}** mins out of **{duration}** mins",
+                    f"Toplam Süre Aşıldığı için Bot Arama Yapamıyor.\n\nŞuan da Oynanan** {bet}** Dakikadan **{duration}** Dakika",
                     show_alert=True,
                 )
             to_seek = duration_played + duration_to_skip + 1
