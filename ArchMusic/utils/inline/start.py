@@ -62,14 +62,18 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
-                url=f"https://t.me/BallerChat",
-            ),
+                text=_["S_B_8"], callback_data="settings_back_helper"
+            )
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_8"], callback_data="settings_back_helper"
-            )
+                text=f"🤖 Bot Destek", 
+                url=f"https://t.me/BallerChat",
+            ),
+            InlineKeyboardButton(
+                text=f"🌟 Oyun Botu", 
+                url=f"https://t.me/LostCashBot?startgroup=a"
+            ),
         ]
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
