@@ -67,12 +67,12 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
+                text=f"🔮 Bot Destek", 
                 url=f"https://t.me/BallerChat",
             ),
             InlineKeyboardButton(
                 text=f"🌟 Oyun Botu", 
-                url=f"https://t.me/LostCashBot?startgroup=a"
+                url=f"https://t.me/LostCashBot"
             ),
         ]
     ]
