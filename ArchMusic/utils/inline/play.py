@@ -53,7 +53,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/LostResmi"
+                url=f"https://t.me/BallerChat"
             ),
             InlineKeyboardButton(
                 text=f"🎧 Lost Müzik", 
@@ -80,7 +80,7 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/LostResmi"
+                url=f"https://t.me/BallerChat"
             ),
             InlineKeyboardButton(
                 text=f"🎧 Lost Müzik", 
@@ -114,7 +114,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/LostResmi"
+                url=f"https://t.me/BallerChat"
             ),
             InlineKeyboardButton(
                 text=f"🎧 Lost Müzik", 
@@ -159,7 +159,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/LostResmi"
+                url=f"https://t.me/BallerChat"
             ),
             InlineKeyboardButton(
                 text=f"🎧 Lost Müzik", 
@@ -186,7 +186,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/LostResmi"
+                url=f"https://t.me/BallerChat"
             ),
             InlineKeyboardButton(
                 text=f"🎧 Lost Müzik", 
