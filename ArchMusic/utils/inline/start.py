@@ -62,6 +62,12 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
+                text=f"🤖 Bot Destek", 
+                url=f"https://t.me/BallerChat",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text=_["S_B_8"], callback_data="settings_back_helper"
             )
         ]
