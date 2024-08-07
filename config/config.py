@@ -77,7 +77,7 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # GIT TOKEN ( if your edited repo is private)
 
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 
