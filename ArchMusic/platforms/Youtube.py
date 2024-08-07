@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -19,8 +19,8 @@ from yt_dlp import YoutubeDL
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from ArchMusic.utils.database import is_on_off
-from ArchMusic.utils.formatters import time_to_seconds
+from LostMuzik.utils.database import is_on_off
+from LostMuzik.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):

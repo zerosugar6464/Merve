@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -11,10 +11,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from ArchMusic import YouTube, app
-from ArchMusic.utils.channelplay import get_channeplayCB
-from ArchMusic.utils.decorators.language import languageCB
-from ArchMusic.utils.stream.stream import stream
+from LostMuzik import YouTube, app
+from LostMuzik.utils.channelplay import get_channeplayCB
+from LostMuzik.utils.decorators.language import languageCB
+from LostMuzik.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)

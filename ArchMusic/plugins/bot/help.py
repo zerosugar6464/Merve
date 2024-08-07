@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -16,13 +16,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from ArchMusic import app
-from ArchMusic.misc import SUDOERS
-from ArchMusic.utils import help_pannel
-from ArchMusic.utils.database import get_lang, is_commanddelete_on
-from ArchMusic.utils.decorators.language import (LanguageStart,
+from LostMuzik import app
+from LostMuzik.misc import SUDOERS
+from LostMuzik.utils import help_pannel
+from LostMuzik.utils.database import get_lang, is_commanddelete_on
+from LostMuzik.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from ArchMusic.utils.inline.help import (help_back_markup,
+from LostMuzik.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command

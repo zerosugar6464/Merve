@@ -1,4 +1,4 @@
-## ArchMusic Assets Folder
+## LostMuzik Assets Folder
 
 # Contains all the fonts and thumb related files.
 

@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -14,14 +14,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from ArchMusic import app
-from ArchMusic.utils.database import (get_global_tops,
+from LostMuzik import app
+from LostMuzik.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from ArchMusic.utils.decorators.language import languageCB
-from ArchMusic.utils.inline.playlist import (botplaylist_markup,
+from LostMuzik.utils.decorators.language import languageCB
+from LostMuzik.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from ArchMusic.utils.stream.stream import stream
+from LostMuzik.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 

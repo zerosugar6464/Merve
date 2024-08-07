@@ -1,16 +1,16 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
 
 from strings import get_string
-from ArchMusic.misc import SUDOERS
-from ArchMusic.utils.database import (get_lang, is_commanddelete_on,
+from LostMuzik.misc import SUDOERS
+from LostMuzik.utils.database import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 

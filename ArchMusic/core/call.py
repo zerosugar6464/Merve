@@ -19,9 +19,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from ArchMusic import LOGGER, YouTube, app
-from ArchMusic.misc import db
-from ArchMusic.utils.database import (add_active_chat,
+from LostMuzik import LOGGER, YouTube, app
+from LostMuzik.misc import db
+from LostMuzik.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
                                        get_audio_bitrate, get_lang,
@@ -31,10 +31,10 @@ from ArchMusic.utils.database import (add_active_chat,
                                        remove_active_chat,
                                        remove_active_video_chat,
                                        set_loop)
-from ArchMusic.utils.exceptions import AssistantErr
-from ArchMusic.utils.inline.play import (stream_markup,
+from LostMuzik.utils.exceptions import AssistantErr
+from LostMuzik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from ArchMusic.utils.stream.autoclear import auto_clean
+from LostMuzik.utils.stream.autoclear import auto_clean
 
 
 autoend = {}
@@ -51,7 +51,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            "ArchMusicString1",
+            "LostMuzikString1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -61,7 +61,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            "ArchMusicString2",
+            "LostMuzikString2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -71,7 +71,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            "ArchMusicString3",
+            "LostMuzikString3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -81,7 +81,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            "ArchMusicString4",
+            "LostMuzikString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -91,7 +91,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            "ArchMusicString5",
+            "LostMuzikString5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -623,4 +623,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-ArchMusic = Call()
+LostMuzik = Call()

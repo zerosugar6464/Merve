@@ -4,14 +4,14 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ArchMusic import YouTube, app
-from ArchMusic.core.call import ArchMusic
-from ArchMusic.misc import db
-from ArchMusic.utils.database import get_loop
-from ArchMusic.utils.decorators import AdminRightsCheck
-from ArchMusic.utils.inline.play import (stream_markup,
+from LostMuzik import YouTube, app
+from LostMuzik.core.call import LostMuzik
+from LostMuzik.misc import db
+from LostMuzik.utils.database import get_loop
+from LostMuzik.utils.decorators import AdminRightsCheck
+from LostMuzik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from ArchMusic.utils.stream.autoclear import auto_clean
+from LostMuzik.utils.stream.autoclear import auto_clean
 
 
 # Commands
@@ -59,7 +59,7 @@ async def skip(cli, message: Message, _, chat_id):
                                             message.from_user.first_name
                                         )
                                     )
-                                    await ArchMusic.stop_stream(chat_id)
+                                    await LostMuzik.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -86,7 +86,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name)
                 )
                 try:
-                    return await ArchMusic.stop_stream(chat_id)
+                    return await LostMuzik.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -94,7 +94,7 @@ async def skip(cli, message: Message, _, chat_id):
                 await message.reply_text(
                     _["admin_10"].format(message.from_user.first_name)
                 )
-                return await ArchMusic.stop_stream(chat_id)
+                return await LostMuzik.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -110,7 +110,7 @@ async def skip(cli, message: Message, _, chat_id):
                 _["admin_11"].format(title)
             )
         try:
-            await ArchMusic.skip_stream(chat_id, link, video=status)
+            await LostMuzik.skip_stream(chat_id, link, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -140,7 +140,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_9"])
         try:
-            await ArchMusic.skip_stream(chat_id, file_path, video=status)
+            await LostMuzik.skip_stream(chat_id, file_path, video=status)
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
@@ -159,7 +159,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await ArchMusic.skip_stream(chat_id, videoid, video=status)
+            await LostMuzik.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -176,7 +176,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await ArchMusic.skip_stream(chat_id, queued, video=status)
+            await LostMuzik.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":

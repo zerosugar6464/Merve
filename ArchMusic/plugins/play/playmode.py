@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -13,11 +13,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ArchMusic import app
-from ArchMusic.utils.database import (get_playmode, get_playtype,
+from LostMuzik import app
+from LostMuzik.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from ArchMusic.utils.decorators import language
-from ArchMusic.utils.inline.settings import playmode_users_markup
+from LostMuzik.utils.decorators import language
+from LostMuzik.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")

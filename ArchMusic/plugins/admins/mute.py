@@ -1,9 +1,9 @@
 #
 # Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/ArchBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ArchMusic import app
-from ArchMusic.core.call import ArchMusic
-from ArchMusic.utils.database import is_muted, mute_on
-from ArchMusic.utils.decorators import AdminRightsCheck
+from LostMuzik import app
+from LostMuzik.core.call import LostMuzik
+from LostMuzik.utils.database import is_muted, mute_on
+from LostMuzik.utils.decorators import AdminRightsCheck
 
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
@@ -34,7 +34,7 @@ async def mute_admin(cli, message: Message, _, chat_id):
     if await is_muted(chat_id):
         return await message.reply_text(_["admin_5"])
     await mute_on(chat_id)
-    await ArchMusic.mute_stream(chat_id)
+    await LostMuzik.mute_stream(chat_id)
     await message.reply_text(
         _["admin_6"].format(message.from_user.mention)
     )
