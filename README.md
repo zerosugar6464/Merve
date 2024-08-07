@@ -29,7 +29,7 @@ Pyrogram ve Py-Tgcalls'ı kullanan bu Python tabanlı bot, şarkıların, videol
 ### Başlangıç
 Kesintisiz müzik ve video akışıyla grup sohbeti deneyiminizi geliştirin.
  Ziyaret edin‌‌
-# [𝘼𝙖𝙧𝙤𝙝𝙞 ✘ 𝙈𝙪𝙨𝙞𝙘](https://t.me/Devilandr) Bugün Telegram'da!
+# [Lost Müzik Destek](https://t.me/Devilandr) Bugün Telegram'da!
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
