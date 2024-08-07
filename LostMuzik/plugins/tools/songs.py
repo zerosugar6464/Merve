@@ -281,13 +281,11 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_9"].format(e))
 
         res = (
-            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
-            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
-            f"⌛️ **Süre:** `{duration}`"
+        
         )
 
         visit_button = InlineKeyboardButton(
-            text="🎧 Lost Müzik",
+            text="🔮 Lost Müzik",
             url=f"https://t.me/LostMuzik"
         )
 
@@ -316,9 +314,7 @@ async def song_download_cb(client, CallbackQuery, _):
             return await mystic.edit_text(_["song_10"])
         
         rep = (
-            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
-            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
-            f"⌛️ **Süre:** `{duration}`"
+          
         )
         
         channel_id = -1002181528689
