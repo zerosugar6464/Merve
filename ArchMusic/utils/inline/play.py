@@ -53,11 +53,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/BallerChat"
+                url=f"https://t.me/Devilandr"
             ),
             InlineKeyboardButton(
-                text=f"🎧 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
+                text=f"⭐ Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
             ),
         ],
         [
@@ -80,11 +80,11 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/BallerChat"
+                url=f"https://t.me/Devilandr"
             ),
             InlineKeyboardButton(
-                text=f"🎧 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
+                text=f"⭐ Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
             ), 
         ],
         
@@ -114,11 +114,11 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/BallerChat"
+                url=f"https://t.me/Devilandr"
             ),
             InlineKeyboardButton(
-                text=f"🎧 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
+                text=f"⭐ Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
             ),
         ],
         
@@ -159,11 +159,11 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/BallerChat"
+                url=f"https://t.me/Devilandr"
             ),
             InlineKeyboardButton(
-                text=f"🎧 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
+                text=f"⭐ Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
             ),
         ],
         
@@ -186,11 +186,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/BallerChat"
+                url=f"https://t.me/Devilandr"
             ),
             InlineKeyboardButton(
-                text=f"🎧 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
+                text=f"⭐ Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
             ),
         ],
         
