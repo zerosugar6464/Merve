@@ -1,87 +1,75 @@
-# 𝘼𝙧𝙘𝙝 ✘ 𝙈𝙪𝙨𝙞𝙘 <img src="https://img.shields.io/github/v/release/LostBots/LostMuzik?color=green&logo=github&logoColor=red&style=social" alt="RELEASE">
+# Lost Müzik <img src="https://img.shields.io/github/v/release/LostBots/LostMuzik?color=green&logo=github&logoColor=red&style=social" alt="RELEASE">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <img src="https://telegra.ph/file/67a7078573dbf895ce7aa.jpg" align="middle" width="500" height="250"/>
 
-<!-- 𝙋𝙍𝙊𝙅𝙀𝘾𝙏 𝙊𝙒𝙉𝙀𝙍𝙎𝙃𝙄𝙋 𝙏𝙍𝘼𝙉𝙎𝙁𝙀𝙍 -->
-<details>
-  <summary>🖇 𝙋𝙍𝙊𝙅𝙀𝘾𝙏 𝙊𝙒𝙉𝙀𝙍 𝘾𝙃𝘼𝙉𝙂𝙀𝘿</summary>
-Hello everyone,
-
-I am excited to announce that I have taken over ownership of this repository! With the previous owner's blessing, I am committed to continuing the development and maintenance of this project.
-
-I want to express my gratitude to the previous owner for their hard work and dedication to this project. It's an honor to have the opportunity to carry the torch forward.
-
-Moving forward, I welcome your support and contributions to help make this project even better. Together, we can ensure its continued success and usefulness to the community.
-
-Thank you all for your support, and I look forward to working with you on this exciting journey!
 
 Best regards,
 **_Chiranjib_**
 </details>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-### Overview Section
-This Python-based bot, utilizing Pyrogram and Py-Tgcalls, enables effortless streaming of songs, videos, and live streams directly into group calls from various sources.
+### Genel Bakış Bölümü
+Pyrogram ve Py-Tgcalls'ı kullanan bu Python tabanlı bot, şarkıların, videoların ve canlı yayınların doğrudan çeşitli kaynaklardan grup çağrılarına zahmetsizce aktarılmasını sağlar.‌‌
 
-### Key Features
+### Ana Özellikler
 
-1. **Source Variety:**
-   - Stream content from YouTube, Soundcloud, Apple Music, Spotify, Resso, Live Streams, and Telegram Audios & Videos.
+1. **Kaynak Çeşitliliği:**
+   - YouTube, Soundcloud, Apple Music, Spotify, Resso, Canlı Yayınlar ve Telegram Ses ve Videolarından içerik akışı yapın.‌‌
 
-2. **Stability and Reliability:**
-   - Developed from scratch to ensure stability and minimize crashes, featuring attractive thumbnails for a better user experience.
+2. **Kararlılık ve Güvenilirlik:**
+   - Daha iyi bir kullanıcı deneyimi için çekici küçük resimler içeren, kararlılığı sağlamak ve çökmeleri en aza indirmek için sıfırdan geliştirildi.‌‌
 
-3. **Advanced Controls:**
-   - Enjoy advanced controls such as Loop, Seek, Shuffle, Specific Skip, Playlists, and more for a customized listening experience.
+3. **Gelişmiş Kontroller:**
+   - Özelleştirilmiş bir dinleme deneyimi için Döngü, Arama, Karışık, Özel Atlama, Çalma Listeleri ve daha fazlası gibi gelişmiş kontrollerin keyfini çıkarın.‌‌
 
-4. **Multi-Language Support:**
-   - Supports multiple languages, enhancing accessibility and user-friendliness for a diverse user base.
+4. **Çoklu Dil Desteği:**
+   - Birden fazla dili destekleyerek farklı bir kullanıcı tabanı için erişilebilirliği ve kullanım kolaylığını artırır.‌‌
 
-### Get Started
-Enhance your group chat experience with seamless music and video streaming.
- Visit the 
-# [𝘼𝙖𝙧𝙤𝙝𝙞 ✘ 𝙈𝙪𝙨𝙞𝙘](https://t.me/AarohiMusicBot) on Telegram today!
+### Başlangıç
+Kesintisiz müzik ve video akışıyla grup sohbeti deneyiminizi geliştirin.
+ Ziyaret edin‌‌
+# [𝘼𝙖𝙧𝙤𝙝𝙞 ✘ 𝙈𝙪𝙨𝙞𝙘](https://t.me/Devilandr) Bugün Telegram'da!
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-# Deployment Section
-<!-- VPS Deployment -->
+# Dağıtım Bölümü
+<!-- VDS Dağıtımı -->
 <details>
-  <summary>🖇 VPS Deployment</summary>
+  <summary>🖇 VDS Deployment</summary>
 
-  1. Upgrade and Update:
+  1. Yükseltme ve Güncelleme‌‌:
      <pre>
      sudo apt-get update && sudo apt-get upgrade -y
      </pre>
 
-  2. Installing Required Packages:
+  2. Gerekli Paketlerin Kurulumu‌‌:
      <pre>
      sudo apt-get install python3-pip ffmpeg -y
      </pre>
 
-  3. Setting up PIP:
+  3. PİP'i Yükleyin:
      <pre>
      sudo pip3 install -U pip
      </pre>
 
-  4. Installing Node:
+  4. Node Kurulumu:
      <pre>
      curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
      </pre>
 
-  5. Clone the Repository:
+  5. Depoyu Klonla:
      <pre>
-     git clone your_repo_link && cd repo_name
+     git clone depo_link && cd depo_ismi
      </pre>
 
-  6. Install Requirements:
+  6. Kurulum Gereksinimleri‌‌:
      <pre>
      pip3 install -U -r requirements.txt
      </pre>
 
-  7. Create .env with sample.env:
+  7. Oluştur .env ile sample.env:
      <pre>
      cp sample.env .env
      </pre>
@@ -90,9 +78,9 @@ Enhance your group chat experience with seamless music and video streaming.
      <pre>
      vi .env
      </pre>
-     Press `I` to start editing. Edit .env with your values. Press `Esc`, then type `:wq` to save and exit.
+     Düzenlemeye başlamak için 'I' tuşuna basın. .env dosyasını değerlerinizle düzenleyin. Kaydetmek ve çıkmak için 'Esc' tuşuna basın, ardından ':wq' yazın.
 
-  9. Finally, Run Your Music Bot:
+  9. Son olarak Müzik Botunuzu Çalıştırın:
      <pre>
      sudo apt install tmux && tmux
      bash start
@@ -108,10 +96,10 @@ Enhance your group chat experience with seamless music and video streaming.
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🏷 Support Section
-**_[Updates](https://t.me/archbots)_**
+## 🏷 Destek Grubu
+**_[Updates](https://t.me/Devilandr)_**
 
-**_[Support](https://t.me/StereoIndiaChatting)_**
+**_[Bot](https://t.me/LostMuzikBot)_**
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
