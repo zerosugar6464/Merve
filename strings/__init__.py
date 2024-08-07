@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
+# Copyright (C) 2021-2023 by LostBots@Github, < https://github.com/LostBots >.
 #
-# This file is part of < https://github.com/ArchBots/LostMuzik > project,
+# This file is part of < https://github.com/LostBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
+# Please see < https://github.com/LostBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 #
@@ -59,6 +59,6 @@ for filename in os.listdir(r"./strings/langs/"):
         ]
     except:
         print(
-            "There is some issue with the language file inside bot. Please report it to the ArchBots at @ARCH_SUPPORTS on Telegram"
+            "There is some issue with the language file inside bot. Please report it to the LostBots at @ARCH_SUPPORTS on Telegram"
         )
         sys.exit()

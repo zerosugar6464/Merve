@@ -1,5 +1,5 @@
 {
-    "name": "Arch Music Bot",
+    "name": "Lost Music Bot",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
     "keywords": [
@@ -8,7 +8,7 @@
         "bot",
         "telegram-bot",
         "pyrogram",
-        "ArchBots",
+        "LostBots",
         "LostMuzik"
     ],
     "stack": "container",
@@ -40,7 +40,7 @@
         },
         "MUSIC_BOT_NAME": {
             "description": "A name for your Music Bot. Please don't use ascii characters",
-            "value": "Arch Music Bot",
+            "value": "Lost Music Bot",
             "required": true
         },
         "OWNER_ID": {
@@ -70,7 +70,7 @@
         },
         "UPSTREAM_REPO": {
             "description": "If you dont know this, Leave as it is",
-            "value": "https://github.com/ArchBots/LostMuzikBot",
+            "value": "https://github.com/LostBots/LostMuzikBot",
             "required": true
         }
     },

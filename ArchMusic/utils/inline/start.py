@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
+# Copyright (C) 2021-2023 by LostBots@Github, < https://github.com/LostBots >.
 #
-# This file is part of < https://github.com/ArchBots/LostMuzik > project,
+# This file is part of < https://github.com/LostBots/LostMuzik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/LostMuzik/blob/master/LICENSE >
+# Please see < https://github.com/LostBots/LostMuzik/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -127,7 +127,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
                 InlineKeyboardButton(
-                    text=_["S_B_6"], url=f"https://github.com/ArchBots/LostMuzik"
+                    text=_["S_B_6"], url=f"https://github.com/LostBots/LostMuzik"
                 ),
             ]
         )
@@ -136,7 +136,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_6"], url=f"https://github.com/ArchBots/LostMuzik"
+                        text=_["S_B_6"], url=f"https://github.com/LostBots/LostMuzik"
                     ),
                 ]
             )

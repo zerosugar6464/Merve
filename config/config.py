@@ -69,7 +69,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/ArchBots/LostMuzik",
+    "https://github.com/LostBots/LostMuzik",
 
 )
 
@@ -83,7 +83,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", None) # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", None) # Example:- https://t.me/LostBots
 
 SUPPORT_GROUP = getenv(
 

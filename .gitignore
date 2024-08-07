@@ -1,6 +1,6 @@
 .env
 .cache
-Archlogs.txt
+Lostlogs.txt
 .DS_Store
 *.session
 raw_files/
