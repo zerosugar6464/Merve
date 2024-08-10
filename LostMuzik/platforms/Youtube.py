@@ -43,7 +43,7 @@ class YouTubeAPI:
         if re.search(self.regex, link):
             return True
         else:
-            return False
+            return True
 
     async def url(self, message_1: Message) -> Union[str, None]:
         messages = [message_1]
