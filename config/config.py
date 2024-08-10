@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "c9a8ea0d3e63c97afdecf913172a2bc3")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7271340407:AAFLhxJwz9nl09eovzp_6BanbKdoMyWMFyE")
+BOT_TOKEN = getenv("BOT_TOKEN", "7271340407:AAGSveHR1wJH7DjDDsf0Qy5MtRPsYMBBDYY")
 
 # Database to save your chats and stats.
 
@@ -41,7 +41,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002202401772"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002235971433"))
 
 # A name for your Music bot.
 
@@ -57,11 +57,11 @@ OWNER_ID = list(
 
 # Get it from http://dashboard.heroku.com/account
 
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", "HRKU-1f0b9d66-abb4-4a57-b2e6-6967ce74b022")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "pulsemuzik")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 # For customized or modified Repository
 
@@ -69,7 +69,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/LostBots/LostMuzik",
+    "https://github.com/BlayzenX/LostMuzik",
 
 )
 
@@ -183,7 +183,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "AgFH6rYAtNfCtXOhLW0BiBWSNYujoLHnqvnNtebkHVO0Hrnyo0pk6V-4eayRrbrMBPiVqNcLk_BysgDm03K6MhY_Xh7dlA8tZni8IL9Q1vvepzWgg0g_G060qomw3bF-4tFspdsCCVZBwIUiNMKnyHRsJzC7Mrzw2jKkL_TED62SK7PPQ6IWQC3EFPonlDR8q5fT4U-7lw9utGNdhPbbnUnnEzNnzNUPtnDR3K-DzaYVrwJ_ybDmNsMA4bz65mbmMlLw2oXnaoQl2CXQL1u8AY5uX3rgfuQWkJSimfij0ddTVvusnXE5TA0Hk5vLj5JOR3n8WVus_8MP19xaaJOCkyQpGBUgAAAAGHv9YpAA")
+STRING1 = getenv("STRING_SESSION", "AgHHpwsAJVoL097f_P_YJaF2fZlgCS1jUtUh4n8IqYALsAxHP_LMZ4G6PT2J6_Fs_Us6UVQfgHHlfS_x04wy8y2TZPKfJyLS1KjR5LJNF6v9KGZp2SSd9yR5vEzRHHD4UamThQ_ufiEoIZswHSlY67cwzcU6SHMBeJEX_KV4QRnwcfRMBmoJdn2H-xvh0M8LvDDRTpbzz0J87Paa9HX3tiFnaJ8UVueCdkN9ePbv_lChCvt4hK20hhNga-vLTzN8x52SjcFKdv6J8b6B-abCltB8Y8gtlFTk84V8hoSNUCYvLEIBKTP3AhzflgmWQVru1PanFY3tW49MI5ldeB1MKdlKavdXdAAAAAGHv9YpAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
