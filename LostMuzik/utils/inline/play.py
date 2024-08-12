@@ -56,8 +56,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 url=f"https://t.me/Reduxon"
             ),
             InlineKeyboardButton(
-                text=f"🎧 Efsun Muzik", 
-                url=f"https://t.me/EfsunMuzik"
+                text=f"⭐ Oyun Botu", 
+                url=f"https://t.me/LostCashBot"
             ),
         ],
         [
@@ -114,7 +114,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/Devilandr"
+                url=f"https://t.me/Reduxon"
             ),
             InlineKeyboardButton(
                 text=f"⭐ Oyun Botu", 
@@ -159,7 +159,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/Devilandr"
+                url=f"https://t.me/Reduxon"
             ),
             InlineKeyboardButton(
                 text=f"⭐ Oyun Botu", 
@@ -186,7 +186,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/Devilandr"
+                url=f"https://t.me/Reduxon"
             ),
             InlineKeyboardButton(
                 text=f"⭐ Oyun Botu", 
