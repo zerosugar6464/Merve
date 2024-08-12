@@ -53,11 +53,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/Devilandr"
+                url=f"https://t.me/Reduxon"
             ),
             InlineKeyboardButton(
-                text=f"⭐ Oyun Botu", 
-                url=f"https://t.me/LostCashBot"
+                text=f"🎧 Efsun Muzik", 
+                url=f"https://t.me/EfsunMuzik"
             ),
         ],
         [
@@ -80,7 +80,7 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
         [
             InlineKeyboardButton(
                 text=f"🤖 Bot Destek", 
-                url=f"https://t.me/Devilandr"
+                url=f"https://t.me/Reduxon"
             ),
             InlineKeyboardButton(
                 text=f"⭐ Oyun Botu", 
