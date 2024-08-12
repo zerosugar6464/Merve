@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "c9a8ea0d3e63c97afdecf913172a2bc3")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7271340407:AAGSveHR1wJH7DjDDsf0Qy5MtRPsYMBBDYY")
+BOT_TOKEN = getenv("BOT_TOKEN", "6968930947:AAFykqnekEUR72LZj823n5XC8c1r6CzpU-k")
 
 # Database to save your chats and stats.
 
@@ -45,7 +45,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002235971433"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Lost Muzik")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Efsun Muzik")
 
 # Your User ID.
 
@@ -183,7 +183,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "AgHHpwsAJVoL097f_P_YJaF2fZlgCS1jUtUh4n8IqYALsAxHP_LMZ4G6PT2J6_Fs_Us6UVQfgHHlfS_x04wy8y2TZPKfJyLS1KjR5LJNF6v9KGZp2SSd9yR5vEzRHHD4UamThQ_ufiEoIZswHSlY67cwzcU6SHMBeJEX_KV4QRnwcfRMBmoJdn2H-xvh0M8LvDDRTpbzz0J87Paa9HX3tiFnaJ8UVueCdkN9ePbv_lChCvt4hK20hhNga-vLTzN8x52SjcFKdv6J8b6B-abCltB8Y8gtlFTk84V8hoSNUCYvLEIBKTP3AhzflgmWQVru1PanFY3tW49MI5ldeB1MKdlKavdXdAAAAAGHv9YpAA")
+STRING1 = getenv("STRING_SESSION", "AgHHpwsACBkP8hG9Lo50Q_FoPi3O7joPLCHBcKXpKDEX21x_CNbcndfyFof3fVZAQzYGrx6U6Hpi-zaNf9n1YGgcEz8pPRXO9LvPH4CdSJz-H6Ai_Hsyi0NIJ_gGdbIjCvAhvH8SXnoCXLVsz8VgbxPDuIH0BiAIYbZvefdoGOfaKRLS0iJisczWUgHP47Q-H6NRvxZjS1F7BxA23rPXhUX7ruL7cszsiYL3sG7UB1B_qsw2BNHP54goI6ar3nTcAbk9iG3AqALJDIin2eBO58U4nF6OAljaXxeKkgH0oWM1B1sy_2wbFjiTAsl3-nch720IetxXh8s90c_1jsxt81y0stKrXwAAAAGHv9YpAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
