@@ -93,4 +93,4 @@ class LostMuzik(Client):
         else:
             self.name = get_me.first_name
 
-        LOGGER(__name__).info(f"MusicBot {self.name} olarak başlatıldı")
+        LOGGER(__name__).info(f" {self.name} olarak başlatıldı")
