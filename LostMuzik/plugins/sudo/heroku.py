@@ -191,7 +191,7 @@ async def usage_dynos(client, message, _):
     path = "/accounts/" + account_id + "/actions/get-quota"
     r = requests.get("https://api.heroku.com" + path, headers=headers)
     if r.status_code != 200:
-        return await dyno.edit("Unable to fetch.")
+        return await dyno.edit("Getirilemiyor.")
     result = r.json()
     quota = result["account_quota"]
     quota_used = result["quota_used"]
@@ -213,13 +213,13 @@ async def usage_dynos(client, message, _):
     AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     text = f"""
-**DYNO USAGE**
+**DYNO KULLANIMI**
 
-<u>Usage:</u>
-Total Used: `{AppHours}`**h**  `{AppMinutes}`**m**  [`{AppPercentage}`**%**]
+<u>Kullanım:</u>
+Toplam Kullanılan: `{AppHours}`**h**  `{AppMinutes}`**m**  [`{AppPercentage}`**%**]
 
-<u>Remaining Quota:</u>
-Total Left: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
+<u>Kalan Kota:</u>
+Toplam: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
     return await dyno.edit(text)
 
 
@@ -262,13 +262,13 @@ async def update_(client, message, _):
     for info in repo.iter_commits(
         f"HEAD..origin/{config.UPSTREAM_BRANCH}"
     ):
-        updates += f"<b>➣ #{info.count()}: [{info.summary}]({REPO_}/commit/{info}) by -> {info.author}</b>\n\t\t\t\t<b>➥ Commited on:</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
-    _update_response_ = "<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n"
+        updates += f"<b>» #{info.count()}: [{info.summary}]({REPO_}/commit/{info}) by -> {info.author}</b>\n\t\t\t\t<b>» Taahhüt:</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
+    _update_response_ = "<b>Bot için yeni bir güncelleme mevcut!</b>\n\n» Güncellemeler Şimdi Aktarılıyor</code>\n\n**<u>Güncellemeler:</u>**\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
         url = await LostMuzikbin(updates)
         nrs = await response.edit(
-            f"<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n[Click Here to checkout Updates]({url})"
+            f"<b>Bot için yeni bir güncelleme mevcut!</b>\n\n» Güncellemeler Şimdi Aktarılıyor</code>\n\n**<u>Güncellemeler:</u>**\n\n[Güncellemeleri kontrol etmek için buraya tıklayın]({url})"
         )
     else:
         nrs = await response.edit(
@@ -282,14 +282,14 @@ async def update_(client, message, _):
                 try:
                     await app.send_message(
                         x,
-                        f"{config.MUSIC_BOT_NAME} **Şuanda Güncelleniyor Veya Restart Atılıyor.. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
+                        f"{config.MUSIC_BOT_NAME} **Şu anda Otomatik Olarak Yeniden Başlatılıyor.. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
                     )
                     await remove_active_chat(x)
                     await remove_active_video_chat(x)
                 except Exception:
                     pass
             await response.edit(
-                f"{nrs.text}\n\nBot was updated successfully on Heroku! Now, wait for 2 - 3 mins until the bot restarts!"
+                f"{nrs.text}\n\Bot Heroku'da başarıyla güncellendi! Şimdi bot yeniden başlatılana kadar 2-3 dakika bekleyin!"
             )
             os.system(
                 f"{XCB[5]} {XCB[7]} {XCB[9]}{XCB[4]}{XCB[0]*2}{XCB[6]}{XCB[4]}{XCB[8]}{XCB[1]}{XCB[5]}{XCB[2]}{XCB[6]}{XCB[2]}{XCB[3]}{XCB[0]}{XCB[10]}{XCB[2]}{XCB[5]} {XCB[11]}{XCB[4]}{XCB[12]}"
@@ -297,11 +297,11 @@ async def update_(client, message, _):
             return
         except Exception as err:
             await response.edit(
-                f"{nrs.text}\n\nSomething went wrong while initiating reboot! Please try again later or check logs for more info."
+                f"{nrs.text}\n\Yeniden başlatma başlatılırken bir şeyler ters gitti! Lütfen daha sonra tekrar deneyin veya daha fazla bilgi için logu kontrol edin."
             )
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"AN EXCEPTION OCCURRED AT #UPDATER DUE TO: <code>{err}</code>",
+                f"#GÜNCELLEME'DE AŞAĞIDAKİ NEDENLE BİR İSTİSNA OLUŞTU: <code>{err}</code>",
             )
     else:
         served_chats = await get_active_chats()
@@ -309,14 +309,14 @@ async def update_(client, message, _):
             try:
                 await app.send_message(
                     x,
-                    f"{config.MUSIC_BOT_NAME} **Şuanda Güncelleniyor Veya Restart Atılıyor.. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
+                    f"{config.MUSIC_BOT_NAME} **Şu anda Otomatik Olarak Yeniden Başlatılıyor.. Yaşanan Kesinti İçin Üzgünüz.** \n\n**15-20 Saniye Sonra Tekrardan Şarkı Açabilirsiniz.**",
                 )
                 await remove_active_chat(x)
                 await remove_active_video_chat(x)
             except Exception:
                 pass
         await response.edit(
-            f"{nrs.text}\n\nBot was updated successfully! Now, wait for 1 - 2 mins until the bot reboots!"
+            f"{nrs.text}\n\Bot başarıyla güncellendi! Şimdi bot yeniden başlatılana kadar 1-2 dakika bekleyin!"
         )
         os.system("pip3 install -r requirements.txt")
         os.system(f"kill -9 {os.getpid()} && bash start")
@@ -325,7 +325,7 @@ async def update_(client, message, _):
 
 @app.on_message(filters.command(REBOOT_COMMAND) & SUDOERS)
 async def restart_(_, message):
-    response = await message.reply_text("Restarting....")
+    response = await message.reply_text("Yeniden başlatılıyor...")
     served_chats = await get_active_chats()
     for x in served_chats:
         try:
@@ -347,6 +347,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit(
-        "Reboot has been initiated successfully! Wait for 1 - 2 minutes until the bot restarts."
+        "Yeniden başlatma başarıyla başlatıldı! Bot yeniden başlatılana kadar 1-2 dakika bekleyin."
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
