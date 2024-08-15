@@ -34,7 +34,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("LostMuzik").error(
-            "No Assistant Clients Vars Defined!.. Exiting Process."
+            "Tanımlanmış Asistan İstemcisi Yok!.. İşlemden Çıkılıyor."
         )
         return
     if (
@@ -42,7 +42,7 @@ async def init():
         and not config.SPOTIFY_CLIENT_SECRET
     ):
         LOGGER("LostMuzik").warning(
-            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
+            "Tanımlanmış Spotify Vars'ı yok. Botunuz Spotify sorgularını oynatamayacak."
         )
     try:
         users = await get_gbanned()
@@ -57,7 +57,7 @@ async def init():
     for all_module in ALL_MODULES:
         importlib.import_module("LostMuzik.plugins" + all_module)
     LOGGER("LostMuzik.plugins").info(
-        "Successfully Imported Modules "
+        "Başarıyla İçe Aktarılan Modüller"
     )
     await userbot.start()
     await LostMuzik.start()
@@ -67,16 +67,16 @@ async def init():
         )
     except NoActiveGroupCall:
         LOGGER("LostMuzik").error(
-            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
+            "[HATA] - \n\Lütfen Log Grubunuzun Sesli Aramasını Açın. Log grubunuzda sesli aramayı asla kapatmadığınızdan sonlandırmadığınızdan emin olun."
         )
         sys.exit()
     except:
         pass
     await LostMuzik.decorators()
-    LOGGER("LostMuzik").info("Lost Music Bot Started Successfully")
+    LOGGER("LostMuzik").info("Lost Muzik Botu Başarıyla Başladı")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("LostMuzik").info("Stopping Lost Music Bot! GoodBye")
+    LOGGER("LostMuzik").info("Lost Muzik Botu Durdu")
