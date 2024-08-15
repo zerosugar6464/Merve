@@ -100,16 +100,16 @@ async def ping_com(client, message: Message, _):
         else:
             IMAGE = get_image(videoid)
     send = (
-        "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
+        "**⌛️Süre:** Bilinmeyen Süreli Akış\n\Sıraya alınmış listenin tamamını almak için aşağıdaki düğmeye tıklayın."
         if DUR == "Unknown"
-        else "\nClick on button below to get whole queued list."
+        else "\nSıraya alınmış listenin tamamını almak için aşağıdaki düğmeye tıklayın."
     )
-    cap = f"""**{config.MUSIC_BOT_NAME} Player**
+    cap = f"""**{config.MUSIC_BOT_NAME} Oynatıcı**
 
-🎥**Playing:** {title}
+🎥**Oynatılan:** {title}
 
-🔗**Stream Type:** {typo}
-🙍‍♂️**Played By:** {user}
+🔗**Akış Türü:** {typo}
+🙍‍♂️**Oynatan:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, "c" if cplay else "g", videoid)
@@ -197,7 +197,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     basic[videoid] = False
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
-        media="https://telegra.ph//file/6f7d35131f69951c74ee5.jpg",
+        media="https://telegra.ph/file/52fdd1ced4160087612bd.jpg",
         caption=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
@@ -206,19 +206,19 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     for x in got:
         j += 1
         if j == 1:
-            msg += f'Currently Playing:\n\n🏷Title: {x["title"]}\nDuration: {x["dur"]}\nBy: {x["by"]}\n\n'
+            msg += f'Şu anda Oynanıyor:\n\n🔮Başlık: {x["title"]}\nSüre: {x["dur"]}\nBy: {x["by"]}\n\n'
         elif j == 2:
-            msg += f'Queued:\n\n🏷Title: {x["title"]}\nDuration: {x["dur"]}\nBy: {x["by"]}\n\n'
+            msg += f'Sıraya alındı:\n\n🔮Başlık: {x["title"]}\nSüre: {x["dur"]}\nBy: {x["by"]}\n\n'
         else:
-            msg += f'🏷Title: {x["title"]}\nDuration: {x["dur"]}\nBy: {x["by"]}\n\n'
+            msg += f'🔮Başlık: {x["title"]}\nSüre: {x["dur"]}\nBy: {x["by"]}\n\n'
     if "Queued" in msg:
         if len(msg) < 700:
             await asyncio.sleep(1)
             return await CallbackQuery.edit_message_text(
                 msg, reply_markup=buttons
             )
-        if "🏷" in msg:
-            msg = msg.replace("🏷", "")
+        if "🔮" in msg:
+            msg = msg.replace("🔮", "")
         link = await LostMuzikbin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
@@ -280,16 +280,16 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
         else:
             IMAGE = get_image(videoid)
     send = (
-        "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
+        "**⌛️Süre:** Bilinmeyen Süreli Akış\n\nSıraya alınmış listenin tamamını almak için aşağıdaki düğmeye tıklayın."
         if DUR == "Unknown"
-        else "\nClick on button below to get whole queued list."
+        else "\nSıraya alınmış listenin tamamını almak için aşağıdaki düğmeye tıklayın."
     )
-    cap = f"""**{config.MUSIC_BOT_NAME} Player**
+    cap = f"""**{config.MUSIC_BOT_NAME} Oynatıcı**
 
-🎥**Playing:** {title}
+🎥**Oynatılan:** {title}
 
-🔗**Stream Type:** {typo}
-🙍‍♂️**Played By:** {user}
+🔗**Akış Türü:** {typo}
+🙍‍♂️**Oynatan:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, cplay, videoid)
