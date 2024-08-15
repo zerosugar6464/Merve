@@ -77,7 +77,7 @@ admin_34 : "İleri Sarılırken Hata Oluştu."
 start_1 : "**Beni {0} Grubunuza Davet Ettiğiniz İçin Teşekkürler.\n{1} Çalışıyor. ❄️\n\nHerhangi Bir Yardım Almak İçin Destek Grubumuza Veya Kanalımıza Göz Atın.**"
 start_2 : "**{0}'e Hoş Geldin. 🔮\n\nGrubunuza Ekleyerek Sesli Sohbetlerinizde Kaliteli Müzik Dinleyebilirsiniz.**"
 start_3 : "**Beni Grubunuza Davet Ettiğiniz İçin Teşekkürler.**\n\n**Çalışmak için Sadece Sesli sohbetleri Yönetme ve Gruba Davet Etme Yetkisi Vermeniz Yeterlidir.** ❄️\n\n**Asistan Kullanıcı Adı:** @{1}"
-start_4 : "**{0}'in Sahibi {1} Sohbetinize Katıldı.** 👑"
+start_4 : "**{0}'in Geliştiricisi/Kurucusu {1} Sohbetinize Katıldı.** ❤️‍🔥"
 start_5 : "**{0}'in Çok Kıymetli {1} Beyefendisinin Grubunuza Katıldığını Fark Ettik. Kendisine Saygılarımı Sunarım.** 🙏"
 start_6 : "❗️ **Süper Grup Gerekli** ❗️ Lütfen Grubunuzu **Süper Gruba** dönüştürün ve sonra beni tekrar ekleyin. \n\n**Süper grup nasıl yapılır? 1-** Üyeler listesine gelin ve sağ üstteki kalem işaretine basın.\n**2-** Yeni üyeler için sohbet geçmişi ayarını Görünür olarak düzenleyin. Şimdi botu tekrar ekleyebilirsiniz"
 start_7 : "**Lost Müzik'in Grup Kapasitesi doldu** \n [Buraya Tıklayarak Yeni Botu Görebilirsiniz]({0})"
@@ -140,7 +140,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/channelplay bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "🔮"
+play_1 : "🔃**Müzik İndiriliyor.. Lütfen Bekleyin...** 🔮"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔮 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi! Başka Bir Parça Oynatmayı Deneyiniz. ❄️"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirilmiş Kullanıcılar bu grupta müzik çalabilir.\n\nModu /playmode aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
@@ -205,7 +205,7 @@ lyrics_4 : "Grubu spama sokmaktan kaçınmak için aşağıdaki düğmeyi tıkla
 
 #Ping
 ping_1 : "🏓Pong!!!!"
-ping_2 : "**🌹 {0} 🌹\nGecikme: `{1}` ms\nUpTime: {2}\nDepolama: {3}\nCpu: {4}\nRam: {5}\nPython: `{6}` ms 🔮**"
+ping_2 : "**🔮 {0} 🔮\nGecikme: `{1}` ms\nUpTime: {2}\nDepolama: {3}\nCpu: {4}\nRam: {5}\nPython: `{6}` ms 🔮**"
 
 # Song
 song_1 : "YouTube'dan Müzik veya Video'yu yalnızca özel sohbette indirebilirsiniz. Lütfen beni özel sohbette başlat. 🔮"
@@ -295,7 +295,7 @@ ST_B_2 : "🎥 Video Kalitesi"
 ST_B_3 : "⚡️ Yetkili Kullanıcılar"
 ST_B_4 : "📱 Ana Panel"
 ST_B_5 : "▶️ Oynatma Ayarları"
-ST_B_6 : "🇹🇷 Diller 🇦🇿"
+ST_B_6 : "🇹🇷 Dil"
 ST_B_7 : "🗑 Mesaj Silme Modu"
 ST_B_8 : "{0} Düşük Kalite Ses"
 ST_B_9 : "{0} Orta Kalite Ses"
