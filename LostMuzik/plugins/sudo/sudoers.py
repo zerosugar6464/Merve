@@ -31,7 +31,7 @@ SUDOUSERS_COMMAND = get_command("SUDOUSERS_COMMAND")
 async def useradd(client, message: Message, _):
     if MONGO_DB_URI is None:
         return await message.reply_text(
-            "**Due to bot's privacy issues, You can't manage sudo users when you're using LostMuzik's Database.\n\n Please fill your MONGO_DB_URI in your vars to use this feature**"
+            "**Botun gizlilik sorunları nedeniyle LostMuzik Veritabanını kullanırken sudo kullanıcılarını yönetemezsiniz.\n\ Bu özelliği kullanmak için lütfen vars'larınızda MONGO_DB_URI'nizi doldurun.**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -77,7 +77,7 @@ async def useradd(client, message: Message, _):
 async def userdel(client, message: Message, _):
     if MONGO_DB_URI is None:
         return await message.reply_text(
-            "**Due to bot's privacy issues, You can't manage sudo users when you're using LostMuzik's Database.\n\n Please fill your MONGO_DB_URI in your vars to use this feature**"
+            "**Botun gizlilik sorunları nedeniyle LostMuzik Veritabanını kullanırken sudo kullanıcılarını yönetemezsiniz.\n\n Bu özelliği kullanmak için lütfen vars'larınızda MONGO_DB_URI'nizi doldurun.**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -93,7 +93,7 @@ async def userdel(client, message: Message, _):
             SUDOERS.remove(user.id)
             await message.reply_text(_["sudo_4"])
             return
-        await message.reply_text(f"Something wrong happened.")
+        await message.reply_text(f"Yanlış bir şey oldu.")
         return
     user_id = message.reply_to_message.from_user.id
     if user_id not in SUDOERS:
@@ -103,7 +103,7 @@ async def userdel(client, message: Message, _):
         SUDOERS.remove(user_id)
         await message.reply_text(_["sudo_4"])
         return
-    await message.reply_text(f"Something wrong happened.")
+    await message.reply_text(f"Yanlış bir şey oldu.")
 
 
 @app.on_message(filters.command(SUDOUSERS_COMMAND) & ~BANNED_USERS)
@@ -120,7 +120,7 @@ async def sudoers_list(client, message: Message, _):
             count += 1
         except Exception:
             continue
-        text += f"{count}➤ {user}\n"
+        text += f"{count}» {user}\n"
     smex = 0
     for user_id in SUDOERS:
         if user_id not in OWNER_ID:
@@ -135,7 +135,7 @@ async def sudoers_list(client, message: Message, _):
                     smex += 1
                     text += _["sudo_6"]
                 count += 1
-                text += f"{count}➤ {user}\n"
+                text += f"{count}» {user}\n"
             except Exception:
                 continue
     if not text:
