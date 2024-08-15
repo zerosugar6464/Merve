@@ -4,9 +4,9 @@ PING_COMMAND : ["ping"]
 START_COMMAND : ["start"]
 HELP_COMMAND : ["help", "yardim", "yardım"]
 SETTINGS_COMMAND : ["settings", "setting", "ayarlar", "ayar"]
-RELOAD_COMMAND : ["admincache", "reload"]
-GSTATS_COMMAND : ["gstatssss"]
-STATS_COMMAND : ["statssss", "statsssss"]
+RELOAD_COMMAND : ["admincache", "reload", "r"]
+GSTATS_COMMAND : ["gstats"]
+STATS_COMMAND : ["stats", "istatistik"]
 LANGUAGE_COMMAND : ["lang", "langs"]
 
 # Play Komutları
@@ -48,8 +48,8 @@ RESTART_COMMAND : ["restart", "rr"]
 
 # Sudo Komutları
 
-ADDSUDO_COMMAND : ["addsudo"]
-DELSUDO_COMMAND : ["delsudo"]
+ADDSUDO_COMMAND : ["addsudo", "esudo"]
+DELSUDO_COMMAND : ["delsudo", "ssudo"]
 SUDOUSERS_COMMAND : ["sudolist"]
 
 # Reklam Komutları
