@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2023 by LostBots@Github, < https://github.com/LostBots >.
-#
-# This file is part of < https://github.com/LostBots/LostMuzik > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/LostBots/LostMuzik/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
 from pyrogram import Client
@@ -21,7 +11,7 @@ TEMP_MONGODB = "mongodb+srv://userbot:userbot@userbot.nrzfzdf.mongodb.net/?retry
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "No MONGO DB URL found.. Your Bot will work on LostMuzik's Database"
+        "Mongo Database Url'si Bulunamadı. Botunuz LostMuzik Veritabanında Çalışacak."
     )
     temp_client = Client(
         "LostMuzik",
