@@ -11,63 +11,63 @@ HELP_1 = """✅**<u>BURDAKİ KOMUTLARI YALNIZCA GRUP ADMİNLERİ KULLANABİLİR:
 
 **Burdaki Komutları Normal Üyelerinde Kullanabilmesi İçin İstediğiniz Kişinin Mesajını Yanıtlayarak /yetkilendir Yazmanız Yeterlidir.**
 
-**/duraklat :** Müziği Duraklatır.
-**/devam :** Müziği Devam Ettirir.
-**/atla :** Çalan Müziği Atlar.
-**/dur veya /son :** Müziği Tamamen Durdurur.
-**/karistir :** Sıraya Aldığınız Parçaları Karışık Şekilde Oynatır.
-**/ilerisar :** Müziği İleri Sarar. (Örnek: /ilerisar 15 İle Çalan Müziği 15 Saniye İleri Alabilirsiniz.)
-**/seekback :** Müziği Geri Sarar. (Örnek: /seekback 15 İle Çalan Müziği 15 Saniye Geri Alabilirsiniz.)
-**/restart :** Botu Yeniden Başlatır.
+⏸️ **/duraklat :** Müziği Duraklatır.
+▶️ **/devam :** Müziği Devam Ettirir.
+⏯️ **/atla :** Çalan Müziği Atlar.
+⏹️ **/dur veya /son :** Müziği Tamamen Durdurur.
+🔀 **/karistir :** Sıraya Aldığınız Parçaları Karışık Şekilde Oynatır.
+⏩ **/ilerisar :** Müziği İleri Sarar. (Örnek: /ilerisar 15 İle Çalan Müziği 15 Saniye İleri Alabilirsiniz.)
+⏪ **/seekback :** Müziği Geri Sarar. (Örnek: /seekback 15 İle Çalan Müziği 15 Saniye Geri Alabilirsiniz.)
+🔃 **/restart :** Botu Yeniden Başlatır.
 
 ✅<u>**Döngü Modu:**</u>
-**/dongu :** Çalan Müziği Döngüye Alıp Tekrar Oynatır. 
+🔁 **/dongu :** Çalan Müziği Döngüye Alıp Tekrar Oynatır. 
 (Örnek: /dongu 3 İle Seste Çalan Müziği 3 Kere Daha Oynatır.)"""
 
 
 HELP_2 = """✅<u>**OYNATMA KOMUTLARI:**</u>
 
-**/oynat veya /play :** Müziği Oynatmaya Yarar.
+⏺️ **/oynat veya /play :** Müziği Oynatmaya Yarar.
 **-Örnek Kullanım:** /oynat şarkı İsmi // Veya Oynatmak İstediğiniz Şarkıyı Yanıtlayarak /oynat Yazabilirsiniz.
 (**Örnek:** /oynat Defkhan Kapak Olsun)
 
-**/voynat veya /vplay :** Videoyu Seste Oynatmaya Yarar.
+⏺️ **/voynat veya /vplay :** Videoyu Seste Oynatmaya Yarar.
 **-Örnek Kullanım:** /voynat Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay veya /voynat Yazabilirsiniz.
 
-**/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
+🔎 **/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
 (**Örnek:** /bul Defkhan Kapak Olsun)
 
 
 ✅**<u>Oynatma Listeleri:</u>**
-**/playlist :** Oynatma Listenizde Hangi Müziklerin Olduğuna Bakabilirsiniz.
-**/listemisil :** Oynatma Listenizden Silmek İstediğiniz Müziği Seçebilirsiniz.
+📃 **/playlist :** Oynatma Listenizde Hangi Müziklerin Olduğuna Bakabilirsiniz.
+❗ **/listemisil :** Oynatma Listenizden Silmek İstediğiniz Müziği Seçebilirsiniz.
 **/oynat Komutunu Tek Başına Kullanırsanız:** Oynatma Listeleri Ekranına Ulaşırsınız. """
 
 
 HELP_3 = """✅<u>**BOT KOMUTLARI**</u>
 
-**/stat :** Bottaki Tüm İstatistikleri Görebilirsiniz. En Çok Müzik Oynatan Gruplar, Kullanıcılar, En Çok Oynatılan Müzikler Ve Daha Fazlası...
+📊 **/stat :** Bottaki Tüm İstatistikleri Görebilirsiniz. En Çok Müzik Oynatan Gruplar, Kullanıcılar, En Çok Oynatılan Müzikler Ve Daha Fazlası...
 
-**/sudolist :** Yardım İstemek İçin Bottaki Sudo Kullanıcılarına Ulaşabilirsiniz.
+👤 **/sudolist :** Yardım İstemek İçin Bottaki Sudo Kullanıcılarına Ulaşabilirsiniz.
 
-**/sarkisozu [Müzik Adı] :** Sözlerine Bakmak İstediğiniz Şarkıyı Arayabilirsiniz.
+🎤 **/sarkisozu [Müzik Adı] :** Sözlerine Bakmak İstediğiniz Şarkıyı Arayabilirsiniz.
 
-**/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
+🎧 **/bul [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Şarkıyı İndirebilirsiniz.
 
-**/video [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Videoyu İndirebilirsiniz.
+🎥 **/video [Müzik Adı] veya [Youtube Linki] :** Youtubedan İndirmek İstediğiniz Videoyu İndirebilirsiniz.
 (**Örnek:** /videoindir Neşet Ertaş Gönül Dağı)
 
-**/sira :** Sırada Olan Müzikler Listesini Görebilirsiniz."""
+📖 **/sira :** Sırada Olan Müzikler Listesini Görebilirsiniz."""
 
 HELP_4 = """✅<u>**EKSTRA KOMUTLAR:**</u>
 
-**/start :** Botun Başlatma Panelini Gösterir. 
+🔮 **/start :** Botun Başlatma Panelini Gösterir. 
 
-**/ayarlar :** Ayarlar Menüsüne Ulaşabilirsiniz.
+⚙️ **/ayarlar :** Ayarlar Menüsüne Ulaşabilirsiniz.
 
-**/yardim :** Botun Yardım Menüsüne Ulaşırsınız.
+🆘 **/yardim :** Botun Yardım Menüsüne Ulaşırsınız.
 
-**/ping :** Ping Süresini CPU Ve RAM Kullanımına Bakabilirsiniz.
+🏓 **/ping :** Ping Süresini CPU Ve RAM Kullanımına Bakabilirsiniz.
 """
 
 
