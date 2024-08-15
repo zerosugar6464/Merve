@@ -56,7 +56,7 @@ async def start_comm(client, message: Message, _):
             return await message.reply_text(_["song_2"])
         if name[0:3] == "sta":
             m = await message.reply_text(
-                "🔎 Fetching your personal stats.!"
+                "🔎 Kişisel istatistikleriniz getiriliyor.!"
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
@@ -92,9 +92,9 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
+                        msg += f"🔗[Telegram Dosyaları ve Sesli İçerikler‌‌](https://t.me/telegram) ** Oynandı {count} Kez**\n\n"
                     else:
-                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
+                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** Oynandı {count} Kez**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
                 return videoid, msg
 
@@ -116,7 +116,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} Bota Start Verdi. <code>SUDOLIST</code>\n\n**Kullanıcı İd:** {sender_id}\n**Kullanıcı Adı:** {sender_name}",
+                    f"{message.from_user.mention} #Start Verdi Bota. <code>SUDOLIST</code>\n\n**🆔 Kullanıcı İd:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -132,7 +132,7 @@ async def start_comm(client, message: Message, _):
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎 Fetching Info!")
+            m = await message.reply_text("🔎 Bilgi Alınıyor!")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -148,26 +148,26 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
+🔍**Video Parça Bilgisi**
 
-❇️**Title:** {title}
+🔮**Başlık:** {title}
 
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
-🔗**Video Link:** [Link]({link})
+⏳**Süre:** {duration} Mins
+👀**İzlenme:** `{views}`
+⏰**Yayınlanma Zamanı:** {published}
+🎥**Kanal İsmi:** {channel}
+📎**Kanal Linki:** [Kanala Göz At]({channellink})
+🔗**Video Linki:** [Link]({link})
 
-⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
+💖 **Arama {config.MUSIC_BOT_NAME} Tarafından Desteklenmektedir.**"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 Watch ", url=f"{link}"
+                            text="🎥 İzle ", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🔄 Close", callback_data="close"
+                            text="🔄 Kapat", callback_data="close"
                         ),
                     ],
                 ]
@@ -218,7 +218,7 @@ async def start_comm(client, message: Message, _):
             sender_name = message.from_user.first_name
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"{message.from_user.mention} #Bota Start Verdi.#\n\n**🆔 Kullanıcı ID:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
+                f"{message.from_user.mention} #Start Verdi Bota.\n\n**🆔 Kullanıcı ID:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
             )
 
 
@@ -232,7 +232,7 @@ async def welcome(client, message: Message):
     if config.PRIVATE_BOT_MODE == str(True):
         if not await is_served_private_chat(message.chat.id):
             await message.reply_text(
-                "**Private Music Bot**\n\nOnly for authorized chats from the owner. Ask my owner to allow your chat first."
+                "**Özel Müzik Bot**\n\nBu bot özeldir! Önce Sahibimden İzin Almalısın!"
             )
             return await app.leave_chat(message.chat.id)
     else:
