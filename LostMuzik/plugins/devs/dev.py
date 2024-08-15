@@ -48,7 +48,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 async def executor(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="__Nigga Give me some command to execute.__"
+            message, text="**Dostum bana yürütmem için bir komut ver.**"
         )
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
@@ -136,7 +136,7 @@ async def forceclose_command(_, CallbackQuery):
     if CallbackQuery.from_user.id != int(user_id):
         try:
             return await CallbackQuery.answer(
-                "You're not allowed to close this.", show_alert=True
+                "Bunu kapatmanıza izin verilmiyor.‌‌", show_alert=True
             )
         except:
             return
