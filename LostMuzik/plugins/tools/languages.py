@@ -1,54 +1,34 @@
-#
-# Copyright (C) 2021-2023 by LostBots@Github, < https://github.com/LostBots >.
-#
-# This file is part of < https://github.com/LostBots/LostMuzik > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/LostBots/LostMuzik/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
-from strings import get_command, get_string, languages_present
+from strings import get_command, get_string
 from LostMuzik import app
 from LostMuzik.utils.database import get_lang, set_lang
-from LostMuzik.utils.decorators import (ActualAdminCB, language,
-                                         languageCB)
+from LostMuzik.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
 
 
 def lanuages_keyboard(_):
-    keyboard = InlineKeyboard(row_width=3)
-    keyboard.add(
-        *[
-            (
-                InlineKeyboardButton(
-                    text=languages_present[i],
-                    callback_data=f"languages:{i}",
-                )
-            )
-            for i in languages_present
-        ]
-    )
-      keyboard.row(
+    keyboard = InlineKeyboard(row_width=2)
+    keyboard.row(
         InlineKeyboardButton(
-            text="🇦🇿 Azerbaycanca",
+            text="🇹🇷 Türkçe",
+            callback_data=f"languages:en",
+        ),
+        InlineKeyboardButton(
+            text="🇦🇿 Azerice",
             callback_data=f"languages:aze",
-        )
-      )
+        ),
+    )
     keyboard.row(
         InlineKeyboardButton(
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
         ),
-        InlineKeyboardButton(
-            text=_["CLOSE_BUTTON"], callback_data=f"close"
-        ),
+        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
     )
     return keyboard
 
@@ -56,11 +36,7 @@ def lanuages_keyboard(_):
 LANGUAGE_COMMAND = get_command("LANGUAGE_COMMAND")
 
 
-@app.on_message(
-    filters.command(LANGUAGE_COMMAND)
-    & filters.group
-    & ~BANNED_USERS
-)
+@app.on_message(filters.command(LANGUAGE_COMMAND) & filters.group & ~BANNED_USERS)
 @language
 async def langs_command(client, message: Message, _):
     keyboard = lanuages_keyboard(_)
@@ -78,34 +54,28 @@ async def lanuagecb(client, CallbackQuery, _):
     except:
         pass
     keyboard = lanuages_keyboard(_)
-    return await CallbackQuery.edit_message_reply_markup(
-        reply_markup=keyboard
-    )
+    return await CallbackQuery.edit_message_reply_markup(reply_markup=keyboard)
 
 
-@app.on_callback_query(
-    filters.regex(r"languages:(.*?)") & ~BANNED_USERS
-)
+@app.on_callback_query(filters.regex(r"languages:(.*?)") & ~BANNED_USERS)
 @ActualAdminCB
 async def language_markup(client, CallbackQuery, _):
     langauge = (CallbackQuery.data).split(":")[1]
     old = await get_lang(CallbackQuery.message.chat.id)
     if str(old) == str(langauge):
         return await CallbackQuery.answer(
-            "Zaten aynı dili konuşuyorsunuz‌‌", show_alert=True
+            "ʏᴏᴜ'ʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜsɪɴɢ sᴀᴍᴇ ʟᴀɴɢᴜᴀɢᴇ ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.", show_alert=True
         )
     try:
         _ = get_string(langauge)
         await CallbackQuery.answer(
-            "Dilinizi başarıyla güncellediniz.", show_alert=True
+            "sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʜᴀɴɢᴇᴅ ʏᴏᴜʀ ʟᴀɴɢᴜᴀɢᴇ.", show_alert=True
         )
     except:
         return await CallbackQuery.answer(
-            "Diliniz güncellenemedi.",
+            "ғᴀɪʟᴇᴅ ᴛᴏ ᴄʜᴀɴɢᴇ ʟᴀɴɢᴜᴀɢᴇ ᴏʀ ᴛʜᴇ ʟᴀɴɢᴜᴀɢᴇ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ.",
             show_alert=True,
         )
     await set_lang(CallbackQuery.message.chat.id, langauge)
     keyboard = lanuages_keyboard(_)
-    return await CallbackQuery.edit_message_reply_markup(
-        reply_markup=keyboard
-    )
+    return await CallbackQuery.edit_message_reply_markup(reply_markup=keyboard)
