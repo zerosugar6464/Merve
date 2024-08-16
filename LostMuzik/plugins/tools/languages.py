@@ -37,7 +37,7 @@ def lanuages_keyboard(_):
     )
       keyboard.row(
         InlineKeyboardButton(
-            text="🇦🇿 Azerice",
+            text="🇦🇿 Azerbaycanca",
             callback_data=f"languages:aze",
         )
       )
