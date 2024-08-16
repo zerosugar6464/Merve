@@ -35,6 +35,12 @@ def lanuages_keyboard(_):
             for i in languages_present
         ]
     )
+      keyboard.row(
+        InlineKeyboardButton(
+            text="🇦🇿 Azerice",
+            callback_data=f"languages:aze",
+        )
+      )
     keyboard.row(
         InlineKeyboardButton(
             text=_["BACK_BUTTON"],
