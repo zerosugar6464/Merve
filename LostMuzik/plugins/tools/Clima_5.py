@@ -2,7 +2,7 @@ import telebot
 import requests
 import datetime
 from geopy.geocoders import Nominatim
-from config import (BOT_TOKEN, STRING_SESSION)
+from config import BOT_TOKEN
 
 
 # hava durumu API belirteçlerini tanımlayın 
