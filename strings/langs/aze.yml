@@ -214,10 +214,12 @@ queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0
 queue_4 : "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
 
 # All Streaming Lines
-stream_1 : "📡 **Yayım başladı** 💡\n\n👤**Tələb:** {0}\n🔦**Məlumat: **[Burada]({1})"
-stream_2 : "📡 **URL vasitəsilə yayıma başladı ** 💡\n\n👤**Tələb edən:** {0}"
-stream_3 : "📡 **Yayım başladı** 💡\n\n**🏷Başlıq:** {0}\n⌛️**Müddət**: {1}\n👤**Tələb:** {2} "
-stream_4 : "📡 **Yayım başladı** 💡\n\n**🏷Başlıq:** [{0}]({1})\n⌛️**Müddət**: {2}\n👤**Tələb olundu Müəllif:** {3}"
+stream_1 : "🔮**Başlıq**: {0} \n**⌛️Müddət**: {2}\n**👉Tələb edən**: {3}"
+stream_2 : " **Yayım Başladı** \n**Başlıq**: {0}\n**⌛️Müddət**: {2}\n**👉Tələb edən**: {3}"
+stream_3 : "🔮**Başlıq**: {0}\n**⌛️Müddət**: {1}\n**👉Tələb edən**: {2}"
+stream_4 : "🔮**Başlıq**: [{0}]\n**⌛️Müddət**: {2}\n**👉Tələb edən**: {3}"
+stream_5 : "🔮**Başlıq**: {0}\n**👉Tələb edən**:{1}"
+stream_6 : " **Yayım Başladı**  \n**Parça**: [{0}]({1})\n**👉Tələb edən**: {2}"
 
 # Inline Buttons
 
