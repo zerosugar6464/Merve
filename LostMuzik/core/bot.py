@@ -8,7 +8,6 @@ import config
 
 from ..logging import LOGGER
 
-
 private_commands = [
     BotCommand("start", "🎧 Botu başlatır"),
     BotCommand("yardim", "📖 Yardım menüsünü gösterir"),
@@ -44,53 +43,37 @@ async def set_commands(client):
 
 class LostMuzik(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Bot Başlatılıyor")
         super().__init__(
             "LostMuzik",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
+            in_memory=True,
         )
+        LOGGER(__name__).info(f"Bot Başlatılıyor...")
 
     async def start(self):
         await super().start()
+        get_me = await self.get_me()
+        self.username = get_me.username
+        self.id = get_me.id
+        self.mention = get_me.mention
         try:
-            get_me = await self.get_me()
-            self.username = get_me.username
-            self.id = get_me.id
-
-            video_url = "https://telegra.ph/file/36221d40afde82941ffff.mp4"
-            caption = "**Bot Başlatılıyor...** ❄️"
-            
-            try:
-                await self.send_video(
-                    config.LOG_GROUP_ID,
-                    video=video_url,
-                    caption=caption,
-                )
-            except:
-                LOGGER(__name__).error(
-                    "Bot log grubuna erişemedi. Log kanalınıza botunuzu eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun!"
-                )
-                sys.exit()
-
-            await set_commands(self)  
-
-
-            a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
-            if a.status != ChatMemberStatus.ADMINISTRATOR:
-                LOGGER(__name__).error(
-                    "Lütfen Logger Grubunda Botu Yönetici Olarak Terfi Ettirin"
-                )
-                sys.exit()
-
-        except Exception as e:
-            LOGGER(__name__).error(f"Bot başlatılırken hata oluştu: {e}")
+            await self.send_message(
+                config.LOG_GROUP_ID, "» **Bot Başarılı Bir Şekilde Başlatıldı** 🔮"
+                
+            )
+        except:
+            LOGGER(__name__).error(
+                "Bot log grubuna erişemedi. Log kanalınıza botunuzu eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun!"
+            )
             sys.exit()
-
+        a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
+        if a.status != ChatMemberStatus.ADMINISTRATOR:
+            LOGGER(__name__).error("Lütfen Logger Grubunda Botu Yönetici Olarak Terfi Ettirin.")
+            sys.exit()
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-
         LOGGER(__name__).info(f" {self.name} olarak başlatıldı")
