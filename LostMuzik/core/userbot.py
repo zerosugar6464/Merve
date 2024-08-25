@@ -71,7 +71,7 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "**Asistan Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 1 Başarıyla Başlatıldı** 🔮"
                 )
             except:
                 LOGGER(__name__).error(
@@ -102,7 +102,7 @@ class Userbot(Client):
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "**Asistan Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 2 Başarıyla Başlatıldı** ❄️"
                 )
             except:
                 LOGGER(__name__).error(
@@ -133,7 +133,7 @@ class Userbot(Client):
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "**Asistan Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 3 Başarıyla Başlatıldı** ❄️"
                 )
             except:
                 LOGGER(__name__).error(
@@ -156,15 +156,15 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("ARCH_SUPPORTS")
-                await self.four.join_chat("ARCH_SUPPORTS")
-                await self.four.join_chat("ARCH_SUPPORTS")
+                await self.four.join_chat("Reduxon")
+                await self.four.join_chat("Reduxon")
+                await self.four.join_chat("Reduxon")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "**Asistan Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 4 Başarıyla Başlatıldı** ❄️"
                 )
             except:
                 LOGGER(__name__).error(
@@ -195,7 +195,7 @@ class Userbot(Client):
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "**Asistan Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 5 Başarıyla Başlatıldı** ❄️"
                 )
             except:
                 LOGGER(__name__).error(
