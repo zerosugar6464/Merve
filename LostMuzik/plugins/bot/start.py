@@ -116,7 +116,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} #Start Verdi Bota. <code>SUDOLIST</code>\n\n**🆔 Kullanıcı İd:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
+                    f"#BOTA START VERDİ#\n\n{message.from_user.mention} <code>SUDOLIST</code>\n\n**🆔 Kullanıcı ID:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -218,7 +218,7 @@ async def start_comm(client, message: Message, _):
             sender_name = message.from_user.first_name
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"{message.from_user.mention} #Start Verdi Bota.\n\n**🆔 Kullanıcı ID:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
+                f"#BOTA START VERDİ#\n\n{message.from_user.mention}\n\n**🆔 Kullanıcı ID:** {sender_id}\n**👤 Kullanıcı Adı:** {sender_name}",
             )
 
 
