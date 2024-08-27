@@ -1,24 +1,59 @@
-# Netscape HTTP Cookie File
-# This is a generated file! Do not edit.
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import os
 
-# domain  include_subdomains  path  secure  expiration_date  name  value
-.youtube.com	TRUE	/	TRUE	1755165179	__Secure-1PSIDCC	AKEyXzUtw3nA0WjX3rxyl70d3SaGQJWE0pTK802UmCnv6gNO8HxCBnNW5wIU1YGw0D6mXLWi
-.youtube.com	TRUE	/	TRUE	1755165179	__Secure-3PSIDCC	AKEyXzXQf7Hl3LdfZZWI5qrm8nkoWv6solWv198asN03Za8mhsv1de7uwar-dlRO47nlC9mI
-.youtube.com	TRUE	/	TRUE	0	YSC	2TIEHvTu1tc
-.youtube.com	TRUE	/	TRUE	1758188907	LOGIN_INFO	AFmmF2swRQIgYF_d-lMVFAAuPvbYzAAlq284gB0DsQlQ0y0_jkjOzr0CIQCuAKpJTcopFqeDj2-e2LuWxWa7GjnL5xlf16mOSuHHYw:QUQ3MjNmeWVIMll0R3R5dU5jUnM3WUdsQi1vam05dTMyX0ROT3NfVktyeHpzN3VKMERMUmV3NkNLMHg0M0VCRm5nb09rb2VpQW9hRWY1OWtRX3RDYkVUQzR1LUVORXNyQzhKMklvTWdjNThweDcxYmFBbDdfb0dUb3lNTzFvbHg0N010SFprRVNNUWxMNzZYSDhXZldsbTJ6cFpLRld2NVdn
-.youtube.com	TRUE	/	TRUE	1758188907	__Secure-1PSID	g.a000mwiHlKT3c32mgPttbGfX5YJEP9uavQIBVaNyq4vSj3rziegYQBHAF9Ct79v98nCB-sGG4AACgYKAQcSARQSFQHGX2MisO6WSjdhI6hLEUBpbbNPYxoVAUF8yKpo3W9eL-CAR_LvcN0dIJEf0076
-.youtube.com	TRUE	/	TRUE	1758188907	__Secure-3PAPISID	wr_or9nsE-vzszeR/AuQ3m498VSHOErQxV
-.youtube.com	TRUE	/	TRUE	1758188907	SAPISID	wr_or9nsE-vzszeR/AuQ3m498VSHOErQxV
-.youtube.com	TRUE	/	TRUE	1723629272	GPS	1
-.youtube.com	TRUE	/	FALSE	1755165179	SIDCC	AKEyXzXduIhDZSbwjOk7J3MohjGDBSgXoMbsefIFt1OuO0AQ0bO97KLn46GcrkmkmmJccoY2xg
-.youtube.com	TRUE	/	TRUE	1758188907	__Secure-3PSID	g.a000mwiHlKT3c32mgPttbGfX5YJEP9uavQIBVaNyq4vSj3rziegY37YKmaQT3A3K1pe75JalFwACgYKAc0SARQSFQHGX2MiEeN7GwA1n0a4NDsSLpEKlBoVAUF8yKoxpSYwv9CwO-_kxd_1DGQ10076
-.youtube.com	TRUE	/	TRUE	1755164903	__Secure-1PSIDTS	sidts-CjIBUFGoh26qN1PlSMRwgrG-VLKrJjEQQCw6G79zWiSbd-34uQFXqRj4qJlpbJvjhjCRGBAA
-.youtube.com	TRUE	/	FALSE	1758188907	HSID	A7ves6CcTb6W21zs2
-.youtube.com	TRUE	/	TRUE	1758189178	PREF	f6=40000000&tz=Asia.Calcutta&f7=100
-.youtube.com	TRUE	/	FALSE	1758188907	SID	g.a000mwiHlKT3c32mgPttbGfX5YJEP9uavQIBVaNyq4vSj3rziegYk_YKvwjinveWHe2MZKl1bwACgYKAW8SARQSFQHGX2MiDbHA9iLPmpgEOT2tjUJGqBoVAUF8yKr0tk7i0iLEdYT-KL7gx3vi0076
-.youtube.com	TRUE	/	TRUE	1758188907	__Secure-1PAPISID	wr_or9nsE-vzszeR/AuQ3m498VSHOErQxV
-.youtube.com	TRUE	/	TRUE	1758188907	SSID	AE7sLSQDhdhaNxawS
-.youtube.com	TRUE	/	TRUE	1739120967	VISITOR_PRIVACY_METADATA	CgJJThIEGgAgFw%3D%3D
-.youtube.com	TRUE	/	FALSE	1758188907	APISID	8E6w-aOfS2MeSxV2/A8kiBiwxJy1O6mKZj
-.youtube.com	TRUE	/	TRUE	1755164903	__Secure-3PSIDTS	sidts-CjIBUFGoh26qN1PlSMRwgrG-VLKrJjEQQCw6G79zWiSbd-34uQFXqRj4qJlpbJvjhjCRGBAA
-.youtube.com	TRUE	/	TRUE	1739120967	VISITOR_INFO1_LIVE	YwPGn-O3nIw
+options = Options()
+
+prefs = {'exit_type': 'Normal'}
+options.add_experimental_option("prefs", {'profile': prefs})
+options.add_argument(f"user-data-dir={os.getcwd()}/chrome")
+options.add_argument("user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1")
+options.add_argument("no-sandbox")
+options.add_argument('start-maximized')
+options.add_argument('disable-infobars')
+options.add_argument("--autoplay-policy=no-user-gesture-required")
+options.add_experimental_option("excludeSwitches", ['enable-automation'])
+
+
+driver = webdriver.Chrome(options=options)
+
+def save_cookies_to_netscape_file(cookies, output_file):
+    with open(output_file, 'w') as f:
+        f.write("# Netscape HTTP Cookie File\n")
+        f.write("# This is a generated file! Do not edit.\n\n")
+        f.write("# domain  include_subdomains  path  secure  expiration_date  name  value\n")
+        
+        for cookie in cookies:
+            # Determine the correct attribute name for expiry based on Selenium version or browser
+            expiry = cookie.get('expiry') or cookie.get('expires') or 0
+            
+            f.write(f"{cookie['domain']}\t")
+            f.write("TRUE\t")  # include_subdomains
+            f.write(f"{cookie['path']}\t")
+            f.write("TRUE\t" if cookie.get('secure') else "FALSE\t")
+            f.write(f"{int(expiry)}\t")  # expiration_date
+            f.write(f"{cookie['name']}\t{cookie['value']}\n")
+
+    return f"Cookies have been saved to {output_file}"
+
+while True:
+ user_input = input("Login to your YouTube account play a video [Completed] (Y/N)")
+ if user_input == "Y":
+   break
+  
+print(f'Hello, Logged in to your account..!')
+
+
+while True:
+ user_input = input("enter a name for your cookies file: ")
+ if user_input:
+   output_file = f"{user_input}.txt"
+   break
+
+cookies = driver.get_cookies()
+output_file = f"{os.getcwd()}/{output_file}"
+save_cookies_to_netscape_file(cookies, output_file)
+print("Cookies saved to:",output_file)
+
+
+driver.quit()
