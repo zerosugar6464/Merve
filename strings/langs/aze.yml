@@ -129,7 +129,7 @@ cplay_5 : "Yalnız Kanallar dəstəklənir."
 cplay_6 : "Bu qrupa qoşulmaq üçün kanalın[{0}] **Sahibi** olmalısınız.\n**Kanalın Sahibi:** @{1}\n\nAlternativ olaraq qrupunuzu əlaqələndirə bilərsiniz. həmin kanala və sonra `/channelplay linked` ilə qoşulmağa cəhd edin"
 
 #Play
-play_1 : "🔄 Sorğu emal olunur... Lütfən gözləyin!"
+play_1 : "🔮"
 play_2 : "**🏷Kanal Oynatma Rejimi**\n\n🔄 Sorğu emal olunur... Lütfən gözləyin!\n**Əlaqələndirilmiş Kanal:** {0}"
 play_3 : "Sorğunu emal etmək alınmadı!"
 play_4 : "🖇 **Yalnız Adminlər Oynadır**\nYalnız Adminlər və Auth İstifadəçiləri bu qrupda musiqi oxuya bilər.\n\nRejimi /playmode vasitəsilə dəyişin və artıq adminsinizsə, /admincache vasitəsilə admincache yenidən yükləyin"
@@ -263,8 +263,8 @@ P_B_4 : "🎵 Play Playlist"
 
 #Playlist
 PL_B_1 : "🚀 Playlist çalın"
-PL_B_2 : "✚ Pleylistlər"
-PL_B_3 : "✚ Əlavə"
+PL_B_2 : "✅ Siyahıma Əlavə Et"
+PL_B_3 : "⚙️ İdarəetmə paneli"
 PL_B_4 : "📡 Oyun rejimi"
 PL_B_5 : "🔄 Del Bütün Pleylist"
 PL_B_6 : "↗️ Pleylist silin"
