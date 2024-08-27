@@ -12,8 +12,7 @@ async def getid(client, message):
     message_id = message.id
     reply = message.reply_to_message
 
-    text = f"**[Mesaj Kimliği:]({message.link})** `{message_id}`\n"
-    text += f"**[Senin Kimliğin:](tg://user?id={your_id})** `{your_id}`\n"
+    text += f"» **Senin ID: (tg://user?id={your_id})** `{your_id}`\n"
 
     if not message.command:
         message.command = message.text.split()
@@ -25,20 +24,19 @@ async def getid(client, message):
         try:
             split = message.text.split(None, 1)[1].strip()
             user_id = (await client.get_users(split)).id
-            text += f"**[Kullanıcı Kimliği:](tg://user?id={user_id})** `{user_id}`\n"
+            text += f"» **Kullanıcı ID: (tg://user?id={user_id})** `{user_id}`\n"
 
         except Exception:
             return await message.reply_text("Bu Kullanıcı Mevcut Değil.", quote=True)
 
-    text += f"**[Sohbet Kimliği:](https://t.me/{chat.username})** `{chat.id}`\n\n"
+    text += f"» **Grup ID: (https://t.me/{chat.username})** `{chat.id}`\n\n"
 
     if (
         not getattr(reply, "empty", True)
         and not message.forward_from_chat
         and not reply.sender_chat
     ):
-        text += f"**[Yanıtlanan Mesaj Kimliği:]({reply.link})** `{reply.id}`\n"
-        text += f"**[Yanıtlanan Kullanıcı Kimliği:](tg://user?id={reply.from_user.id})** `{reply.from_user.id}`\n\n"
+        text += f"**Kullanıcı ID: (tg://user?id={reply.from_user.id})** `{reply.from_user.id}`\n\n"
 
     if reply and reply.forward_from_chat:
         text += f"İletilen Kanal, {reply.forward_from_chat.title}, Kimliği `{reply.forward_from_chat.id}`\n\n"
