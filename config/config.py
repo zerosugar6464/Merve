@@ -19,6 +19,7 @@ API_HASH = getenv("API_HASH", "c9a8ea0d3e63c97afdecf913172a2bc3")
 ## Get it from @Botfather in Telegram.
 
 BOT_TOKEN = getenv("BOT_TOKEN", "6968930947:AAFykqnekEUR72LZj823n5XC8c1r6CzpU-k")
+BOT_USERNAME = getenv("BOT_USERNAME", "LostMuzikBot")
 
 # Database to save your chats and stats.
 
