@@ -12,10 +12,10 @@ from pyrogram.types import (InlineKeyboardButton,
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
 from strings import get_command
-from ArchMusic import YouTube, app
-from ArchMusic.utils.decorators.language import language, languageCB
-from ArchMusic.utils.formatters import convert_bytes
-from ArchMusic.utils.inline.song import song_markup
+from LostMuzik import YouTube, app
+from LostMuzik.utils.decorators.language import language, languageCB
+from LostMuzik.utils.formatters import convert_bytes
+from LostMuzik.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
