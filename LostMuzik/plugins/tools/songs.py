@@ -280,9 +280,6 @@ async def song_download_cb(client, CallbackQuery, _):
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
 
-        res = (
-        
-        )
 
         visit_button = InlineKeyboardButton(
             text="🎉 Lost Müzik",
@@ -313,9 +310,6 @@ async def song_download_cb(client, CallbackQuery, _):
             print(e)
             return await mystic.edit_text(_["song_10"])
         
-        rep = (
-          
-        )
         
         channel_id = -1002181528689
         
