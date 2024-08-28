@@ -12,10 +12,10 @@ from pyrogram.types import (InlineKeyboardButton,
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
 from strings import get_command
-from LostMuzik import YouTube, app
-from LostMuzik.utils.decorators.language import language, languageCB
-from LostMuzik.utils.formatters import convert_bytes
-from LostMuzik.utils.inline.song import song_markup
+from ArchMusic import YouTube, app
+from ArchMusic.utils.decorators.language import language, languageCB
+from ArchMusic.utils.formatters import convert_bytes
+from ArchMusic.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
@@ -169,7 +169,7 @@ async def song_helper_cb(client, CallbackQuery, _):
             print(e)
             return await CallbackQuery.edit_message_text(_["song_7"])
         keyboard = InlineKeyboard()
-        # AVC Formats Only [ LostMuzik Bot]
+        # AVC Formats Only [ ArchMusic Bot]
         done = [160, 133, 134, 135, 136, 137, 298, 299, 264, 304, 266]
         for x in formats_available:
             check = x["format"]
@@ -280,6 +280,11 @@ async def song_download_cb(client, CallbackQuery, _):
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
 
+        res = (
+            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
+            f"⌛️ **Süre:** `{duration}`"
+            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
+        )
 
         visit_button = InlineKeyboardButton(
             text="🎉 Lost Müzik",
@@ -310,6 +315,11 @@ async def song_download_cb(client, CallbackQuery, _):
             print(e)
             return await mystic.edit_text(_["song_10"])
         
+        rep = (
+            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
+            f"⌛️ **Süre:** `{duration}`" 
+            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
+        )
         
         channel_id = -1002181528689
         
