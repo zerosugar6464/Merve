@@ -16,11 +16,11 @@ headers = {
     "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 12; M2012K11AG Build/SQ1D.211205.017)"
 }
 
-@app.on_message(filters.command("weather"))
+@app.on_message(filters.command("hava"))
 async def weather(c: Client, m: Message):
     if len(m.command) == 1:
         return await m.reply_text(
-            "<b>ᴜsᴀɢᴇ:</b> <code>/weather location ᴏʀ city</code> - ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴛʜᴇ ᴡᴇᴀᴛʜᴇʀ ɪɴ <i>ʟᴏᴄᴀᴛɪᴏɴ ᴏʀ ᴄɪᴛʏ</i>"
+            "<b>Kullanım:</b> <code>/hava Konum Veya Şehir</code> - Hava Durumu Hakkında Bilgi Almak İçin <i>Kullanabilirsiniz.</i>"
         )
 
     r = await http.get(
@@ -29,14 +29,14 @@ async def weather(c: Client, m: Message):
         params=dict(
             apiKey=weather_apikey,
             format="json",
-            language="en",
+            language="tr",
             query=m.text.split(maxsplit=1)[1],
         ),
     )
     loc_json = r.json()
 
     if not loc_json.get("location"):
-        await m.reply_text("Location not found")
+        await m.reply_text("Konum bulunamadı‌‌")
     else:
         pos = f"{loc_json['location']['latitude'][0]},{loc_json['location']['longitude'][0]}"
         r = await http.get(
@@ -45,7 +45,7 @@ async def weather(c: Client, m: Message):
             params=dict(
                 apiKey=weather_apikey,
                 format="json",
-                language="en",
+                language="tr",
                 geocode=pos,
                 units="m",
             ),
@@ -55,11 +55,11 @@ async def weather(c: Client, m: Message):
         obs_dict = res_json["v3-wx-observations-current"]
 
         res = (
-            "<b>{location}</b>:\n\n"
-            "ᴛᴇᴍᴘᴇʀᴀᴛᴜʀᴇ: <code>{temperature} °C</code>\n"
-            "ᴛᴇᴍᴘᴇʀᴀᴛᴜʀᴇ ғᴇᴇʟs ʟɪᴋᴇ:: <code>{feels_like} °C</code>\n"
-            "ᴀɪʀ ʜᴜᴍɪᴅɪᴛʏ: <code>{air_humidity}%</code>\n"
-            "ᴡɪɴᴅ sᴘᴇᴇᴅ: <code>{wind_speed} km/h</code>\n\n"
+            "<b>{location}</b> Hava Durumu:\n\n"
+            "🌡️Sıcaklık: <code>{temperature} °C</code>\n"
+            "🔥 Hissedilen: <code>{feels_like} °C</code>\n"
+            "💧 Nem: <code>{air_humidity}%</code>\n"
+            "🌬️ Rüzgar Hızı: <code>{wind_speed} km/h</code>\n\n"
             "- <i>{overview}</i>"
         ).format(
             location=loc_json["location"]["address"][0],
