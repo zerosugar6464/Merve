@@ -57,7 +57,7 @@ async def play_logs(message, streamtype):
                     f"{logger_text}",
                     disable_web_page_preview=True,
                 )
-                await app.set_chat_title(LOG_GROUP_ID, f"AKTİF SESLİ SAYISI - {aktifseslisayısı}")
+                await app.set_chat_title(LOG_GROUP_ID, f"AKTİF SESLİ - {aktifseslisayısı}")
             except:
                 pass
         return
