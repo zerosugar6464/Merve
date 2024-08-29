@@ -1,6 +1,8 @@
 # Bot Komutları
 
 PING_COMMAND : ["ping"]
+ID_COMMAND : ["id"]
+HAVA_COMMAND : ["hava"]
 START_COMMAND : ["start"]
 HELP_COMMAND : ["help", "yardim", "yardım"]
 SETTINGS_COMMAND : ["settings", "setting", "ayarlar", "ayar"]
