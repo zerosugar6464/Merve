@@ -28,6 +28,7 @@ group_commands = [
     BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
     BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
     BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
+    BotCommand("id", "🆔 Kullanıcı ID'sini Verir"),
     BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
     BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
     BotCommand("hava", "🌦️ Hava Durumunu Gösterir"),
