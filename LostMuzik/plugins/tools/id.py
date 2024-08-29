@@ -1,4 +1,4 @@
-from AlexaMusic import app
+from LostMuzik import app
 from pyrogram import filters
 
 
