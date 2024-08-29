@@ -55,12 +55,12 @@ async def weather(c: Client, m: Message):
         obs_dict = res_json["v3-wx-observations-current"]
 
         res = (
-            "<b>{location}</b> Hava Durumu:\n\n"
-            "🌡️Sıcaklık: <code>{temperature} °C</code>\n"
-            "🔥 Hissedilen: <code>{feels_like} °C</code>\n"
-            "💧 Nem: <code>{air_humidity}%</code>\n"
-            "🌬️ Rüzgar Hızı: <code>{wind_speed} km/h</code>\n\n"
-            "- <i>{overview}</i>"
+            "<b>{location}</b>:\n\n"
+            "🌡️ **Sıcaklık: <code>{temperature} °C</code>\n**"
+            "🔥 **Hissedilen: <code>{feels_like} °C</code>\n**"
+            "💧 **Nem: <code>{air_humidity}%</code>\n**"
+            "🌬️ **Rüzgar Hızı: <code>{wind_speed} km/h</code>\n\n**"
+            "**Hava: <i>{overview}</i>**"
         ).format(
             location=loc_json["location"]["address"][0],
             temperature=obs_dict["temperature"],
