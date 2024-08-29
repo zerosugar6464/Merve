@@ -1,7 +1,7 @@
 {
-    "name": "Lost Music Bot",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
+    "name": "Lost Muzik",
+    "description": "Telegram Grup, Python'da Pyrogram ve Py-Tgcalls ile yazılmış, bazı kullanışlı özelliklere sahip, Youtube, Spotify, Resso, AppleMusic, Soundcloud ve M3u8 Links gibi platformları destekler.",
+    "logo": "https://telegra.ph/file/6f2d69111b40bd322b9f3.jpg",
     "keywords": [
         "python3",
         "telegram",
@@ -14,63 +14,63 @@
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "Get this value from https://my.telegram.org",
-            "value": "your_api_id_here",
+            "description": "https://my.telegram.org Adresinden Alabilirsiniz.",
+            "value": "Api ID Giriniz",
             "required": true
         },
         "API_HASH": {
-            "description": "Get this value from https://my.telegram.org",
-            "value": "your_api_hash_here",
+            "description": "https://my.telegram.org Adresinden Alabilirsiniz.",
+            "value": "Api Hash Giriniz",
             "required": true
         },
         "AUTO_LEAVING_ASSISTANT": {
-            "description": "If you want your assistant to leave all chats automatically after some time.",
+            "description": "Asistanınızın Bir Süre Sonra Tüm Sohbetlerden Otomatik Olarak Ayrılmasını İstiyorsanız True Yapın Eğer İstemiyorsanız False Yapın.",
             "value": "True",
             "required": false
         },
         "BOT_TOKEN": {
-            "description": "A Bot's token from Botfather",
-            "value": "your_bot_token_here",
+            "description": "@Botfather'den Müzik Botunuzu Oluşturun Ve Tokeninizi Buraya Girin.",
+            "value": "Bot Token Giriniz.",
             "required": true
         },
         "MONGO_DB_URI": {
-            "description": "Get a mongodb url from https://cloud.mongodb.com. You can leave it blank if you want, bot will use LostMuzik's database for you.",
-            "value": "",
+            "description": "https://cloud.mongodb.com Adresinden Bir Mongodb URL'si Alın. İsterseniz Boş Bırakabilirsiniz, Bot Sizin İçin LostMuzik'in Veritabanını Kullanacaktır.‌‌",
+            "value": "Mongo Url'nizi Giriniz.",
             "required": true
         },
         "MUSIC_BOT_NAME": {
-            "description": "A name for your Music Bot. Please don't use ascii characters",
-            "value": "Lost Music Bot",
+            "description": "Müzik Botunuzun İsmini Girin. Lütfen Türkçe Karakterler Kullanmayın.",
+            "value": "Lost Muzik",
             "required": true
         },
         "OWNER_ID": {
-            "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be separated with a space.",
-            "value": "your_owner_id_here",
+            "description": "Bot Sahibi Kimliği Giriniz Eğer Birden Fazla Hesap Girmek İstiyorsanız Her ID Girdiğinizde Bir Boşluk Bırakın Aralarına.",
+            "value": "Bot Sahip ID'sini Giriniz.",
             "required": true
         },
         "STRING_SESSION": {
-            "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-            "value": "your_string_session_here",
+            "description": "Pyrogram İle Oluşturulmuş String Session Girin.",
+            "value": "String Session Giriniz.",
             "required": true
         },
         "HEROKU_API_KEY": {
-            "description": "Your Heroku account's API key",
+            "description": "Heroku Hesabınızın API Anahtarı‌‌nı Girin.",
             "value": "",
             "required": false
         },
         "HEROKU_APP_NAME": {
-            "description": "Your heroku app/bot's name",
+            "description": "Heroku Uygulamanızın/Botunuzun Adı‌‌nı Giriniz",
             "value": "",
             "required": false
         },
         "LOG_GROUP_ID": {
-            "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-            "value": "your_log_group_id_here",
+            "description": "Log Grubu ID'sini Girin, Botunuzu Gruba Ekleyin Ve Tüm Yetkilere Sahip Yönetici Olarak Tanımlayın! Yalnızca Grubu Kullanın . Lütfen Kanal Kimliğini Kullanmayın.‌‌",
+            "value": "Log Grup ID Giriniz.",
             "required": true
         },
         "UPSTREAM_REPO": {
-            "description": "If you dont know this, Leave as it is",
-            "value": "https://github.com/LostBots/LostMuzikBot",
+            "description": "Bunu Bilmiyorsan Olduğu Gibi Bırak. DOKUNMA!",
+            "value": "https://github.com/BlayzenX/LostMuzik",
             "required": true
         }
     },
