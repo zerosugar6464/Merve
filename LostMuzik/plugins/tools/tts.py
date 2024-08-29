@@ -5,8 +5,6 @@ from LostMuzik import app
 
 @app.on_message(filters.command("tts"))
 async def text_to_speech(client, message):
-    if is_user_blocked(message.from_user.id):
-        await message.reply("**Üzgünüm, bu komutu kullanma yetkiniz engellendi.** 🚫")
         return
 
     text = ""
