@@ -30,8 +30,8 @@ group_commands = [
     BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
     BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
     BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
+    BotCommand("hava", "🌦️ Hava Durumunu Gösterir"),
     BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
-    BotCommand("hava", "🌦️ Hava durumunu gösterir"),
     
 ]
 
