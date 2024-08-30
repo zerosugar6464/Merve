@@ -21,8 +21,6 @@ requests
 speedtest-cli
 spotipy
 tgcrypto
-shazamio
-telegraph
 youtube-search
 youtube-search-python
 yt-dlp
