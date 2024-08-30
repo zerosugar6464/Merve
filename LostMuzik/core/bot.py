@@ -44,33 +44,35 @@ async def set_commands(client):
     
     await client.set_bot_commands(group_commands, scope=BotCommandScopeAllGroupChats())
 
-class LostMuzik(Client):
+class AlexaBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Bot Başlatılıyor...")
         super().__init__(
-            "LostMuzik",
+            "MusicBot",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
+            in_memory=True,
         )
+        LOGGER(__name__).info(f"Bot Başlatılıyor...")
 
     async def start(self):
         await super().start()
         get_me = await self.get_me()
         self.username = get_me.username
         self.id = get_me.id
+        self.mention = get_me.mention
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "» Bot Başarıyla Başlatıldı 🔮"
+                config.LOG_GROUP_ID, "» **Bot Başarılı Bir Şekilde Başlatıldı** 🔮"
             )
         except:
             LOGGER(__name__).error(
-                "Bot log grubuna erişemedi. Log kanalınıza botunuzu eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun!"
+                "Bot, günlük grubuna erişemedi. Botunuzu günlük kanalınıza eklediğinizden ve yönetici olarak tanıttığınızdan emin olun!"
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
-        if a.status != "administrator":
-            LOGGER(__name__).error("Bot başlatılırken hata oluştu")
+        if a.status != ChatMemberStatus.ADMINISTRATOR:
+            LOGGER(__name__).error("Lütfen Bot'u Logger Grubunda Yönetici olarak tanıtın")
             sys.exit()
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
