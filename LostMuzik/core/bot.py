@@ -70,6 +70,9 @@ class LostMuzik(Client):
                 "Bot log grubuna erişemedi. Log kanalınıza botunuzu eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun!"
             )
             sys.exit()
+            
+            await set_commands(self)
+            
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
             LOGGER(__name__).error("Lütfen Logger Grubunda Botu Yönetici Olarak Terfi Ettirin.")
