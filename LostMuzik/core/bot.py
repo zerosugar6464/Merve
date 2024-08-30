@@ -44,7 +44,7 @@ async def set_commands(client):
     
     await client.set_bot_commands(group_commands, scope=BotCommandScopeAllGroupChats())
 
-class AlexaBot(Client):
+class LostMuzik(Client):
     def __init__(self):
         super().__init__(
             "MusicBot",
