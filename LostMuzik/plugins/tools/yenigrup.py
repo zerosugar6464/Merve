@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from config import LOGGER_ID
+from config import LOG_GROUP_ID
 from LostMuzik import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -28,7 +28,7 @@ async def on_new_chat_members(client: Client, message: Message):
             ]
         )
 
-        await new_message(LOGGER_ID, sigma, reply_markup)
+        await new_message(LOG_GROUP_ID, sigma, reply_markup)
 
 
 @app.on_message(filters.left_chat_member)
@@ -49,4 +49,4 @@ async def on_left_chat_member(client: Client, message: Message):
             ]
         )
 
-        await new_message(LOGGER_ID, bye, reply_markup)
+        await new_message(LOG_GROUP_ID, bye, reply_markup)
