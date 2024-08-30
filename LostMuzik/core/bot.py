@@ -47,7 +47,7 @@ async def set_commands(client):
 class LostMuzik(Client):
     def __init__(self):
         super().__init__(
-            "MusicBot",
+            "LostMuzik",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
