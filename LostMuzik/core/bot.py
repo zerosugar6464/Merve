@@ -44,7 +44,7 @@ async def set_commands(client):
     
     await client.set_bot_commands(group_commands, scope=BotCommandScopeAllGroupChats())
 
-class ArchMusic(Client):
+class LostMuzik(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Bot Başlatılıyor")
         super().__init__(
