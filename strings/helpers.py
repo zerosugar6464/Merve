@@ -68,6 +68,7 @@ HELP_4 = """✅<u>**EKSTRA KOMUTLAR:**</u>
 🆘 **/yardim :** Botun Yardım Menüsüne Ulaşırsınız.
 
 🏓 **/ping :** Ping Süresini CPU Ve RAM Kullanımına Bakabilirsiniz.
+🌦️ **/hava :** Hava Durumunu Gösterir (Örn: /hava Adana)
 """
 
 
