@@ -11,14 +11,13 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
-from strings import get_command
 from LostMuzik import YouTube, app
 from LostMuzik.utils.decorators.language import language, languageCB
 from LostMuzik.utils.formatters import convert_bytes
 from LostMuzik.utils.inline.song import song_markup
 
 # Command
-SONG_COMMAND = get_command("SONG_COMMAND")
+SONG_COMMAND = ["song"]
 
 
 @app.on_message(
@@ -26,6 +25,20 @@ SONG_COMMAND = get_command("SONG_COMMAND")
     & filters.group
     & ~BANNED_USERS
 )
+@language
+async def song_commad_group(client, message: Message, _):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_["SG_B_1"],
+                    url=f"https://t.me/{app.username}?start=song",
+                ),
+            ]
+        ]
+    )
+    await message.reply_text(_["song_1"], reply_markup=upl)
+
 
 # Song Module
 
@@ -144,7 +157,7 @@ async def song_helper_cb(client, CallbackQuery, _):
                 fom = x["format_id"]
                 keyboard.row(
                     InlineKeyboardButton(
-                        text=f"{form} Kalite = {sz}",
+                        text=f"{form} Quality Audio = {sz}",
                         callback_data=f"song_download {stype}|{fom}|{vidid}",
                     ),
                 )
@@ -169,7 +182,7 @@ async def song_helper_cb(client, CallbackQuery, _):
             print(e)
             return await CallbackQuery.edit_message_text(_["song_7"])
         keyboard = InlineKeyboard()
-        # AVC Formats Only [ ArchMusic Bot]
+        # AVC Formats Only [ LostMuzik ]
         done = [160, 133, 134, 135, 136, 137, 298, 299, 264, 304, 266]
         for x in formats_available:
             check = x["format"]
@@ -209,29 +222,24 @@ async def song_helper_cb(client, CallbackQuery, _):
 @languageCB
 async def song_download_cb(client, CallbackQuery, _):
     try:
-        await CallbackQuery.answer("İndiriliyor")
+        await CallbackQuery.answer("Downloading")
     except:
         pass
-    
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
     stype, format_id, vidid = callback_request.split("|")
     mystic = await CallbackQuery.edit_message_text(_["song_8"])
     yturl = f"https://www.youtube.com/watch?v={vidid}"
-    
     with yt_dlp.YoutubeDL({"quiet": True}) as ytdl:
         x = ytdl.extract_info(yturl, download=False)
-    
     title = (x["title"]).title()
     title = re.sub("\W+", " ", title)
     thumb_image_path = await CallbackQuery.message.download()
-    duration = x.get("duration", 0)
-    
+    duration = x["duration"]
     if stype == "video":
         thumb_image_path = await CallbackQuery.message.download()
         width = CallbackQuery.message.photo.width
         height = CallbackQuery.message.photo.height
-        
         try:
             file_path = await YouTube.download(
                 yturl,
@@ -242,7 +250,6 @@ async def song_download_cb(client, CallbackQuery, _):
             )
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
-        
         med = InputMediaVideo(
             media=file_path,
             duration=duration,
@@ -252,22 +259,17 @@ async def song_download_cb(client, CallbackQuery, _):
             caption=title,
             supports_streaming=True,
         )
-        
         await mystic.edit_text(_["song_11"])
-        
         await app.send_chat_action(
             chat_id=CallbackQuery.message.chat.id,
             action=ChatAction.UPLOAD_VIDEO,
         )
-        
         try:
             await CallbackQuery.edit_message_media(media=med)
         except Exception as e:
             print(e)
             return await mystic.edit_text(_["song_10"])
-        
         os.remove(file_path)
-    
     elif stype == "audio":
         try:
             filename = await YouTube.download(
@@ -279,56 +281,21 @@ async def song_download_cb(client, CallbackQuery, _):
             )
         except Exception as e:
             return await mystic.edit_text(_["song_9"].format(e))
-
-        res = (
-            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
-            f"⌛️ **Süre:** `{duration}`"
-            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
-        )
-
-        visit_button = InlineKeyboardButton(
-            text="🎉 Lost Müzik",
-            url=f"https://t.me/LostMuzik"
-        )
-
-        visit_markup = InlineKeyboardMarkup(
-            [[visit_button]]
-        )
-        
         med = InputMediaAudio(
             media=filename,
-            caption=res,
+            caption=title,
             thumb=thumb_image_path,
-            performer="@LostMuzikBot"
+            title=title,
+            performer=x["@LostMuzik"],
         )
-        
         await mystic.edit_text(_["song_11"])
-        
         await app.send_chat_action(
             chat_id=CallbackQuery.message.chat.id,
             action=ChatAction.UPLOAD_AUDIO,
         )
-        
         try:
-            await CallbackQuery.edit_message_media(media=med, reply_markup=visit_markup)
+            await CallbackQuery.edit_message_media(media=med)
         except Exception as e:
             print(e)
             return await mystic.edit_text(_["song_10"])
-        
-        rep = (
-            f"🔮 **Başlık:** [{title[:23]}]({yturl})\n"
-            f"⌛️ **Süre:** `{duration}`" 
-            f"👉 **Talep Eden:** {CallbackQuery.from_user.mention}\n"
-        )
-        
-        channel_id = -1002181528689
-        
-        await app.send_audio(
-            chat_id=channel_id,
-            audio=filename,
-            caption=rep,
-            performer="@LostMuzikBot",
-            thumb=thumb_image_path,
-        )
-        
         os.remove(filename)
