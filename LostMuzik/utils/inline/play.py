@@ -52,12 +52,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
+                text=f"🔮 Bot Destek", 
                 url=f"https://t.me/Eskiyalar"
-            ),
-            InlineKeyboardButton(
-                text=f"🎉 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
             ),
         ],
         [
@@ -79,13 +75,9 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
+                text=f"🔮 Bot Destek", 
                 url=f"https://t.me/Eskiyalar"
             ),
-            InlineKeyboardButton(
-                text=f"🎉 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
-            ), 
         ],
         
         [
@@ -113,12 +105,8 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
+                text=f"🔮 Bot Destek", 
                 url=f"https://t.me/Eskiyalar"
-            ),
-            InlineKeyboardButton(
-                text=f"🎉 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
             ),
         ],
         
@@ -158,12 +146,8 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
+                text=f"🔮 Bot Destek", 
                 url=f"https://t.me/Eskiyalar"
-            ),
-            InlineKeyboardButton(
-                text=f"🎉 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
             ),
         ],
         
@@ -185,12 +169,8 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🤖 Bot Destek", 
+                text=f"🔮 Bot Destek", 
                 url=f"https://t.me/Eskiyalar"
-            ),
-            InlineKeyboardButton(
-                text=f"🎉 Lost Müzik", 
-                url=f"https://t.me/LostMuzik"
             ),
         ],
         
