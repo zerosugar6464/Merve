@@ -60,7 +60,7 @@ async def weather(c: Client, m: Message):
             "🔥 **Hissedilen: <code>{feels_like} °C</code>\n**"
             "💧 **Nem: <code>{air_humidity}%</code>\n**"
             "🌬️ **Rüzgar Hızı: <code>{wind_speed} km/h</code>\n\n**"
-            "**Hava: <i>{overview}</i>**"
+            "**Hava Durumu: <i>{overview}</i>**"
         ).format(
             location=loc_json["location"]["address"][0],
             temperature=obs_dict["temperature"],
