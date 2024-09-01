@@ -63,15 +63,15 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("Reduxon")
-                await self.one.join_chat("Reduxon")
-                await self.one.join_chat("Reduxon")
+                await self.one.join_chat("Eskiyalar")
+                await self.one.join_chat("Eskiyalar")
+                await self.one.join_chat("Eskiyalar")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 1 Başarıyla Başlatıldı** 🔮"
+                    config.LOG_GROUP_ID, "» **Asistan 1 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
                 )
             except:
                 LOGGER(__name__).error(
@@ -94,15 +94,15 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("Reduxon")
-                await self.two.join_chat("Reduxon")
-                await self.two.join_chat("Reduxon")
+                await self.two.join_chat("Eskiyalar")
+                await self.two.join_chat("Eskiyalar")
+                await self.two.join_chat("Eskiyalar")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 2 Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 2 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
                 )
             except:
                 LOGGER(__name__).error(
@@ -125,15 +125,15 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("Reduxon")
-                await self.three.join_chat("Reduxon")
-                await self.three.join_chat("Reduxon")
+                await self.three.join_chat("Eskiyalar")
+                await self.three.join_chat("Eskiyalar")
+                await self.three.join_chat("Eskiyalar")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 3 Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 3 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
                 )
             except:
                 LOGGER(__name__).error(
@@ -156,15 +156,15 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("Reduxon")
-                await self.four.join_chat("Reduxon")
-                await self.four.join_chat("Reduxon")
+                await self.four.join_chat("Eskiyalar")
+                await self.four.join_chat("Eskiyalar")
+                await self.four.join_chat("Eskiyalar")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 4 Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 4 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
                 )
             except:
                 LOGGER(__name__).error(
@@ -187,15 +187,15 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("Reduxon")
-                await self.five.join_chat("Reduxon")
-                await self.five.join_chat("Reduxon")
+                await self.five.join_chat("Eskiyalar")
+                await self.five.join_chat("Eskiyalar")
+                await self.five.join_chat("Eskiyalar")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 5 Başarıyla Başlatıldı** ❄️"
+                    config.LOG_GROUP_ID, "» **Asistan 5 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
                 )
             except:
                 LOGGER(__name__).error(
