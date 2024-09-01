@@ -5,19 +5,19 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from LostMuzik import Carbon, YouTube, app
-from LostMuzik.core.call import LostMuzik
-from LostMuzik.misc import db
-from LostMuzik.utils.database import (add_active_chat,
+from ArchMusic import Carbon, YouTube, app
+from ArchMusic.core.call import ArchMusic
+from ArchMusic.misc import db
+from ArchMusic.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from LostMuzik.utils.exceptions import AssistantErr
-from LostMuzik.utils.inline.play import (stream_markup,
+from ArchMusic.utils.exceptions import AssistantErr
+from ArchMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from LostMuzik.utils.inline.playlist import close_markup
-from LostMuzik.utils.pastebin import LostMuzikbin
-from LostMuzik.utils.stream.queue import put_queue, put_queue_index
+from ArchMusic.utils.inline.playlist import close_markup
+from ArchMusic.utils.pastebin import ArchMusicbin
+from ArchMusic.utils.stream.queue import put_queue, put_queue_index
 
 
 
@@ -40,7 +40,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await LostMuzik.force_stop_stream(chat_id)
+        await ArchMusic.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -89,7 +89,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await LostMuzik.join_call(
+                await ArchMusic.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await put_queue(
@@ -105,6 +105,7 @@ async def stream(
                     forceplay=forceplay,
                 )
                 img = None
+                button = stream_markup(_, vidid, chat_id)
                 run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
@@ -120,7 +121,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await LostMuzikbin(msg)
+            link = await ArchMusicbin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -169,7 +170,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await LostMuzik.join_call(
+            await ArchMusic.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -185,6 +186,7 @@ async def stream(
                 forceplay=forceplay,
             )
             img = None
+            button = stream_markup(_, vidid, chat_id)
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
@@ -223,7 +225,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await LostMuzik.join_call(
+            await ArchMusic.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -276,7 +278,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await LostMuzik.join_call(
+            await ArchMusic.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -334,7 +336,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await LostMuzik.join_call(
+            await ArchMusic.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -387,7 +389,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await LostMuzik.join_call(
+            await ArchMusic.join_call(
                 chat_id,
                 original_chat_id,
                 link,
