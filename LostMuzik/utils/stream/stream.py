@@ -105,7 +105,6 @@ async def stream(
                     forceplay=forceplay,
                 )
                 img = None
-                button = stream_markup(_, vidid, chat_id)
                 run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
