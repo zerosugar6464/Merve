@@ -132,9 +132,9 @@ playcb_1 : "ʙᴜ sᴇɴɪɴ ɪ̇ᴄ̧ɪɴ ᴅᴇɢ̆ɪʟ! ᴋᴇɴᴅɪ şᴀ�
 playcb_2 : "sᴏɴʀᴀᴋɪ sᴏɴᴜᴄᴜ ᴀʟᴍᴀ"
 
 # Channel Play
-cplay_1 : "Bu sohbetteki kanallarda[{0}] herhangi bir kanala veya sohbetinizin bağlantılı kanalına müzik çalabilirsiniz.\n\n**Bağlı kanal için:**\n`/{1}bağlı`\n\n** Diğer herhangi bir kanal için:**\n`/{1} [Kanal Kimliği]`"
-cplay_2 : "Bu sohbette bağlantılı kanal yok."
-cplay_3 : "{0}\n\n__Kanal Kimliği__ ile Tanımlanmış Kanal: {1}"
+cplay_1 : "ʙᴜ sᴏʜʙᴇᴛᴛᴇᴋɪ ᴋᴀɴᴀʟʟᴀʀᴅᴀ[{0}] ʜᴇʀʜᴀɴɢɪ ʙɪʀ ᴋᴀɴᴀʟᴀ ᴠᴇʏᴀ sᴏʜʙᴇᴛɪɴɪᴢɪɴ ʙᴀɢ̆ʟᴀɴᴛıʟı ᴋᴀɴᴀʟıɴᴀ ᴍᴜ̈ᴢɪᴋ ᴄ̧ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ.\n\n**ʙᴀɢ̆ʟı ᴋᴀɴᴀʟ ɪᴄ̧ɪɴ:**\n`/{1}ʙᴀɢ̆ʟı`\n\n** ᴅɪɢ̆ᴇʀ ʜᴇʀʜᴀɴɢɪ ʙɪʀ ᴋᴀɴᴀʟ ɪᴄ̧ɪɴ:**\n`/{1} [ᴋᴀɴᴀʟ ᴋɪᴍʟɪɢ̆ɪ]`"
+cplay_2 : "ʙᴜ sᴏʜʙᴇᴛᴛᴇ ʙᴀɢ̆ʟᴀɴᴛıʟı ᴋᴀɴᴀʟ ʏᴏᴋ."
+cplay_3 : "{0}\n\n__ᴋᴀɴᴀʟ ᴋɪᴍʟɪɢ̆ɪ__ ɪʟᴇ ᴛᴀɴıᴍʟᴀɴᴍış ᴋᴀɴᴀʟ: {1}"
 cplay_4 : "Kanal alınamadı.\n\nKanalınıza bot eklediğinizden ve onu yönetici olarak terfi ettirdiğinizden emin olun.\nKanalı /channelplay ile değiştirin veya /playmode ile kanal oynatma modunu devre dışı bırakın"
 cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/channelplay bağlantılı ile bağlanmayı deneyin`"
