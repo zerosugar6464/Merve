@@ -227,11 +227,11 @@ queue_3 : "<u>**Sıradaki Parçalar:</u>**  [Sıradaki Parçalara Burdan Bakabil
 queue_4 : "✅ Sıraya eklendi **#{0}\n\n🔮Başlık:** {1}\n**⏱Süre:** {2}\n👉**Talep Eden: {3}**"
 queue_5 : "Sırada Sadece Bir Parça Var, Lütfen Biraz Daha Parça Ekleyin. 🎧"
 
-stream_1 : "🔮**Başlık**: {0} \n**⌛️Süre**: {2}\n**👉Talep Eden**: {3}"
+stream_1 : "🔮**ʙᴀşʟɪᴋ**: {0} \n**⌛️Süre**: {2}\n**👉Talep Eden**: {3}"
 stream_2 : " **Yayın Başlatıldı** \n**Başlık**: {0}\n**⌛️Süre**: {2}\n**👉Talep Eden**: {3}"
-stream_3 : "🔮**Başlık**: {0}\n**⌛️Süre**: {1}\n**👉Talep Eden**: {2}"
-stream_4 : "🔮**Başlık**: [{0}]\n**⌛️Süre**: {2}\n**👉Talep Eden**: {3}"
-stream_5 : "🔮**Başlık**: {0}\n**👉Talep Eden**:{1}"
+stream_3 : "🔮**ʙᴀşʟɪᴋ**: {0}\n**⌛️Süre**: {1}\n**👉Talep Eden**: {2}"
+stream_4 : "🔮**ʙᴀşʟɪᴋ**: [{0}]\n**⌛️Süre**: {2}\n**👉Talep Eden**: {3}"
+stream_5 : "🔮**ʙᴀşʟɪᴋ**: {0}\n**👉Talep Eden**:{1}"
 stream_6 : " **Yayın Başlatıldı**  \n**Parça**: [{0}]({1})\n**👉Talep Eden**: {2}"
 
 
@@ -278,7 +278,7 @@ P_B_4 : "🎵 Oynatma Listelerimi Oynat"
 
 #Playlist
 PL_B_1 : "⚡ Oynatma listelerimi oynat"
-PL_B_2 : "✅ Listeme Ekle"
+PL_B_2 : "✅ ʟɪ̇sᴛᴇᴍᴇ ᴇᴋʟᴇ"
 PL_B_3 : "⚙️ Kontrol Paneli"
 PL_B_4 : "📡 Oynatma Modu"
 PL_B_5 : "🔄 Tüm Listeyi Sil"
