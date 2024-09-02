@@ -5,7 +5,7 @@ HELP_1 = """✅**<u>ʙᴜʀᴅᴀᴋɪ̇ ᴋᴏᴍᴜᴛʟᴀʀɪ ʏᴀʟɴɪᴢ
 ⏸️ **/duraklat :** ᴍᴜ̈ᴢɪɢ̆ɪ ᴅᴜʀᴀᴋʟᴀᴛıʀ.
 ▶️ **/devam :** ᴍᴜ̈ᴢɪɢ̆ɪ ᴅᴇᴠᴀᴍ ᴇᴛᴛɪʀɪʀ.
 ⏯️ **/atla :** ᴄ̧ᴀʟᴀɴ ᴍᴜ̈ᴢɪɢ̆ɪ ᴀᴛʟᴀʀ.
-⏹️ **/dur veya /son :** ᴍᴜ̈ᴢɪɢ̆ɪ ᴛᴀᴍᴀᴍᴇɴ ᴅᴜʀᴅᴜʀᴜʀ.
+⏹️ **/dur ᴠᴇʏᴀ /son :** ᴍᴜ̈ᴢɪɢ̆ɪ ᴛᴀᴍᴀᴍᴇɴ ᴅᴜʀᴅᴜʀᴜʀ.
 🔀 **/karistir :** sıʀᴀʏᴀ ᴀʟᴅıɢ̆ıɴıᴢ ᴘᴀʀᴄ̧ᴀʟᴀʀı ᴋᴀʀışıᴋ şᴇᴋɪʟᴅᴇ ᴏʏɴᴀᴛıʀ.
 ⏩ **/ilerisar :** ᴍᴜ̈ᴢɪɢ̆ɪ ɪ̇ʟᴇʀɪ sᴀʀᴀʀ. (ᴏ̈ʀɴᴇᴋ: /ɪʟᴇʀɪsᴀʀ 𝟷𝟻 ɪ̇ʟᴇ ᴄ̧ᴀʟᴀɴ ᴍᴜ̈ᴢɪɢ̆ɪ 𝟷𝟻 sᴀɴɪʏᴇ ɪ̇ʟᴇʀɪ ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ.)
 ⏪ **/seekback :** ᴍᴜ̈ᴢɪɢ̆ɪ ɢᴇʀɪ sᴀʀᴀʀ. (ᴏ̈ʀɴᴇᴋ: /sᴇᴇᴋʙᴀᴄᴋ 𝟷𝟻 ɪ̇ʟᴇ ᴄ̧ᴀʟᴀɴ ᴍᴜ̈ᴢɪɢ̆ɪ 𝟷𝟻 sᴀɴɪʏᴇ ɢᴇʀɪ ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ.)
@@ -18,9 +18,9 @@ HELP_1 = """✅**<u>ʙᴜʀᴅᴀᴋɪ̇ ᴋᴏᴍᴜᴛʟᴀʀɪ ʏᴀʟɴɪᴢ
 
 HELP_2 = """✅<u>**ᴏʏɴᴀᴛᴍᴀ ᴋᴏᴍᴜᴛʟᴀʀɪ:**</u>
 
-⏺️ **/oynat veya /play :** Müziği Oynatmaya Yarar.
-**-Örnek Kullanım:** /oynat şarkı İsmi // Veya Oynatmak İstediğiniz Şarkıyı Yanıtlayarak /oynat Yazabilirsiniz.
-(**Örnek:** /oynat Defkhan Kapak Olsun)
+⏺️ **/oynat ᴠᴇʏᴀ /play :** ᴍᴜ̈ᴢɪɢ̆ɪ ᴏʏɴᴀᴛᴍᴀʏᴀ ʏᴀʀᴀʀ.
+**-ᴏ̈ʀɴᴇᴋ ᴋᴜʟʟᴀɴıᴍ:** /ᴏʏɴᴀᴛ şᴀʀᴋı ɪ̇sᴍɪ // ᴠᴇʏᴀ ᴏʏɴᴀᴛᴍᴀᴋ ɪ̇sᴛᴇᴅɪɢ̆ɪɴɪᴢ şᴀʀᴋıʏı ʏᴀɴıᴛʟᴀʏᴀʀᴀᴋ /ᴏʏɴᴀᴛ ʏᴀᴢᴀʙɪʟɪʀsɪɴɪᴢ.
+(**ᴏ̈ʀɴᴇᴋ:** /ᴏʏɴᴀᴛ ᴅᴇғᴋʜᴀɴ ᴋᴀᴘᴀᴋ ᴏʟsᴜɴ)
 
 ⏺️ **/voynat veya /vplay :** Videoyu Seste Oynatmaya Yarar.
 **-Örnek Kullanım:** /voynat Video İsmi // Veya Oynatmak İstediğiniz Videoyu Yanıtlayarak /vplay veya /voynat Yazabilirsiniz.
