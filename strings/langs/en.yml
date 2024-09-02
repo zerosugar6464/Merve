@@ -21,9 +21,9 @@ call_5 : "**ᴀsɪsᴛᴀɴ ʜᴇsᴀʙı 𝟻 sᴀɴɪʏᴇ ɪᴄ̧ɪɴᴅᴇ �
 call_6 : "**ᴀsɪsᴛᴀɴ ʜᴇsᴀʙı [{0}] ʙᴀşᴀʀıʏʟᴀ ᴋᴀᴛıʟᴅı. ✅\n\nᴍᴜ̈ᴢɪᴋ şɪᴍᴅɪ ʙᴀşʟᴀᴛıʟıʏᴏʀ.**"
 call_7 : "**ᴢᴀʀᴀʀʟı ʏᴏ̈ɴᴇᴛɪᴄɪ ʜᴀᴋᴋı ᴠᴇʀɪʟᴅɪ**\n\nʟᴜ̈ᴛғᴇɴ **ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀɪ ʏᴀsᴀᴋʟᴀ** ʜᴀᴋᴋɪɴɪ ʙᴏᴛᴛᴀɴ ᴋᴀʟᴅıʀıɴ."
 call_8 : "**ᴢᴀʀᴀʀʟı ʏᴏ̈ɴᴇᴛɪᴄɪ ʜᴀᴋᴋı ᴠᴇʀɪʟᴅɪ**\n\nʟᴜ̈ᴛғᴇɴ ʙᴏᴛᴛᴀɴ **ʏᴇɴɪ̇ ʏᴏ̈ɴᴇᴛɪ̇ᴄɪ̇ ᴇᴋʟᴇ** ʜᴀᴋᴋıɴı ᴋᴀʟᴅıʀıɴ."
-call_9 : "**Yayın değiştirilemedi**\nParçayı tekrar değiştirmek için /atla komutunu kullanın."
-call_10 : "**Oynatma Listesinde Olan Sonraki Parça İndiriliyor...** 🔮"
-call_11 : "Please add @{0} to your channel[ ID: {1}].\n\nBot is not able to get channel details."
+call_9 : "**ʏᴀʏıɴ ᴅᴇɢ̆ɪşᴛɪʀɪʟᴇᴍᴇᴅɪ**\nᴘᴀʀᴄ̧ᴀʏı ᴛᴇᴋʀᴀʀ ᴅᴇɢ̆ɪşᴛɪʀᴍᴇᴋ ɪᴄ̧ɪɴ /ᴀᴛʟᴀ ᴋᴏᴍᴜᴛᴜɴᴜ ᴋᴜʟʟᴀɴıɴ."
+call_10 : "**ᴏʏɴᴀᴛᴍᴀ ʟɪsᴛᴇsɪɴᴅᴇ ᴏʟᴀɴ sᴏɴʀᴀᴋɪ ᴘᴀʀᴄ̧ᴀ ɪ̇ɴᴅɪʀɪʟɪʏᴏʀ...** 🔮"
+call_11 : "ʟᴜ̈ᴛғᴇɴ ᴋᴀɴᴀʟıɴıᴢᴀ @{0} ᴇᴋʟᴇʏɪɴ [ ɪᴅ: {1}].\n\nʙᴏᴛ ᴋᴀɴᴀʟ ᴀʏʀıɴᴛıʟᴀʀıɴı ᴀʟᴀᴍıʏᴏʀ."
 
 # PLUGINS - Auth.py
 auth_1 : "Grubunuzun Yetkili Kullanıcılar Listesinde yalnızca 20 Kullanıcınız olabilir. ❤️‍🔥"
