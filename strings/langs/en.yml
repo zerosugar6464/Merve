@@ -186,20 +186,20 @@ playmode_1 : "**ɢʀᴜʙᴜɴᴜᴢᴅᴀᴋɪ ᴍᴜ̈ᴢɪᴋʟᴇʀɪ ᴏʏ�
 playmode_2 : "ᴀʏᴀʀʟᴀʀ {0} ᴛᴀʀᴀғıɴᴅᴀɴ ʙᴀşᴀʀıʏʟᴀ ᴅᴇɢ̆ɪşᴛɪʀɪʟᴅɪ ᴠᴇ ᴋᴀʏᴅᴇᴅɪʟᴅɪ. 🔮"
 
 #Stream 
-str_1 : "Lütfen M3u8 Bağlantıları veya Dizin Bağlantıları Sağlayın."
-str_2 : "✅ Geçerli Akış Doğrulandı\n\nLütfen bağlantının işlenmesini bekleyin.. 🔮"
-str_3 : "Youtube canlı yayın akışı yapılamıyor. Canlı Biçim Bulunamadı"
+str_1 : "ʟᴜ̈ᴛғᴇɴ ᴍ𝟹ᴜ𝟾 ʙᴀɢ̆ʟᴀɴᴛıʟᴀʀı ᴠᴇʏᴀ ᴅɪᴢɪɴ ʙᴀɢ̆ʟᴀɴᴛıʟᴀʀı sᴀɢ̆ʟᴀʏıɴ."
+str_2 : "✅ ɢᴇᴄ̧ᴇʀʟɪ ᴀᴋış ᴅᴏɢ̆ʀᴜʟᴀɴᴅı\n\nʟᴜ̈ᴛғᴇɴ ʙᴀɢ̆ʟᴀɴᴛıɴıɴ ɪşʟᴇɴᴍᴇsɪɴɪ ʙᴇᴋʟᴇʏɪɴ... 🔮"
+str_3 : "ʏᴏᴜᴛᴜʙᴇ ᴄᴀɴʟı ʏᴀʏıɴ ᴀᴋışı ʏᴀᴘıʟᴀᴍıʏᴏʀ. ᴄᴀɴʟı ʙɪᴄ̧ɪᴍ ʙᴜʟᴜɴᴀᴍᴀᴅı."
 
 #TopPlay
-tracks_1 : "**{0} En Çok Oynatılan 10 Şarkı Başlamak Üzere, Lütfen Hazır Olana Kadar Bekleyin... 🌹 **\n\n**👉Talep Eden:** {1}"
-tracks_2 : "**Hata**\n\nBot'un sunucularında **{0} En İyi 10 Oynatma Listesi** yok. Lütfen başka bir oynatma listesi deneyin"
+tracks_1 : "**{0} ᴇɴ ᴄ̧ᴏᴋ ᴏʏɴᴀᴛıʟᴀɴ 𝟷𝟶 şᴀʀᴋı ʙᴀşʟᴀᴍᴀᴋ ᴜ̈ᴢᴇʀᴇ, ʟᴜ̈ᴛғᴇɴ ʜᴀᴢıʀ ᴏʟᴀɴᴀ ᴋᴀᴅᴀʀ ʙᴇᴋʟᴇʏɪɴ... ⏳ **\n\n**👉 ᴛᴀʟᴇᴘ ᴇᴅᴇɴ:** {1}"
+tracks_2 : "**ʜᴀᴛᴀ**\n\nʙᴏᴛ'ᴜɴ sᴜɴᴜᴄᴜʟᴀʀıɴᴅᴀ **{0} ᴇɴ ɪ̇ʏɪ 𝟷𝟶 ᴏʏɴᴀᴛᴍᴀ ʟɪsᴛᴇsɪ** ʏᴏᴋ. ʟᴜ̈ᴛғᴇɴ ʙᴀşᴋᴀ ʙɪʀ ᴏʏɴᴀᴛᴍᴀ ʟɪsᴛᴇsɪ ᴅᴇɴᴇʏɪɴ."
 
 
 # TOOLS
 
 #Lyrics
-lyrics_1 : "**Kullanım:**\n\n/sarkisozu [Şarkı Adı]"
-lyrics_2 : "Şarkı Sözleri Arama"
+lyrics_1 : "**ᴋᴜʟʟᴀɴıᴍ:**\n\n/sᴀʀᴋɪsᴏᴢᴜ [şᴀʀᴋı ᴀᴅı]"
+lyrics_2 : "şᴀʀᴋı sᴏ̈ᴢʟᴇʀɪ ᴀʀᴀᴍᴀ"
 lyrics_3 : "❌ Şarkı sözleri getirilemedi😭.\n\n🔮**Aramaya çalışıldı:** {0}"
 lyrics_4 : "Grubu spama sokmaktan kaçınmak için aşağıdaki düğmeyi tıklayın ve komutu özelde kullanın."
 
