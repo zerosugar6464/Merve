@@ -1,4 +1,4 @@
-name : Türkçe 🇹🇷
+name : ᴛᴜ̈ʀᴋᴄ̧ᴇ 🇹🇷
 
 # General Strings
 general_1 : "ʙɪʀ ᴋᴜʟʟᴀɴɪᴄɪɴɪɴ ᴍᴇꜱᴀᴊɪɴɪ ʏᴀɴɪᴛʟᴀʏɪɴ ᴠᴇʏᴀ ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ_ɪᴅ ᴠᴇʀɪɴ."
@@ -61,44 +61,44 @@ admin_22 : "ᴋᴀʀışᴛıʀıʟᴀᴍᴀᴅı.\n\nsıʀᴀʏı ᴋᴏɴᴛ�
 admin_23 : "**sıʀᴀ ᴋᴀʀışᴛıʀıʟᴅı: {0}**\n\nᴋᴀʀışᴛıʀıʟᴀɴ sıʀᴀʏı ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ: /sɪʀᴀ"
 admin_24 : "**ᴋᴜʟʟᴀɴıᴍ:**\n/ᴅᴏɴɢᴜ [𝟷-𝟷𝟶 ᴀʀᴀsı sᴀʏı]\n\n**ᴏ̈ʀɴᴇᴋ:** /ᴅᴏɴɢᴜ 𝟻"
 admin_25 : "ᴅᴏ̈ɴɢᴜ̈, {0} ᴛᴀʀᴀғıɴᴅᴀɴ **{1}** ᴋᴇᴢ ᴇᴛᴋɪɴʟᴇşᴛɪʀɪʟᴅɪ. ʙᴏᴛ şɪᴍᴅɪ sᴇsʟɪ sᴏʜʙᴇᴛᴛᴇ ᴄ̧ᴀʟᴍᴀᴋᴛᴀ ᴏʟᴀɴ ᴍᴜ̈ᴢɪɢ̆ɪ **{1}** ᴋᴇᴢ ᴛᴇᴋʀᴀʀʟᴀʏᴀᴄᴀᴋ. 🔮"
-admin_26 : "Döngü oynatma için lütfen 1-10 arasındaki sayıları kullanın"
-admin_27 : "Döngü Oynatma devre dışı bırakıldı. 🔮"
-admin_28 : "**Kullanım:**\n/ilerisar : Müziği İleri Sarar. (Örnek: /ilerisar 15 İle Çalan Müziği 15 Saniye İleri Alabilirsiniz.)"
-admin_29 : "Lütfen Kaç Saniye İleri Alacaksanız Yazın. Örnek: /ilerisar 15 İle Çalan Müziği 15 Saniye İleri Alabilirsiniz."
-admin_30 : "Üzgünüm Bunu İleri Alamazsınız Ama /atla Yazarak Müziği Geçebilirsiniz."
-admin_31 : "Sayıyı Biraz Az Gir, Su Yakmıyor Bu Da Bir Bot Sonuçta.\n\nŞu An Oynatılan** {0}** dakika **{1}** dakikanın"
-admin_32 : "**Lütfen Bekleyin... ileri Alınıyor...** ❄️"
-admin_33 : "Şarkının {0} Dakikasına Atlandı. "
-admin_34 : "İleri Sarılırken Hata Oluştu."
+admin_26 : "ᴅᴏ̈ɴɢᴜ̈ ᴏʏɴᴀᴛᴍᴀ ɪᴄ̧ɪɴ ʟᴜ̈ᴛғᴇɴ 𝟷-𝟷𝟶 ᴀʀᴀsıɴᴅᴀᴋɪ sᴀʏıʟᴀʀı ᴋᴜʟʟᴀɴıɴ"
+admin_27 : "ᴅᴏ̈ɴɢᴜ̈ ᴏʏɴᴀᴛᴍᴀ ᴅᴇᴠʀᴇ ᴅışı ʙıʀᴀᴋıʟᴅı. 🔮"
+admin_28 : "**ᴋᴜʟʟᴀɴıᴍ:**\n/ɪʟᴇʀɪsᴀʀ : ᴘᴀʀᴄ̧ᴀʏı ɪ̇ʟᴇʀɪ sᴀʀᴀʀ. (ᴏ̈ʀɴᴇᴋ: /ɪʟᴇʀɪsᴀʀ 𝟷𝟻 ɪ̇ʟᴇ ᴄ̧ᴀʟᴀɴ ᴍᴜ̈ᴢɪɢ̆ɪ 𝟷𝟻 sᴀɴɪʏᴇ ɪ̇ʟᴇʀɪ ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ.)"
+admin_29 : "ʟᴜ̈ᴛғᴇɴ ᴋᴀᴄ̧ sᴀɴɪʏᴇ ɪ̇ʟᴇʀɪ ᴀʟᴀᴄᴀᴋsᴀɴıᴢ ʏᴀᴢıɴ. ᴏ̈ʀɴᴇᴋ: /ɪʟᴇʀɪsᴀʀ 𝟷𝟻 ɪ̇ʟᴇ ᴄ̧ᴀʟᴀɴ ᴘᴀʀᴄ̧ᴀʏı 𝟷𝟻 sᴀɴɪʏᴇ ɪ̇ʟᴇʀɪ ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ."
+admin_30 : "ᴜ̈ᴢɢᴜ̈ɴᴜ̈ᴍ ʙᴜɴᴜ ɪ̇ʟᴇʀɪ ᴀʟᴀᴍᴀᴢsıɴıᴢ ᴀᴍᴀ /ᴀᴛʟᴀ ʏᴀᴢᴀʀᴀᴋ ᴘᴀʀᴄ̧ᴀʏı ɢᴇᴄ̧ᴇʙɪʟɪʀsɪɴɪᴢ."
+admin_31 : "sᴀʏıʏı ʙɪʀᴀᴢ ᴀᴢ ɢɪʀ, sᴜ ʏᴀᴋᴍıʏᴏʀ ʙᴜ ᴅᴀ ʙɪʀ ʙᴏᴛ sᴏɴᴜᴄ̧ᴛᴀ.\n\nşᴜ ᴀɴ ᴏʏɴᴀᴛıʟᴀɴ** {0}** ᴅᴀᴋɪᴋᴀ **{1}** ᴅᴀᴋɪᴋᴀɴıɴ"
+admin_32 : "**ʟᴜ̈ᴛғᴇɴ ʙᴇᴋʟᴇʏɪɴ... ɪʟᴇʀɪ ᴀʟıɴıʏᴏʀ...** 🔮"
+admin_33 : "şᴀʀᴋıɴıɴ {0} ᴅᴀᴋɪᴋᴀsıɴᴀ ᴀᴛʟᴀɴᴅı."
+admin_34 : "ɪ̇ʟᴇʀɪ sᴀʀıʟıʀᴋᴇɴ ʜᴀᴛᴀ ᴏʟᴜşᴛᴜ."
 
 # Bot 
 
 # Start
-start_1 : "**Beni {0} Grubunuza Davet Ettiğiniz İçin Teşekkürler.\n{1} Çalışıyor. 🔮\n\nHerhangi Bir Yardım Almak İçin Destek Grubumuza Veya Kanalımıza Göz Atın.**"
-start_2 : "**{0}'e Hoş Geldin. 🔮\n\nGrubunuza Ekleyerek Sesli Sohbetlerinizde Kaliteli Müzik Dinleyebilirsiniz.**"
-start_3 : "**Beni Grubunuza Davet Ettiğiniz İçin Teşekkürler.**\n\n**Çalışmak için Sadece Sesli sohbetleri Yönetme ve Gruba Davet Etme Yetkisi Vermeniz Yeterlidir.** 🔮\n\n**Asistan Kullanıcı Adı:** @{1}"
-start_4 : "**{0}'in Geliştiricisi/Kurucusu {1} Sohbetinize Katıldı.** ❤️‍🔥"
-start_5 : "**{0}'in Çok Kıymetli {1} Beyefendisinin Grubunuza Katıldığını Fark Ettik. Kendisine Saygılarımı Sunarım.** 🙏"
-start_6 : "❗️ **Süper Grup Gerekli** ❗️ Lütfen Grubunuzu **Süper Gruba** dönüştürün ve sonra beni tekrar ekleyin. \n\n**Süper grup nasıl yapılır? 1-** Üyeler listesine gelin ve sağ üstteki kalem işaretine basın.\n**2-** Yeni üyeler için sohbet geçmişi ayarını Görünür olarak düzenleyin. Şimdi botu tekrar ekleyebilirsiniz"
-start_7 : "**Lost Müzik'in Grup Kapasitesi doldu** \n [Buraya Tıklayarak Yeni Botu Görebilirsiniz]({0})"
+start_1 : "**ʙᴇɴɪ {0} ɢʀᴜʙᴜɴᴜᴢᴀ ᴅᴀᴠᴇᴛ ᴇᴛᴛɪɢ̆ɪɴɪᴢ ɪ̇ᴄ̧ɪɴ ᴛᴇşᴇᴋᴋᴜ̈ʀʟᴇʀ.\n{1} ᴄ̧ᴀʟışıʏᴏʀ. 🔮\n\nʜᴇʀʜᴀɴɢɪ ʙɪʀ ʏᴀʀᴅıᴍ ᴀʟᴍᴀᴋ ɪ̇ᴄ̧ɪɴ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜᴍᴜᴢᴀ ᴠᴇʏᴀ ᴋᴀɴᴀʟıᴍıᴢᴀ ɢᴏ̈ᴢ ᴀᴛıɴ.**"
+start_2 : "**ʟᴏsᴛ ᴍᴜ̈ᴢɪᴋ'ᴇ ʜᴏş ɢᴇʟᴅɪɴ 🔮\n\nɢʀᴜʙᴜɴᴜᴢᴀ ᴇᴋʟᴇʏᴇʀᴇᴋ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪɴɪᴢᴅᴇ ᴋᴀʟɪᴛᴇʟɪ ᴍᴜ̈ᴢɪᴋ ᴅɪɴʟᴇʏᴇʙɪʟɪʀsɪɴɪᴢ.**"
+start_3 : "**ʙᴇɴɪ ɢʀᴜʙᴜɴᴜᴢᴀ ᴅᴀᴠᴇᴛ ᴇᴛᴛɪɢ̆ɪɴɪᴢ ɪ̇ᴄ̧ɪɴ ᴛᴇşᴇᴋᴋᴜ̈ʀʟᴇʀ..**\n\n**ᴄ̧ᴀʟışᴍᴀᴋ ɪᴄ̧ɪɴ sᴀᴅᴇᴄᴇ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪ ʏᴏ̈ɴᴇᴛᴍᴇ ᴠᴇ ɢʀᴜʙᴀ ᴅᴀᴠᴇᴛ ᴇᴛᴍᴇ ʏᴇᴛᴋɪsɪ ᴠᴇʀᴍᴇɴɪᴢ ʏᴇᴛᴇʀʟɪᴅɪʀ.** 🔮\n\n**ᴀsɪsᴛᴀɴ ᴋᴜʟʟᴀɴıᴄı ᴀᴅı:** @{1}"
+start_4 : "**ʟᴏsᴛ ᴍᴜ̈ᴢɪᴋ'ɪɴ ɢᴇʟɪşᴛɪʀɪᴄɪsɪ/ᴋᴜʀᴜᴄᴜsᴜ {1} ɢʀᴜʙᴜɴᴜᴢᴀ ᴋᴀᴛıʟᴅı.** ❤️‍🔥"
+start_5 : "**ʟᴏsᴛ ᴍᴜ̈ᴢɪᴋ'ɪɴ ᴄ̧ᴏᴋ ᴋıʏᴍᴇᴛʟɪ {1} ʙᴇʏᴇғᴇɴᴅɪsɪɴɪɴ ɢʀᴜʙᴜɴᴜᴢᴀ ᴋᴀᴛıʟᴅıɢ̆ıɴı ғᴀʀᴋ ᴇᴛᴛɪᴋ. ᴋᴇɴᴅɪsɪɴᴇ sᴀʏɢıʟᴀʀıᴍı sᴜɴᴀʀıᴍ.** 🙏"
+start_6 : "❗️ **sᴜ̈ᴘᴇʀ ɢʀᴜᴘ ɢᴇʀᴇᴋʟɪ** ❗️ ʟᴜ̈ᴛғᴇɴ ɢʀᴜʙᴜɴᴜᴢᴜ **sᴜ̈ᴘᴇʀ ɢʀᴜʙᴀ** ᴅᴏ̈ɴᴜ̈şᴛᴜ̈ʀᴜ̈ɴ ᴠᴇ sᴏɴʀᴀ ʙᴇɴɪ ᴛᴇᴋʀᴀʀ ᴇᴋʟᴇʏɪɴ.\n\n**sᴜ̈ᴘᴇʀ ɢʀᴜᴘ ɴᴀsıʟ ʏᴀᴘıʟıʀ? 1-** ᴜ̈ʏᴇʟᴇʀ ʟɪsᴛᴇsɪɴᴇ ɢᴇʟɪɴ ᴠᴇ sᴀɢ̆ ᴜ̈sᴛᴛᴇᴋɪ ᴋᴀʟᴇᴍ ɪşᴀʀᴇᴛɪɴᴇ ʙᴀsıɴ.\n**2-** ʏᴇɴɪ ᴜ̈ʏᴇʟᴇʀ ɪᴄ̧ɪɴ sᴏʜʙᴇᴛ ɢᴇᴄ̧ᴍɪşɪ ᴀʏᴀʀıɴı ɢᴏ̈ʀᴜ̈ɴᴜ̈ʀ ᴏʟᴀʀᴀᴋ ᴅᴜ̈ᴢᴇɴʟᴇʏɪɴ. şɪᴍᴅɪ ʙᴏᴛᴜ ᴛᴇᴋʀᴀʀ ᴇᴋʟᴇʏᴇʙɪʟɪʀsɪɴɪᴢ ᴋᴇʏɪғʟɪ ᴅɪɴʟᴇᴍᴇʟᴇʀ."
+start_7 : "**ʟᴏsᴛ ᴍᴜ̈ᴢɪᴋ'ɪɴ ɢʀᴜᴘ ᴋᴀᴘᴀsɪᴛᴇsɪ ᴅᴏʟᴅᴜ**\n [ʙᴜʀᴀʏᴀ ᴛıᴋʟᴀʏᴀʀᴀᴋ ʏᴇɴɪ ʙᴏᴛᴜ ɢᴏ̈ʀᴇʙɪʟɪʀsɪɴɪᴢ]({0})"
 
 # Help
-help_1 : "**Komutlar ve Öğreticileri Görmek İçin Aşağadaki Butonları Kullanınız 🔮**\n\nGrup Üyelerinin Sadece Oynatma Komutlarını, Grup Adminlerininse Ayrıca Admin Komutlarını İncelemeleri Yeterli Olacaktır. "
-help_2 : "**Yardım İçin Butona Tıklayın** 🔮"
+help_1 : "**ᴋᴏᴍᴜᴛʟᴀʀ ᴠᴇ ᴏ̈ɢ̆ʀᴇᴛɪᴄɪʟᴇʀɪ ɢᴏ̈ʀᴍᴇᴋ ɪ̇ᴄ̧ɪɴ ᴀşᴀɢ̆ᴀᴅᴀᴋɪ ʙᴜᴛᴏɴʟᴀʀı ᴋᴜʟʟᴀɴıɴıᴢ 🔮**\n\nɢʀᴜᴘ ᴜ̈ʏᴇʟᴇʀɪɴɪɴ sᴀᴅᴇᴄᴇ ᴏʏɴᴀᴛᴍᴀ ᴋᴏᴍᴜᴛʟᴀʀıɴı, ɢʀᴜᴘ ᴀᴅᴍɪɴʟᴇʀɪɴɪɴsᴇ ᴀʏʀıᴄᴀ ᴀᴅᴍɪɴ ᴋᴏᴍᴜᴛʟᴀʀıɴı ɪ̇ɴᴄᴇʟᴇᴍᴇʟᴇʀɪ ʏᴇᴛᴇʀʟɪ ᴏʟᴀᴄᴀᴋᴛıʀ. 🎧"
+help_2 : "**ʏᴀʀᴅıᴍ ɪ̇ᴄ̧ɪ̇ɴ ʙᴜᴛᴏɴᴀ ᴛıᴋʟᴀʏıɴ** 🔮"
 
 # Settings
-setting_1 : "⚙️ **Müzik Botu Ayarları**\n\n🔮**Düzenlemek Veya Değiştirmek İstediğiniz Ayarları Aşağıdan Butonları Kullanarak Ayarlayabilirsiniz.**"
-setting_3 : "⁉️ Bu Nedir?\n\n1) Doğrudan: Arama sorgularını doğrudan oynatır. Videoları doğrudan modda oynatmak için -v kullanın.\n\n2) Satır İçi: Video ve ses arasında seçim yapmak için Satır İçi İşaretleme Düğmelerini Döndürür. 🔮"
-setting_4 : "⁉️ Bu Nedir?\n\n👥 Herkes: Bu grupta bulunan yönetici komutlarını (skip, pause, resume vb.) herkes kullanabilir.\n\n🙍 Yalnızca Yönetici: Yalnızca yöneticiler ve yetkili kullanıcılar yönetici komutlarını kullanabilir."
+setting_1 : "⚙️ **ᴍᴜ̈ᴢɪᴋ ʙᴏᴛᴜ ᴀʏᴀʀʟᴀʀɪ**\n\n🔮**ᴅᴜ̈ᴢᴇɴʟᴇᴍᴇᴋ ᴠᴇʏᴀ ᴅᴇɢ̆ɪşᴛɪʀᴍᴇᴋ ɪ̇sᴛᴇᴅɪɢ̆ɪɴɪᴢ ᴀʏᴀʀʟᴀʀı ᴀşᴀɢ̆ıᴅᴀɴ ʙᴜᴛᴏɴʟᴀʀı ᴋᴜʟʟᴀɴᴀʀᴀᴋ ᴀʏᴀʀʟᴀʏᴀʙɪʟɪʀsɪɴɪᴢ.**"
+setting_3 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\n1) ᴅᴏɢ̆ʀᴜᴅᴀɴ: ᴀʀᴀᴍᴀ sᴏʀɢᴜʟᴀʀıɴı ᴅᴏɢ̆ʀᴜᴅᴀɴ ᴏʏɴᴀᴛıʀ. ᴠɪᴅᴇᴏʟᴀʀı ᴅᴏɢ̆ʀᴜᴅᴀɴ ᴍᴏᴅᴅᴀ ᴏʏɴᴀᴛᴍᴀᴋ ɪᴄ̧ɪɴ -ᴠ ᴋᴜʟʟᴀɴıɴ.\n\n2) sᴀᴛıʀ ɪ̇ᴄ̧ɪ̇: ᴠɪᴅᴇᴏ ᴠᴇ sᴇs ᴀʀᴀsıɴᴅᴀ sᴇᴄ̧ɪᴍ ʏᴀᴘᴍᴀᴋ ɪᴄ̧ɪɴ sᴀᴛıʀ ɪ̇ᴄ̧ɪ ɪ̇şᴀʀᴇᴛʟᴇᴍᴇ ᴅᴜ̈ɢ̆ᴍᴇʟᴇʀɪɴɪ ᴅᴏ̈ɴᴅᴜ̈ʀᴜ̈ʀ. 🔮"
+setting_4 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\n👥 Herkes: Bu grupta bulunan yönetici komutlarını (skip, pause, resume vb.) herkes kullanabilir.\n\n🙍 Yalnızca Yönetici: Yalnızca yöneticiler ve yetkili kullanıcılar yönetici komutlarını kullanabilir."
 setting_5 : "Yetkili Kullanıcı Bulunamadı\n\nYönetici olmayan herhangi bir kişinin /auth ile yönetici komutlarımı kullanmasına ve /unauth kullanarak kullanmamasına izin verebilirsiniz"
-setting_9 : "⁉️ Bu Nedir?\n\nEtkinleştirildiğinde Bot, sohbetinizi temiz ve anlaşılır kılmak için {0} tarihinden sonra mesajını siler.."
-setting_10 : "⁉️ Bu Nedir?\n\n1) Grup: Komutun verildiği gruptaki müziği çalar.\n\n2) Kanal: İstediğiniz kanaldaki müziği çalar. /channelplay ile kanal kimliğini ayarla"
-setting_11 : "⁉️ Bu Nedir?\n\n1) Herkes: Bu grupta bulunan herkes burada müzik çalabilir.\n\n2) Yalnızca Yönetici: Bu gruptaki müziği yalnızca yöneticiler çalabilir."
+setting_9 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\nEtkinleştirildiğinde Bot, sohbetinizi temiz ve anlaşılır kılmak için {0} tarihinden sonra mesajını siler.."
+setting_10 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\n1) Grup: Komutun verildiği gruptaki müziği çalar.\n\n2) Kanal: İstediğiniz kanaldaki müziği çalar. /channelplay ile kanal kimliğini ayarla"
+setting_11 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\n1) Herkes: Bu grupta bulunan herkes burada müzik çalabilir.\n\n2) Yalnızca Yönetici: Bu gruptaki müziği yalnızca yöneticiler çalabilir."
 setting_12 : "❌ Kanal modu için tanımlanmış kanal kimliğiniz yok. Lütfen /channelplay ile tanımlayın."
 setting_13 : "Etkin grup aramasında oynatma modu değiştirilemez. Lütfen önce /stop ile sesli sohbeti durdurun."
-setting_14 : "⁉️ Bu Nedir?\n\nEtkinleştirildiğinde, Bot yürütülen komutları (/play, /pause, /stop vb.) hemen siler.\n\nBot, bunun düzgün çalışması için mesajları silme yetkisine sahip olmalıdır."
+setting_14 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\nEtkinleştirildiğinde, Bot yürütülen komutları (/play, /pause, /stop vb.) hemen siler.\n\nBot, bunun düzgün çalışması için mesajları silme yetkisine sahip olmalıdır."
 setting_15 : "Eş çözümlenemedi, Kanalınıza bot eklediğinizden ve onu yönetici olarak terfi ettirdiğinizden emin olun.\n\n/channelplay'i tekrar ayarlamayı deneyin..."
-setting_16 : "⁉️ Bu Nedir?\n\nAktive Ettiğiniz Zaman Bot 2 Saatte Bir Botun Nasıl Kullanılacağı İle İlgili İpuçları Verir."
+setting_16 : "⁉️ ʙᴜ ɴᴇᴅɪʀ?\n\nAktive Ettiğiniz Zaman Bot 2 Saatte Bir Botun Nasıl Kullanılacağı İle İlgili İpuçları Verir."
 
 set_cb_1 : "Ses Kalitesi Paneli 🔈"
 set_cb_2 : "Video Kalitesi Paneli 📽️"
