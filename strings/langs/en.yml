@@ -241,25 +241,25 @@ stream_6 : " **ʏᴀʏıɴ ʙᴀşʟᴀᴛıʟᴅı**  \n**ᴘᴀʀᴄ̧ᴀ**: 
 #General Buttons
 CLOSE_BUTTON  : "ᴋᴀᴘᴀᴛ"
 CLOSEMENU_BUTTON  : "ᴍᴇɴᴜ̈ʏᴜ̈ ᴋᴀᴘᴀᴛ"
-BACK_BUTTON : "⬅ Geri"
-UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
+BACK_BUTTON : "ɢᴇʀɪ"
+UNBAN_BUTTON : "ᴀsɪsᴛᴀɴ ʏᴀsᴀɢ̆ɪɴɪ ᴋᴀʟᴅɪʀ"
 
 #Lyrics
-L_B_1 : "🔮 Şarkı Sözlerini Şimdi Kontrol Et"
+L_B_1 : "şᴀʀᴋı sᴏ̈ᴢʟᴇʀɪɴɪ şɪᴍᴅɪ ᴋᴏɴᴛʀᴏʟ ᴇᴛ"
 
 # Start
-S_B_1 : "🗒 Komutlar"
-S_B_2 : "🔧 Ayarlar"
-S_B_3 : "🎉 Destek Grubu"
-S_B_4 : "🎩 Duyuru"
-S_B_5 : "✚ Beni Grubuna Ekle ✚"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "❤️‍🔥 Developer"
-S_B_8 : "🔮 Komutlar Menüsü"
+S_B_1 : "ᴋᴏᴍᴜᴛʟᴀʀ"
+S_B_2 : "ᴀʏᴀʀʟᴀʀ"
+S_B_3 : "ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ"
+S_B_4 : "ᴅᴜʏᴜʀᴜ"
+S_B_5 : "✚ ʙᴇɴɪ ɢʀᴜʙᴜɴᴀ ᴇᴋʟᴇ"
+S_B_6 : "ɢɪᴛ ʀᴇᴘᴏ"
+S_B_7 : "ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+S_B_8 : "ᴋᴏᴍᴜᴛʟᴀʀ ᴍᴇɴᴜ̈sᴜ̈"
 
 #Help 
-H_B_1 : "💎 Admin Komutları"
-H_B_2 : "🎧 Oynatma Komutları"
+H_B_1 : "ᴀᴅᴍɪɴ ᴋᴏᴍᴜᴛʟᴀʀı"
+H_B_2 : "Oynatma Komutları"
 H_B_3 : "🤖 Bot Komutları"
 H_B_4 : "🎁 Ekstra Komutlar"
 H_B_5 : "💣 Menüyü Kapat"
