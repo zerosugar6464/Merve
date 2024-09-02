@@ -1,22 +1,22 @@
 name : Türkçe 🇹🇷
 
 # General Strings
-general_1 : "Bir kullanıcının mesajını yanıtlayın veya username/user_id verin."
-general_2 : "Hata! Komutun Yanlış Kullanımı."
-general_3 : "İşleminiz Gerçekleşirken Hata Oluştu. **Lütfen Bota Yönetici Yetkisi Verin**.\n\nHata Türü: - {0}"
-general_4 : "Bu sohbet grubunda isimsiz bir yöneticisiniz!\nYönetici Haklarından Kullanıcı Hesabına geri dönün."
-general_5 : "Bu eylemi gerçekleştirmek için sesli sohbet haklarına sahip yönetici olmanız gerekir."
-general_6 : "Bot sesli sohbette yayın yapmıyor. 🔮"
+general_1 : "ʙɪʀ ᴋᴜʟʟᴀɴɪᴄɪɴɪɴ ᴍᴇꜱᴀᴊɪɴɪ ʏᴀɴɪᴛʟᴀʏɪɴ ᴠᴇʏᴀ ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ_ɪᴅ ᴠᴇʀɪɴ."
+general_2 : "ʜᴀᴛᴀ! ᴋᴏᴍᴜᴛᴜɴ ʏᴀɴʟɪş ᴋᴜʟʟᴀɴɪᴍɪ."
+general_3 : "ɪ̇şʟᴇᴍɪɴɪᴢ ɢᴇʀᴄ̧ᴇᴋʟᴇşɪʀᴋᴇɴ ʜᴀᴛᴀ ᴏʟᴜşᴛᴜ. **ʟᴜ̈ᴛғᴇɴ ʙᴏᴛᴀ ʏᴏ̈ɴᴇᴛɪᴄɪ ʏᴇᴛᴋɪsɪ ᴠᴇʀɪɴ.**\n\ʜᴀᴛᴀ ᴛᴜ̈ʀᴜ̈: - {0}"
+general_4 : "ʙᴜ sᴏʜʙᴇᴛ ɢʀᴜʙᴜɴᴅᴀ ɪsɪᴍsɪᴢ ʙɪʀ ʏᴏ̈ɴᴇᴛɪᴄɪsɪɴɪᴢ!\ʏᴏ̈ɴᴇᴛɪᴄɪ ʜᴀᴋʟᴀʀıɴᴅᴀɴ ᴋᴜʟʟᴀɴıᴄı ʜᴇsᴀʙıɴᴀ ɢᴇʀɪ ᴅᴏ̈ɴᴜ̈ɴ."
+general_5 : "ʙᴜ ᴇʏʟᴇᴍɪ ɢᴇʀᴄ̧ᴇᴋʟᴇşᴛɪʀᴍᴇᴋ ɪᴄ̧ɪɴ sᴇsʟɪ sᴏʜʙᴇᴛ ʜᴀᴋʟᴀʀıɴᴀ sᴀʜɪᴘ ʏᴏ̈ɴᴇᴛɪᴄɪ ᴏʟᴍᴀɴıᴢ ɢᴇʀᴇᴋɪʀ."
+general_6 : "ʙᴏᴛ sᴇsʟɪ sᴏʜʙᴇᴛᴛᴇ ʏᴀʏıɴ ʏᴀᴘᴍıʏᴏʀ. 🔮"
 
 # Classes - Telegram.py
-tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. @Blayzen hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
-tg_2 : "Telegram'dan Medya İndirilirken Hata Oluştu."
+tg_1 : "ʙᴏᴛ şᴜ ᴀɴᴅᴀ ɪɴᴅɪʀɪʟᴇɴʟᴇʀʟᴇ **ᴀşıʀı ʏᴜ̈ᴋʟᴇɴᴍɪş**. @Blayzen ʜᴇsᴀʙıɴᴀ ᴅᴜ̈ᴢᴇʟᴛᴍᴇsɪ ɪᴄ̧ɪɴ ʙᴜ ᴍᴇsᴀᴊı ʙɪʟᴅɪʀɪɴɪᴢ.\n\n**ᴅᴇɴᴇᴍᴇ sᴜ̈ʀᴇsɪ:** {0} (__beklenen süre__))"
+tg_2 : "ᴛᴇʟᴇɢʀᴀᴍ'ᴅᴀɴ ᴍᴇᴅʏᴀ ɪ̇ɴᴅɪʀɪʟɪʀᴋᴇɴ ʜᴀᴛᴀ ᴏʟᴜşᴛᴜ."
 
 # Core - Call.py
-call_1 : "Bot, asistan hesabını grubunuza davet etmek için **Yönetici** İzni gerektirir.\n\Lütfen bota davet yetkisi verin."
-call_2 : "**Asistanı Grubunuzda yasaklamışsınız**, lütfen yasağı kaldırın! \nAsistanın bilgileri aşağıda unban yaparsanız tekrar katılabilir. Veya grup ayarlarında çıkarılan kullanıcılar listesinde asistanı bulup engeli kaldırın. Yapamazsanız @Blayzen hesabına ulaşın.\n\n**Asistan Kullanıcı Adı:** @{0}\n**Asistan ID:** {1}"
-call_3 : "Asistan Hesabı sohbetinize katılırken sorun oluştu.\nLütfen @{0} hesabını gruba kendiniz ekleyin veya @Blayzen hesabına yazın.\n\n**Sistem Notu**: {1}"
-call_4 : "Bot, asistan hesabını sohbet grubunuza davet etmek için **Kullanıcıları Bağlantı Yoluyla Davet Et** Yetkisi gerektirir.\nLütfen bota davet yetkisi verin."
+call_1 : "ʙᴏᴛ, ᴀsɪsᴛᴀɴ ʜᴇsᴀʙıɴı ɢʀᴜʙᴜɴᴜᴢᴀ ᴅᴀᴠᴇᴛ ᴇᴛᴍᴇᴋ ɪᴄ̧ɪɴ **ʏᴏ̈ɴᴇᴛɪᴄɪ** ɪ̇ᴢɴɪ ɢᴇʀᴇᴋᴛɪʀɪʀ.\n\ʟᴜ̈ᴛғᴇɴ ʙᴏᴛᴀ ᴅᴀᴠᴇᴛ ʏᴇᴛᴋɪsɪ ᴠᴇʀɪɴ."
+call_2 : "**ᴀsɪsᴛᴀɴı ɢʀᴜʙᴜɴᴜᴢᴅᴀ ʏᴀsᴀᴋʟᴀᴍışsıɴıᴢ**, ʟᴜ̈ᴛғᴇɴ ʏᴀsᴀɢ̆ı ᴋᴀʟᴅıʀıɴ!\nᴀsɪsᴛᴀɴıɴ ʙɪʟɢɪʟᴇʀɪ ᴀşᴀɢ̆ıᴅᴀ ᴜɴʙᴀɴ ʏᴀᴘᴀʀsᴀɴıᴢ ᴛᴇᴋʀᴀʀ ᴋᴀᴛıʟᴀʙɪʟɪʀ. ᴠᴇʏᴀ ɢʀᴜᴘ ᴀʏᴀʀʟᴀʀıɴᴅᴀ ᴄ̧ıᴋᴀʀıʟᴀɴ ᴋᴜʟʟᴀɴıᴄıʟᴀʀ ʟɪsᴛᴇsɪɴᴅᴇ ᴀsɪsᴛᴀɴı ʙᴜʟᴜᴘ ᴇɴɢᴇʟɪ ᴋᴀʟᴅıʀıɴ. ʏᴀᴘᴀᴍᴀᴢsᴀɴıᴢ @Blayzen ʜᴇsᴀʙıɴᴀ ᴜʟᴀşıɴ.\n\n**ᴀsɪsᴛᴀɴ ᴋᴜʟʟᴀɴıᴄı ᴀᴅı:** @{0}\n**ᴀsɪsᴛᴀɴ ɪᴅ:** {1}"
+call_3 : "ᴀsɪsᴛᴀɴ ʜᴇsᴀʙı sᴏʜʙᴇᴛɪɴɪᴢᴇ ᴋᴀᴛıʟıʀᴋᴇɴ sᴏʀᴜɴ ᴏʟᴜşᴛᴜ.\nʟᴜ̈ᴛғᴇɴ @{0} ʜᴇsᴀʙıɴı ɢʀᴜʙᴀ ᴋᴇɴᴅɪɴɪᴢ ᴇᴋʟᴇʏɪɴ ᴠᴇʏᴀ @Blayzen ʜᴇsᴀʙıɴᴀ ʏᴀᴢıɴ.\n\n**sɪsᴛᴇᴍ ɴᴏᴛᴜ**: {1}"
+call_4 : "ʙᴏᴛ, ᴀsɪsᴛᴀɴ ʜᴇsᴀʙıɴı sᴏʜʙᴇᴛ ɢʀᴜʙᴜɴᴜᴢᴀ ᴅᴀᴠᴇᴛ ᴇᴛᴍᴇᴋ ɪᴄ̧ɪɴ **ᴋᴜʟʟᴀɴıᴄıʟᴀʀı ʙᴀɢ̆ʟᴀɴᴛı ʏᴏʟᴜʏʟᴀ ᴅᴀᴠᴇᴛ ᴇᴛ** ʏᴇᴛᴋɪsɪ ɢᴇʀᴇᴋᴛɪʀɪʀ.\nʟᴜ̈ᴛғᴇɴ ʙᴏᴛᴀ ᴅᴀᴠᴇᴛ ʏᴇᴛᴋɪsɪ ᴠᴇʀɪɴ."
 call_5 : "**Asistan Hesabı 5 Saniye içinde katılacak.. Lütfen Bekleyin.** 🔮"
 call_6 : "**Asistan Hesabı [{0}] Başarıyla Katıldı. ✅\n\nMüzik Şimdi Başlatılıyor.**"
 call_7 : "**Zararlı Yönetici Hakkı Verildi **\n\nLütfen ** KULLANICILARI YASAK** haklarını bottan kaldırın."
