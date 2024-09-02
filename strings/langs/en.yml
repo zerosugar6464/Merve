@@ -239,8 +239,8 @@ stream_6 : " **ʏᴀʏıɴ ʙᴀşʟᴀᴛıʟᴅı**  \n**ᴘᴀʀᴄ̧ᴀ**: 
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "💣 Kapat"
-CLOSEMENU_BUTTON  : "💣 Menüyü Kapat"
+CLOSE_BUTTON  : "ᴋᴀᴘᴀᴛ"
+CLOSEMENU_BUTTON  : "ᴍᴇɴᴜ̈ʏᴜ̈ ᴋᴀᴘᴀᴛ"
 BACK_BUTTON : "⬅ Geri"
 UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 
