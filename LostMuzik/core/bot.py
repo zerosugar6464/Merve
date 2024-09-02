@@ -31,10 +31,10 @@ group_commands = [
     BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
     BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
     BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
+    BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
     BotCommand("id", "🆔 Kullanıcı ID'sini Verir"),
     BotCommand("hava", "🌦️ Hava Durumunu Gösterir"),
-    BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
-    
+    BotCommand("info", "📚 Grup Bilgilerini Verir"),
 ]
 
 async def set_commands(client):
