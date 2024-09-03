@@ -49,10 +49,28 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar += circle
     bar += line*(10-len(bar))
 
+    buttons = [
+    
+        [
+             InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            )
+        ],
+    ]
+    return buttons
 
 
 def telegram_markup_timer(_, chat_id, played, dur, videoid):
     bar = random.choice(selection)
+    buttons = [
+        
+        [
+             InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            )
+        ],
+    ]
+    return buttons
 
 
 # Rest of the functions remain the same...
@@ -63,25 +81,71 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
 
 
 def stream_markup(_, videoid, chat_id):
-    
+    buttons = [
+        
+        [
+             InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            )
+        ],
+    ]
+    return buttons
+
 
 def telegram_markup(_, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            ),
+        ],
+    ]
+    return buttons
 
 
 ## Search Query Inline
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
+    buttons = [
+    
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            )
+        ],
+    ]
+    return buttons
 
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
-    
+    buttons = [
+        
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+        ],
+    ]
+    return buttons
+
 
 ## Live Stream Markup
 
 
 def livestream_markup(_, videoid, user_id, mode, channel, fplay):
-    
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+        ],
+    ]
+    return buttons
+
 
 ## Slider Query Markup
 
