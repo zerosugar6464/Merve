@@ -63,7 +63,7 @@ class LostMuzik(Client):
         self.mention = get_me.mention
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "» **Bot Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
+                config.LOG_GROUP_ID, "» **ʙᴏᴛ ʙᴀşᴀʀıʟı ʙɪʀ şᴇᴋɪʟᴅᴇ ʙᴀşʟᴀᴛıʟᴅı**"
             )
         except:
             LOGGER(__name__).error(
