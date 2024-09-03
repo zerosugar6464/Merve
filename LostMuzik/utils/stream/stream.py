@@ -15,7 +15,7 @@ from LostMuzik.utils.database import (add_active_chat,
 from LostMuzik.utils.exceptions import AssistantErr
 from LostMuzik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from LostMuzik.utils.inline.playlist import close_markup
+from LostMuzik.utils.inline.playlist import 
 from LostMuzik.utils.pastebin import LostMuzikbin
 from LostMuzik.utils.stream.queue import put_queue, put_queue_index
 
