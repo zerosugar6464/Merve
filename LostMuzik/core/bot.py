@@ -10,31 +10,31 @@ from ..logging import LOGGER
 
 
 private_commands = [
-    BotCommand("start", "🎧 Botu başlatır"),
-    BotCommand("yardim", "📖 Yardım menüsünü gösterir"),
+    BotCommand("start", "🎧 ʙᴏᴛᴜ ʙᴀşʟᴀᴛıʀ"),
+    BotCommand("yardim", "📖 ʏᴀʀᴅıᴍ ᴍᴇɴᴜ̈sᴜ̈ɴᴜ̈ ɢᴏ̈sᴛᴇʀɪʀ"),
 ]
 
 
 group_commands = [
-    BotCommand("oynat", "🔼 Müziği oynatır"),
-    BotCommand("voynat", "📹 Videoyu oynatır"),
-    BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
-    BotCommand("duraklat", "⏸️ Çalan Parçayı Durdurur"),
-    BotCommand("devam", "▶️ Çalan Parçayı Devam Ettirir"),
-    BotCommand("son", "⏹️ Çalan Parçayı Kapatır"),
-    BotCommand("karistir", "🔀 Çalan Parçayı Karıştırır"),
-    BotCommand("dongu", "🔄 Çalan Parçayı Tekrarlar"),
-    BotCommand("sira", "📖 Çalma Listelerini Gösterir"),
-    BotCommand("ilerisar", "⏩ Parçayı İleri Sarar"),
-    BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
-    BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
-    BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
-    BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
-    BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
-    BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
-    BotCommand("id", "🆔 Kullanıcı ID'sini Verir"),
-    BotCommand("hava", "🌦️ Hava Durumunu Gösterir"),
-    BotCommand("info", "📚 Grup Bilgilerini Verir"),
+    BotCommand("oynat", "🔼 ᴍᴜ̈ᴢɪɢ̆ɪ ᴏʏɴᴀᴛıʀ"),
+    BotCommand("voynat", "📹 ᴠɪᴅᴇᴏʏᴜ ᴏʏɴᴀᴛıʀ"),
+    BotCommand("atla", "⏭️ sᴏɴʀᴀᴋɪ ᴘᴀʀᴄ̧ᴀʏᴀ ɢᴇᴄ̧ᴇʀ"),
+    BotCommand("duraklat", "⏸️ ᴄ̧ᴀʟᴀɴ ᴘᴀʀᴄ̧ᴀʏı ᴅᴜʀᴅᴜʀᴜʀ"),
+    BotCommand("devam", "▶️ ᴄ̧ᴀʟᴀɴ ᴘᴀʀᴄ̧ᴀʏı ᴅᴇᴠᴀᴍ ᴇᴛᴛɪʀɪʀ"),
+    BotCommand("son", "⏹️ ᴄ̧ᴀʟᴀɴ ᴘᴀʀᴄ̧ᴀʏı ᴋᴀᴘᴀᴛıʀ"),
+    BotCommand("karistir", "🔀 ᴄ̧ᴀʟᴀɴ ᴘᴀʀᴄ̧ᴀʏı ᴋᴀʀışᴛıʀıʀ"),
+    BotCommand("dongu", "🔄 ᴄ̧ᴀʟᴀɴ ᴘᴀʀᴄ̧ᴀʏı ᴛᴇᴋʀᴀʀʟᴀʀ"),
+    BotCommand("sira", "📖 ᴄ̧ᴀʟᴍᴀ ʟɪsᴛᴇʟᴇʀɪɴɪ ɢᴏ̈sᴛᴇʀɪʀ"),
+    BotCommand("ilerisar", "⏩ ᴘᴀʀᴄ̧ᴀʏı ɪ̇ʟᴇʀɪ̇ sᴀʀᴀʀ"),
+    BotCommand("gerisar", "⏪ ᴘᴀʀᴄ̧ᴀʏı ɢᴇʀɪ sᴀʀᴀʀ"),
+    BotCommand("playlist", "📖 ᴄ̧ᴀʟᴍᴀ ʟɪsᴛᴇɴɪᴢɪ ɢᴏ̈sᴛᴇʀɪʀ"),
+    BotCommand("bul", "📩 sᴇᴄ̧ᴛɪɢ̆ɪɴɪᴢ ᴘᴀʀᴄ̧ᴀʏı ɪ̇ɴᴅɪ̇ʀɪ̇ʀ"),
+    BotCommand("ayarlar", "⚙️ ʙᴏᴛ ᴀʏᴀʀʟᴀʀıɴı ɢᴏ̈sᴛᴇʀɪʀ"),
+    BotCommand("restart", "🔃 ʙᴏᴛᴜ ʏᴇɴɪᴅᴇɴ ʙᴀşʟᴀᴛıʀ"),
+    BotCommand("reload", "❤️‍🔥 ʏᴏ̈ɴᴇᴛɪᴄɪ ᴏ̈ɴʙᴇʟʟᴇɢ̆ɪɴɪ ɢᴜ̈ɴᴄᴇʟʟᴇʀ"),
+    BotCommand("id", "🆔 ᴋᴜʟʟᴀɴıᴄı ɪᴅ'sɪɴɪ ᴠᴇʀɪʀ"),
+    BotCommand("hava", "🌦️ ʜᴀᴠᴀ ᴅᴜʀᴜᴍᴜɴᴜ ɢᴏ̈sᴛᴇʀɪʀ"),
+    BotCommand("info", "📚 ɢʀᴜᴘ ʙɪʟɢɪʟᴇʀɪɴɪ ᴠᴇʀɪʀ"),
 ]
 
 async def set_commands(client):
