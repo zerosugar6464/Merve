@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2023 by LostBots@Github, < https://github.com/LostBots >.
-#
-# This file is part of < https://github.com/LostBots/LostMuzik > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/LostBots/LostMuzik/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import sys
 
 from pyrogram import Client
@@ -71,7 +61,7 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 1 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
+                    config.LOG_GROUP_ID, "» **ᴀsɪsᴛᴀɴ 𝟷 ʙᴀşᴀʀıʟı ʙɪʀ şᴇᴋɪʟᴅᴇ ʙᴀşʟᴀᴛıʟᴅı**"
                 )
             except:
                 LOGGER(__name__).error(
@@ -102,7 +92,7 @@ class Userbot(Client):
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 2 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
+                    config.LOG_GROUP_ID, "» **ᴀsɪsᴛᴀɴ 𝟸 ʙᴀşᴀʀıʟı ʙɪʀ şᴇᴋɪʟᴅᴇ ʙᴀşʟᴀᴛıʟᴅı**"
                 )
             except:
                 LOGGER(__name__).error(
@@ -133,7 +123,7 @@ class Userbot(Client):
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 3 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
+                    config.LOG_GROUP_ID, "» **ᴀsɪsᴛᴀɴ 𝟹 ʙᴀşᴀʀıʟı ʙɪʀ şᴇᴋɪʟᴅᴇ ʙᴀşʟᴀᴛıʟᴅı**"
                 )
             except:
                 LOGGER(__name__).error(
@@ -164,7 +154,7 @@ class Userbot(Client):
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 4 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
+                    config.LOG_GROUP_ID, "» **ᴀsɪsᴛᴀɴ 𝟺 ʙᴀşᴀʀıʟı ʙɪʀ şᴇᴋɪʟᴅᴇ ʙᴀşʟᴀᴛıʟᴅı**"
                 )
             except:
                 LOGGER(__name__).error(
@@ -195,7 +185,7 @@ class Userbot(Client):
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "» **Asistan 5 Başarılı Bir Şekilde Başlatıldı** ❤️‍🔥"
+                    config.LOG_GROUP_ID, "» **ᴀsɪsᴛᴀɴ 𝟻 ʙᴀşᴀʀıʟı ʙɪʀ şᴇᴋɪʟᴅᴇ ʙᴀşʟᴀᴛıʟᴅı**"
                 )
             except:
                 LOGGER(__name__).error(
