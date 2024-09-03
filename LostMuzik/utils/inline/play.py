@@ -82,7 +82,12 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
 
 def stream_markup(_, videoid, chat_id):
     buttons = [
-
+        
+        [
+             InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            )
+        ],
     ]
     return buttons
 
