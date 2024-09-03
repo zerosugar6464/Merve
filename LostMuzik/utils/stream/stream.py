@@ -130,7 +130,6 @@ async def stream(
             carbon = await Carbon.generate(
                 car, randint(100, 10000000)
             )
-            upl = close_markup(_)
             return await app.send_message(
                 original_chat_id,
                 text=_["playlist_18"].format(link, position),
