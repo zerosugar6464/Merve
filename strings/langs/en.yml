@@ -342,11 +342,11 @@ QU_B_2 : "🎧 {1}ᴅᴇɴ {0} ᴅᴀᴋɪᴋᴀsı ᴏʏɴᴀᴛıʟᴅı"
 #Sudo
 sudo_1 : "{0} ᴢᴀᴛᴇɴ ʙɪʀ sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄısı. 😁"
 sudo_2 : "sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄıʟᴀʀıɴᴀ **{0}** ᴇᴋʟᴇɴᴅɪ. ❤️‍🔥" 
-sudo_3 : "Bot'un Sudo'sunun bir parçası değil."
-sudo_4 : "Bot'un Sudo Kullanıcısından Kaldırıldı. ❄️"
-sudo_5 : "⭐️<u> **Owners:**</u>\n"
-sudo_6 : "\n⭐️<u> **Sudo Kullanıcıları:**</u>\n"
-sudo_7 : "Sudo Kullanıcısı Yok"
+sudo_3 : "ʙᴏᴛ'ᴜɴ sᴜᴅᴏ'sᴜɴᴜɴ ʙɪʀ ᴘᴀʀᴄ̧ᴀsı ᴅᴇɢ̆ɪʟ."
+sudo_4 : "ʙᴏᴛ'ᴜɴ sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄısıɴᴅᴀɴ ᴋᴀʟᴅıʀıʟᴅı. 🐙"
+sudo_5 : "👑<u> **ʙᴏᴛ sᴀʜɪʙɪ:**</u>\n"
+sudo_6 : "\n💎<u> **sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄıʟᴀʀı:**</u>\n"
+sudo_7 : "sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄısı ʏᴏᴋ"
 
 #Block
 block_1 : "{0} bot tarafından zaten engellendi."
