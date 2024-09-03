@@ -80,18 +80,6 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-        
-        [
-             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
-        ],
-    ]
-    return buttons
-
-
 def telegram_markup(_, chat_id):
     buttons = [
         [
