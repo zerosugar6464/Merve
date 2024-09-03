@@ -33,23 +33,23 @@ async def play_logs(message, streamtype):
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
         else:
-            chatusername = "Gizli Grup 🔏"
+            chatusername = "ɢɪᴢʟɪ ɢʀᴜᴘ 🔏"
         logger_text = f"""
 
 
-❤️‍🔥 **Grup Adı:** {message.chat.title} [`{message.chat.id}`]
-👥 **Üye Sayısı: {sayı}**
-👤 **Kullanıcı:** {message.from_user.mention}
-✏️ **Kullanıcı Adı:** @{message.from_user.username}
-🆔 **Kullanıcı ID:** `{message.from_user.id}`
-🔗 **Grup Linki:** {chatusername}
-🔎 **Sorgu:** {message.text}
+**ɢʀᴜᴘ ᴀᴅı:** {message.chat.title} [`{message.chat.id}`]
+**ᴜ̈ʏᴇ sᴀʏısı: {sayı}**
+**ᴋᴜʟʟᴀɴıᴄı:** {message.from_user.mention}
+**ᴋᴜʟʟᴀɴıᴄı ᴀᴅı:** @{message.from_user.username}
+**ᴋᴜʟʟᴀɴıᴄı ɪᴅ:** `{message.from_user.id}`
+**ɢʀᴜᴘ ʟɪɴᴋɪ:** {chatusername}
+**sᴏʀɢᴜ:** {message.text}
 
-**CPU:** {CPU}  ♨️  **RAM:** {RAM}  📂  **DISK:** {DISK}
+**ɪşʟᴇᴍᴄɪ:** {CPU}  ♨️  **ʙᴇʟʟᴇᴋ:** {RAM}  📂  **ᴅᴇᴘᴏʟᴀᴍᴀ:** {DISK}
 
-**Toplam Grup Sayısı: » {toplamgrup}** 
+**ᴛᴏᴘʟᴀᴍ ɢʀᴜᴘ sᴀʏısı: » {toplamgrup}** 
 
-**Aktif Ses: {aktifseslisayısı}  🌬️  Aktif Video: {aktifvideosayısı}**"""
+**ᴀᴋᴛɪғ sᴇsʟɪ: {aktifseslisayısı}  🌬️  ᴀᴋᴛɪғ ᴠɪᴅᴇᴏ: {aktifvideosayısı}**"""
         if message.chat.id != LOG_GROUP_ID:
             try:
                 await app.send_message(
@@ -57,7 +57,7 @@ async def play_logs(message, streamtype):
                     f"{logger_text}",
                     disable_web_page_preview=True,
                 )
-                await app.set_chat_title(LOG_GROUP_ID, f"AKTİF SESLİ - {aktifseslisayısı}")
+                await app.set_chat_title(LOG_GROUP_ID, f"ᴀᴋᴛɪғ sᴇsʟɪ - {aktifseslisayısı}")
             except:
                 pass
         return
