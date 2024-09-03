@@ -58,46 +58,46 @@ HELP_4 = """✅<u>**ᴇᴋsᴛʀᴀ ᴋᴏᴍᴜᴛʟᴀʀ:**</u>
 
 🆘 **/yardim :** ʙᴏᴛᴜɴ ʏᴀʀᴅıᴍ ᴍᴇɴᴜ̈sᴜ̈ɴᴇ ᴜʟᴀşıʀsıɴıᴢ.
 
-🏓 **/ping :** Ping Süresini CPU Ve RAM Kullanımına Bakabilirsiniz.
-🌦️ **/hava :** Hava Durumunu Gösterir (Örn: /hava Adana)
-🆔 **/id :** Bir Kullanıcıyı Yanıtlayarak /id Yazarsanız Kullanıcının İdsini Alabilirsiniz.
-📚 **/info :** /info Yazarak Grup Bilgisini Alabilirsiniz. (Sadece Adminlere Özel)
+🏓 **/ping :** ᴘɪɴɢ sᴜ̈ʀᴇsɪɴɪ ᴄᴘᴜ ᴠᴇ ʀᴀᴍ ᴋᴜʟʟᴀɴıᴍıɴᴀ ʙᴀᴋᴀʙɪʟɪʀsɪɴɪᴢ.
+🌦️ **/hava :** ʜᴀᴠᴀ ᴅᴜʀᴜᴍᴜɴᴜ ɢᴏ̈sᴛᴇʀɪʀ (ᴏ̈ʀɴ: /ʜᴀᴠᴀ ᴀᴅᴀɴᴀ)
+🆔 **/id :** ʙɪʀ ᴋᴜʟʟᴀɴıᴄıʏı ʏᴀɴıᴛʟᴀʏᴀʀᴀᴋ /ɪᴅ ʏᴀᴢᴀʀsᴀɴıᴢ ᴋᴜʟʟᴀɴıᴄıɴıɴ ɪ̇ᴅsɪɴɪ ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ.
+📚 **/info :** /ɪɴғᴏ ʏᴀᴢᴀʀᴀᴋ ɢʀᴜᴘ ʙɪʟɢɪsɪɴɪ ᴀʟᴀʙɪʟɪʀsɪɴɪᴢ. (sᴀᴅᴇᴄᴇ ᴀᴅᴍɪɴʟᴇʀᴇ ᴏ̈ᴢᴇʟ)
 """
 
 
-HELP_5 = """🔰**<u>BURASI ÇOK ÖNEMLİ DEĞİL, SADECE BOT YÖNETİCİLERİ İÇİN BİR REHBER:</u>**
+HELP_5 = """🔰**<u>ʙᴜʀᴀsɪ ᴄ̧ᴏᴋ ᴏ̈ɴᴇᴍʟɪ̇ ᴅᴇɢ̆ɪ̇ʟ, sᴀᴅᴇᴄᴇ ʙᴏᴛ ʏᴏ̈ɴᴇᴛɪ̇ᴄɪ̇ʟᴇʀɪ̇ ɪ̇ᴄ̧ɪ̇ɴ ʙɪ̇ʀ ʀᴇʜʙᴇʀ:</u>**
 
-/addsudo [Kullanıcı adı veya kullanıcıya yanıt]
-/delsudo [Kullanıcı adı veya kullanıcıya yanıt]
+/addsudo [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ]
+/delsudo [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ]
 
-🤖**<u>BOT Komutları:</u>**
-/reboot - Botunuzu yeniden başlatın. 
-/update - Botu Güncelle.
-/speedtest - Sunucu hızlarını kontrol edin
-/maintenance [enable / disable] 
-/logger [enable / disable] - Bot, aranan sorguları günlükçü grubuna kaydeder.
-/get_log [Satır Sayısı] - Botunuzun günlüğünü heroku veya vps'den alın. Her ikisi için de işe yarar.
-/autoend [enable|disable] - Kimse dinlemiyorsa 3 dakika sonra Otomatik akışı sonlandır özelliğini etkinleştirin.
+🤖**<u>ʙᴏᴛ ᴋᴏᴍᴜᴛʟᴀʀı:</u>**
+/reboot - ʙᴏᴛᴜɴᴜᴢᴜ ʏᴇɴɪᴅᴇɴ ʙᴀşʟᴀᴛıɴ. 
+/update - ʙᴏᴛᴜ ɢᴜ̈ɴᴄᴇʟʟᴇ.
+/speedtest - sᴜɴᴜᴄᴜ ʜıᴢʟᴀʀıɴı ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ
+/maintenance [ᴇɴᴀʙʟᴇ / ᴅɪsᴀʙʟᴇ] 
+/logger [ᴇɴᴀʙʟᴇ / ᴅɪsᴀʙʟᴇ] - ʙᴏᴛ, ᴀʀᴀɴᴀɴ sᴏʀɢᴜʟᴀʀı ɢᴜ̈ɴʟᴜ̈ᴋᴄ̧ᴜ̈ ɢʀᴜʙᴜɴᴀ ᴋᴀʏᴅᴇᴅᴇʀ.
+/get_log [sᴀᴛıʀ sᴀʏısı] - ʙᴏᴛᴜɴᴜᴢᴜɴ ɢᴜ̈ɴʟᴜ̈ɢ̆ᴜ̈ɴᴜ̈ ʜᴇʀᴏᴋᴜ ᴠᴇʏᴀ ᴠᴘs'ᴅᴇɴ ᴀʟıɴ. ʜᴇʀ ɪᴋɪsɪ ɪᴄ̧ɪɴ ᴅᴇ ɪşᴇ ʏᴀʀᴀʀ.
+/autoend [ᴇɴᴀʙʟᴇ / ᴅɪsᴀʙʟᴇ] - ᴋɪᴍsᴇ ᴅɪɴʟᴇᴍɪʏᴏʀsᴀ 𝟹 ᴅᴀᴋɪᴋᴀ sᴏɴʀᴀ ᴏᴛᴏᴍᴀᴛɪᴋ ᴀᴋışı sᴏɴʟᴀɴᴅıʀ ᴏ̈ᴢᴇʟʟɪɢ̆ɪɴɪ ᴇᴛᴋɪɴʟᴇşᴛɪʀɪɴ.
 
-📈**<u>İSTATİSTİK KOMUTLARI:</u>**
-/aktifses - Bottaki aktif sesli sohbetleri kontrol edin.
-/aktifvideo - Bottaki etkin video görüşmelerini kontrol edin.
-/stat - Bot İstatistiklerini Kontrol Edin
+📈**<u>ɪ̇sᴛᴀᴛɪ̇sᴛɪ̇ᴋ ᴋᴏᴍᴜᴛʟᴀʀɪ:</u>**
+/aktifses - ʙᴏᴛᴛᴀᴋɪ ᴀᴋᴛɪғ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
+/aktifvideo - ʙᴏᴛᴛᴀᴋɪ ᴀᴋᴛɪғ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
+/stat - ʙᴏᴛ ɪ̇sᴛᴀᴛɪsᴛɪᴋʟᴇʀɪɴɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ
 
-⚠️**<u>KARA LİSTE SOHBET İŞLEVİ:</u>**
-/blacklistchat veya /engelle [CHAT_ID] - Müzik Bot'u kullanarak yapılan tüm sohbetleri kara listeye alın
-/whitelistchat [CHAT_ID] - Kara listeye alınmış herhangi bir sohbeti Music Bot kullanarak beyaz listeye alın
-/blacklistedchat veya /engelliler- Kara listeye alınan tüm sohbetleri kontrol edin.
+⚠️**<u>ᴋᴀʀᴀ ʟɪ̇sᴛᴇ sᴏʜʙᴇᴛ ɪ̇şʟᴇᴠɪ̇:</u>**
+/blacklistchat ᴠᴇʏᴀ /engelle [ᴄʜᴀᴛ_ɪᴅ] - ᴍᴜ̈ᴢɪᴋ ʙᴏᴛ'ᴜ ᴋᴜʟʟᴀɴᴀʀᴀᴋ ʏᴀᴘıʟᴀɴ ᴛᴜ̈ᴍ sᴏʜʙᴇᴛʟᴇʀɪ ᴋᴀʀᴀ ʟɪsᴛᴇʏᴇ ᴀʟıɴ. 
+/whitelistchat [ᴄʜᴀᴛ_ɪᴅ] - ᴋᴀʀᴀ ʟɪsᴛᴇʏᴇ ᴀʟıɴᴍış ʜᴇʀʜᴀɴɢɪ ʙɪʀ sᴏʜʙᴇᴛɪ ʙᴜ ᴋᴏᴍᴜᴛᴜ  ᴋᴜʟʟᴀɴᴀʀᴀᴋ ʙᴇʏᴀᴢ ʟɪsᴛᴇʏᴇ ᴀʟıɴ.
+/blacklistedchat ᴠᴇʏᴀ /engelliler - ᴋᴀʀᴀ ʟɪsᴛᴇʏᴇ ᴀʟıɴᴀɴ ᴛᴜ̈ᴍ sᴏʜʙᴇᴛʟᴇʀɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
 
-👤**<u>ENGELLEME FONKSİYONU:</u>**
-/block [Kullanıcı adı veya kullanıcıya yanıt] - Kullanıcının bot komutlarını kullanmasını engeller.
-/unblock [Kullanıcı adı veya kullanıcıya yanıt] - Bir kullanıcıyı Bot'un Engellenen Listesinden kaldırma.
-/blockedusers - Engellenen Kullanıcı Listelerini kontrol edin
+👤**<u>ᴇɴɢᴇʟʟᴇᴍᴇ ғᴏɴᴋsɪ̇ʏᴏɴᴜ:</u>**
+/block [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ] - ᴋᴜʟʟᴀɴıᴄıɴıɴ ʙᴏᴛ ᴋᴏᴍᴜᴛʟᴀʀıɴı ᴋᴜʟʟᴀɴᴍᴀsıɴı ᴇɴɢᴇʟʟᴇʀ.
+/unblock [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ] - ʙɪʀ ᴋᴜʟʟᴀɴıᴄıʏı ʙᴏᴛ'ᴜɴ ᴇɴɢᴇʟʟᴇɴᴇɴ ʟɪsᴛᴇsɪɴᴅᴇɴ ᴋᴀʟᴅıʀᴍᴀ.
+/blockedusers - ᴇɴɢᴇʟʟᴇɴᴇɴ ᴋᴜʟʟᴀɴıᴄı ʟɪsᴛᴇʟᴇʀɪɴɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
 
-👤**<u>GBAN FONKSİYONU:</u>**
-/gban [Kullanıcı adı veya kullanıcıya yanıt] - Bir kullanıcıyı bot sunucusu sohbetinden yasaklayın ve botunuzu kullanmasını engelleyin.
-/ungban [Kullanıcı adı veya kullanıcıya yanıt] - Bir kullanıcıyı Bot'un yasaklı listesinden kaldırın ve onun botunuzu kullanmasına izin verin
-/gbannedusers - G Yasaklı Kullanıcı Listelerini Kontrol Edin
+👤**<u>ɢʙᴀɴ ғᴏɴᴋsɪ̇ʏᴏɴᴜ:</u>**
+/gban [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ] - ʙɪʀ ᴋᴜʟʟᴀɴıᴄıʏı ʙᴏᴛ sᴜɴᴜᴄᴜsᴜ sᴏʜʙᴇᴛɪɴᴅᴇɴ ʏᴀsᴀᴋʟᴀʏıɴ ᴠᴇ ʙᴏᴛᴜɴᴜᴢᴜ ᴋᴜʟʟᴀɴᴍᴀsıɴı ᴇɴɢᴇʟʟᴇʏɪɴ.
+/ungban [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ] - ʙɪʀ ᴋᴜʟʟᴀɴıᴄıʏı ʙᴏᴛ'ᴜɴ ʏᴀsᴀᴋʟı ʟɪsᴛᴇsɪɴᴅᴇɴ ᴋᴀʟᴅıʀıɴ ᴠᴇ ᴏɴᴜɴ ʙᴏᴛᴜɴᴜᴢᴜ ᴋᴜʟʟᴀɴᴍᴀsıɴᴀ ɪᴢɪɴ ᴠᴇʀɪɴ.
+/gbannedusers - ɢ ʏᴀsᴀᴋʟı ᴋᴜʟʟᴀɴıᴄı ʟɪsᴛᴇʟᴇʀɪɴɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
 
 🎥**<u>VİDEO FONKSİYONU:</u>**
 /videolimit [Sohbet Sayısı] - Aynı anda Video Görüşmeleri için izin verilen maksimum Sohbet Sayısını ayarlayın. Varsayılan olarak 3 sohbet.
