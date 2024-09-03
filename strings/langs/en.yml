@@ -340,8 +340,8 @@ QU_B_2 : "🎧 {1}ᴅᴇɴ {0} ᴅᴀᴋɪᴋᴀsı ᴏʏɴᴀᴛıʟᴅı"
 # Sudo Users [ If you are translating this to some other language .. you can leave all these strings in english language]
 
 #Sudo
-sudo_1 : "{0} zaten bir sudo kullanıcısı. ❄️"
-sudo_2 : "Sudo Kullanıcılarına **{0}** eklendi. ❄️" 
+sudo_1 : "{0} ᴢᴀᴛᴇɴ ʙɪʀ sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄısı. 😁"
+sudo_2 : "sᴜᴅᴏ ᴋᴜʟʟᴀɴıᴄıʟᴀʀıɴᴀ **{0}** ᴇᴋʟᴇɴᴅɪ. ❤️‍🔥" 
 sudo_3 : "Bot'un Sudo'sunun bir parçası değil."
 sudo_4 : "Bot'un Sudo Kullanıcısından Kaldırıldı. ❄️"
 sudo_5 : "⭐️<u> **Owners:**</u>\n"
