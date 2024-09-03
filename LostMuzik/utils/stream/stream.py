@@ -105,7 +105,6 @@ async def stream(
                     forceplay=forceplay,
                 )
                 img = None
-                button = stream_markup(_, vidid, chat_id)
                 run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
@@ -186,7 +185,6 @@ async def stream(
                 forceplay=forceplay,
             )
             img = None
-            button = stream_markup(_, vidid, chat_id)
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
@@ -240,7 +238,6 @@ async def stream(
                 "audio",
                 forceplay=forceplay,
             )
-            button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_3"].format(
@@ -295,7 +292,6 @@ async def stream(
             )
             if video:
                 await add_active_video_chat(chat_id)
-            button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_4"].format(
@@ -352,7 +348,6 @@ async def stream(
                 forceplay=forceplay,
             )
             img = None
-            button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
@@ -406,7 +401,6 @@ async def stream(
                 "video" if video else "audio",
                 forceplay=forceplay,
             )
-            button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_2"].format(
