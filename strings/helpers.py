@@ -99,25 +99,25 @@ HELP_5 = """🔰**<u>ʙᴜʀᴀsɪ ᴄ̧ᴏᴋ ᴏ̈ɴᴇᴍʟɪ̇ ᴅᴇɢ̆ɪ�
 /ungban [ᴋᴜʟʟᴀɴıᴄı ᴀᴅı ᴠᴇʏᴀ ᴋᴜʟʟᴀɴıᴄıʏᴀ ʏᴀɴıᴛ] - ʙɪʀ ᴋᴜʟʟᴀɴıᴄıʏı ʙᴏᴛ'ᴜɴ ʏᴀsᴀᴋʟı ʟɪsᴛᴇsɪɴᴅᴇɴ ᴋᴀʟᴅıʀıɴ ᴠᴇ ᴏɴᴜɴ ʙᴏᴛᴜɴᴜᴢᴜ ᴋᴜʟʟᴀɴᴍᴀsıɴᴀ ɪᴢɪɴ ᴠᴇʀɪɴ.
 /gbannedusers - ɢ ʏᴀsᴀᴋʟı ᴋᴜʟʟᴀɴıᴄı ʟɪsᴛᴇʟᴇʀɪɴɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
 
-🎥**<u>VİDEO FONKSİYONU:</u>**
-/videolimit [Sohbet Sayısı] - Aynı anda Video Görüşmeleri için izin verilen maksimum Sohbet Sayısını ayarlayın. Varsayılan olarak 3 sohbet.
-/videomode [download|m3u8] - İndirme modu etkinleştirilirse Bot, videoları M3u8 biçiminde oynatmak yerine indirecektir. Varsayılan olarak M3u8'e. M3u8 modunda herhangi bir sorgu oynatılmadığında indirme modunu kullanabilirsiniz.İndirme modu etkinleştirilirse Bot, videoları M3u8 biçiminde oynatmak yerine indirecektir. Varsayılan olarak M3u8'e. M3u8 modunda herhangi bir sorgu oynatılmadığında indirme modunu kullanabilirsiniz.
+🎥**<u>ᴠɪ̇ᴅᴇᴏ ғᴏɴᴋsɪ̇ʏᴏɴᴜ:</u>**
+/videolimit [sᴏʜʙᴇᴛ sᴀʏısı] - ᴀʏɴı ᴀɴᴅᴀ ᴠɪᴅᴇᴏ ɢᴏ̈ʀᴜ̈şᴍᴇʟᴇʀɪ ɪᴄ̧ɪɴ ɪᴢɪɴ ᴠᴇʀɪʟᴇɴ ᴍᴀᴋsɪᴍᴜᴍ sᴏʜʙᴇᴛ sᴀʏısıɴı ᴀʏᴀʀʟᴀʏıɴ. ᴠᴀʀsᴀʏıʟᴀɴ ᴏʟᴀʀᴀᴋ 𝟹 sᴏʜʙᴇᴛ.
+/videomode [ᴅᴏᴡɴʟᴏᴀᴅ / ᴍ𝟹ᴜ𝟾] - ɪ̇ɴᴅɪʀᴍᴇ ᴍᴏᴅᴜ ᴇᴛᴋɪɴʟᴇşᴛɪʀɪʟɪʀsᴇ ʙᴏᴛ, ᴠɪᴅᴇᴏʟᴀʀı ᴍ𝟹ᴜ𝟾 ʙɪᴄ̧ɪᴍɪɴᴅᴇ ᴏʏɴᴀᴛᴍᴀᴋ ʏᴇʀɪɴᴇ ɪɴᴅɪʀᴇᴄᴇᴋᴛɪʀ. ᴠᴀʀsᴀʏıʟᴀɴ ᴏʟᴀʀᴀᴋ ᴍ𝟹ᴜ𝟾'ᴇ. ᴍ𝟹ᴜ𝟾 ᴍᴏᴅᴜɴᴅᴀ ʜᴇʀʜᴀɴɢɪ ʙɪʀ sᴏʀɢᴜ ᴏʏɴᴀᴛıʟᴍᴀᴅıɢ̆ıɴᴅᴀ ɪɴᴅɪʀᴍᴇ ᴍᴏᴅᴜɴᴜ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ.ɪ̇ɴᴅɪʀᴍᴇ ᴍᴏᴅᴜ ᴇᴛᴋɪɴʟᴇşᴛɪʀɪʟɪʀsᴇ ʙᴏᴛ, ᴠɪᴅᴇᴏʟᴀʀı ᴍ𝟹ᴜ𝟾 ʙɪᴄ̧ɪᴍɪɴᴅᴇ ᴏʏɴᴀᴛᴍᴀᴋ ʏᴇʀɪɴᴇ ɪɴᴅɪʀᴇᴄᴇᴋᴛɪʀ. ᴠᴀʀsᴀʏıʟᴀɴ ᴏʟᴀʀᴀᴋ ᴍ𝟹ᴜ𝟾'ᴇ. ᴍ𝟹ᴜ𝟾 ᴍᴏᴅᴜɴᴅᴀ ʜᴇʀʜᴀɴɢɪ ʙɪʀ sᴏʀɢᴜ ᴏʏɴᴀᴛıʟᴍᴀᴅıɢ̆ıɴᴅᴀ ɪɴᴅɪʀᴍᴇ ᴍᴏᴅᴜɴᴜ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ.
 
-⚡️**<u>ÖZEL BOT İŞLEVİ:</u>**
-/pro [CHAT_ID] - Botunuzu kullanmak için sohbete izin verin.
-/unpro [CHAT_ID] - Bir sohbetin botunuzu kullanmasına izin vermeyin.
-/prolar - Botunuzun izin verilen tüm sohbetlerini kontrol edin.
+⚡️**<u>ᴏ̈ᴢᴇʟ ʙᴏᴛ ɪ̇şʟᴇᴠɪ̇:</u>**
+/pro [ᴄʜᴀᴛ_ɪᴅ] - ʙᴏᴛᴜɴᴜᴢᴜ ᴋᴜʟʟᴀɴᴍᴀᴋ ɪᴄ̧ɪɴ sᴏʜʙᴇᴛᴇ ɪᴢɪɴ ᴠᴇʀɪɴ.
+/unpro [ᴄʜᴀᴛ_ɪᴅ] - ʙɪʀ sᴏʜʙᴇᴛɪɴ ʙᴏᴛᴜɴᴜᴢᴜ ᴋᴜʟʟᴀɴᴍᴀsıɴᴀ ɪᴢɪɴ ᴠᴇʀᴍᴇʏɪɴ.
+/prolar - ʙᴏᴛᴜɴᴜᴢᴜɴ ɪᴢɪɴ ᴠᴇʀɪʟᴇɴ ᴛᴜ̈ᴍ sᴏʜʙᴇᴛʟᴇʀɪɴɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
 
-🌐**<u>YAYIN FONKSİYONU:</u>**
-/broadcast [Mesaj Gönderme veya Mesaja Cevap Verme] - Herhangi bir mesajı Bot'un Sunulan Sohbetlerine yayınlayın.
+🌐**<u>ʏᴀʏɪɴ ғᴏɴᴋsɪ̇ʏᴏɴᴜ:</u>**
+/broadcast [ᴍᴇsᴀᴊ ɢᴏ̈ɴᴅᴇʀᴍᴇ ᴠᴇʏᴀ ᴍᴇsᴀᴊᴀ ᴄᴇᴠᴀᴘ ᴠᴇʀᴍᴇ] - ʜᴇʀʜᴀɴɢɪ ʙɪʀ ᴍᴇsᴀᴊı ʙᴏᴛ'ᴜɴ sᴜɴᴜʟᴀɴ sᴏʜʙᴇᴛʟᴇʀɪɴᴇ ʏᴀʏıɴʟᴀʏıɴ.
 
-<u>Yayın seçenekleri:</u>
-**-pin** : Bu, mesajınızı sabitleyecektir 
-**-pinloud** : Bu, mesajınızı yüksek sesli bildirimle sabitleyecektir
-**-user** : Bu, mesajınızı botunuzu başlatan kullanıcılara yayınlayacaktır.
-**-assistant** : Bu, mesajınızı botunuzun asistan hesabından yayınlayacaktır.
-**-nobot** : Bu, botunuzu mesaj yayınlamamaya zorlayacaktır
+<u>ʏᴀʏıɴ sᴇᴄ̧ᴇɴᴇᴋʟᴇʀɪ:</u>
+**-ᴘɪɴ** : ʙᴜ, ᴍᴇsᴀᴊıɴıᴢı sᴀʙɪᴛʟᴇʏᴇᴄᴇᴋᴛɪʀ. 
+**-ᴘɪɴʟᴏᴜᴅ** : ʙᴜ, ᴍᴇsᴀᴊıɴıᴢı sᴇsʟɪ ʙɪʟᴅɪʀɪᴍʟᴇ sᴀʙɪᴛʟᴇʏᴇᴄᴇᴋᴛɪʀ.
+**-ᴜsᴇʀ** : ʙᴜ, ᴍᴇsᴀᴊıɴıᴢı ʙᴏᴛᴜɴᴜᴢᴜ ʙᴀşʟᴀᴛᴀɴ ᴋᴜʟʟᴀɴıᴄıʟᴀʀᴀ ʏᴀʏıɴʟᴀʏᴀᴄᴀᴋᴛıʀ.
+**-ᴀssɪsᴛᴀɴᴛ** : ʙᴜ, ᴍᴇsᴀᴊıɴıᴢı ʙᴏᴛᴜɴᴜᴢᴜɴ ᴀsɪsᴛᴀɴ ʜᴇsᴀʙıɴᴅᴀɴ ʏᴀʏıɴʟᴀʏᴀᴄᴀᴋᴛıʀ.
+**-ɴᴏʙᴏᴛ** : ʙᴜ, ʙᴏᴛᴜɴᴜᴢᴜ ᴍᴇsᴀᴊ ʏᴀʏıɴʟᴀᴍᴀᴍᴀʏᴀ ᴢᴏʀʟᴀʏᴀᴄᴀᴋᴛıʀ.
 
-**Örnek:** `/broadcast -user -assistant -pin Lost Müzik`
+**ᴏ̈ʀɴᴇᴋ:** `/ʙʀᴏᴀᴅᴄᴀsᴛ -ᴜsᴇʀ -ᴀssɪsᴛᴀɴᴛ -ᴘɪɴ ʟᴏsᴛ ᴍᴜ̈ᴢɪᴋ`
 
 """
