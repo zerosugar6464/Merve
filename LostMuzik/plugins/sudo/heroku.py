@@ -238,7 +238,7 @@ async def update_(client, message, _):
     ):
         verification = str(checks.count())
     if verification == "":
-        return await response.edit("Bot is up-to-date!")
+        return await response.edit("ʙᴏᴛ şᴜ ᴀɴᴅᴀ ɢᴜ̈ɴᴄᴇʟ ᴅᴜʀᴜᴍᴅᴀ!")
     updates = ""
     ordinal = lambda format: "%d%s" % (
         format,
