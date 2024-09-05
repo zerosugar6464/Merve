@@ -80,6 +80,18 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
 ## Inline without Timer Bar
 
 
+def stream_markup(_, videoid, chat_id):
+    buttons = [
+        
+        [
+             InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            )
+        ],
+    ]
+    return buttons
+
+
 def telegram_markup(_, chat_id):
     buttons = [
         [
@@ -92,6 +104,19 @@ def telegram_markup(_, chat_id):
 
 
 ## Search Query Inline
+
+
+def track_markup(_, videoid, user_id, channel, fplay):
+    buttons = [
+    
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            )
+        ],
+    ]
+    return buttons
 
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
@@ -144,10 +169,6 @@ def slider_markup(
             InlineKeyboardButton(
                 text="❮",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}|{channel}|{fplay}",
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {query}|{user_id}",
             ),
             InlineKeyboardButton(
                 text="❯",
