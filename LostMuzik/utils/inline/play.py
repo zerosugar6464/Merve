@@ -49,27 +49,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar += circle
     bar += line*(10-len(bar))
 
-    buttons = [
-    
-        [
-             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
-        ],
-    ]
+    buttons = []
     return buttons
 
 
 def telegram_markup_timer(_, chat_id, played, dur, videoid):
     bar = random.choice(selection)
-    buttons = [
-        
-        [
-             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
-        ],
-    ]
+    buttons = []
     return buttons
 
 
