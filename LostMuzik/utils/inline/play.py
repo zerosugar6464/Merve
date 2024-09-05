@@ -80,13 +80,6 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-        
-    ]
-    return buttons
-
-
 def telegram_markup(_, chat_id):
     buttons = [
         [
@@ -99,13 +92,6 @@ def telegram_markup(_, chat_id):
 
 
 ## Search Query Inline
-
-
-def track_markup(_, videoid, user_id, channel, fplay):
-    buttons = [
-        
-    ]
-    return buttons
 
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
