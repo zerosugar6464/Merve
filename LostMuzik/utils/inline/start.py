@@ -116,6 +116,10 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 [
                     InlineKeyboardButton(
                         text=_["S_B_7"], user_id=OWNER
+          ),
+            InlineKeyboardButton(
+                text=f"ʟ📯 ʀᴇᴋʟᴀᴍ ᴀ.s", 
+                url=f"https://t.me/the_zerrin_albora"
                     ),
                 ]
             )
