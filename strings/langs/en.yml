@@ -246,14 +246,14 @@ UNBAN_BUTTON : "ᴀsɪsᴛᴀɴ ʏᴀsᴀɢ̆ɪɴɪ ᴋᴀʟᴅɪʀ"
 L_B_1 : "şᴀʀᴋı sᴏ̈ᴢʟᴇʀɪɴɪ şɪᴍᴅɪ ᴋᴏɴᴛʀᴏʟ ᴇᴛ"
 
 # Start
-S_B_1 : "🗒 ᴋᴏᴍᴜᴛʟᴀʀ"
-S_B_2 : "🔧 ᴀʏᴀʀʟᴀʀ"
-S_B_3 : "🎉 ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ"
-S_B_4 : "🎩 ᴅᴜʏᴜʀᴜ"
-S_B_5 : "✚ 𝗯𝗲𝗻𝗶 𝗴𝗿𝘂𝗯𝘂𝗻𝗮 𝗲𝗸𝗹𝗲"
-S_B_6 : "ɢɪᴛ ʀᴇᴘᴏ"
-S_B_7 : "❤️‍🔥 𝘀𝗮𝗵𝗶𝗯𝗶"
-S_B_8 : "📚 𝗸𝗼𝗺𝘂𝘁𝗹𝗮𝗿 𝗺𝗲𝗻𝘂̈𝘀𝘂̈"
+S_B_1 : "🗒 Komutlar"
+S_B_2 : "🔧 Kapat"
+S_B_3 : "🎉 Duyuru"
+S_B_4 : "🎩 Kumsal Bots"
+S_B_5 : "✚ Beni Grubuna Ekle"
+S_B_6 : "🔮 Reklam "
+S_B_7 : "❤️‍🔥 Geliştirici"
+S_B_8 : "📚 Komutlar Menüsü"
 
 #Help 
 H_B_1 : "💎Admin"
