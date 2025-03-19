@@ -12,7 +12,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
-from ArchMusic import app
+from LostMuzik import app
 
 
 def start_pannel(_):
@@ -82,7 +82,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                        text=_["S_B_4"], url=f"https://t.me/the_team_kumsal"
                     )
                 ]
             )
@@ -107,7 +107,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
                 InlineKeyboardButton(
-                    text=_["S_B_6"], url=f"https://t.me/the_team_kumsal"
+                    text=_["S_B_6"], url=f"https://t.me/the_zerrin_albora"
                 ),
             ]
         )
