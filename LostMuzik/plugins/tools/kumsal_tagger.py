@@ -18,9 +18,9 @@ from pyrogram.types import (
     CallbackQuery,
     ChatMemberUpdated,
 )
-from ArchMusic import app
+from LostMuzik import app
 from config import LOG_GROUP_ID, OWNER_ID
-from ArchMusic.plugins.tools.kumsal import *
+from LostMuzik.plugins.tools.kumsal import *
 
 kumsal_tagger = {}
 users = []
