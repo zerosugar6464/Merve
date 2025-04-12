@@ -56,7 +56,7 @@ SUDOUSERS_COMMAND : ["sudolist"]
 
 # Reklam Komutları
 
-BROADCAST_COMMAND : ["broadcast", "reklam", "duyuru"]
+BROADCAST_COMMAND : ["broadcast", "mehmet", "cihan"]
 
 #Ban Komutları
 
